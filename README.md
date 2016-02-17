@@ -15,3 +15,11 @@
 6.  run `python manage.py createsuperuser`
 7.  run `python manage.py runserver`
 8.  Browse to <http://localhost:8000/admin>
+
+
+## TODOs
+
+-   write script to to automatically import processes from adhocracy
+    (see unfinished branch feature-adh-pull)
+-   build sass instead of just linking pre-build file
+-   make home page more customizable (e.g. cover image)

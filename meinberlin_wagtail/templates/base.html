@@ -1,29 +1,116 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar wagtailcore_tags navigation %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+    <head prefix="og: http://ogp.me/ns#">
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Page specific headers -->
 
-        {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/meinberlin_wagtail.css' %}">
+        <link rel="shortcut icon" href="https://www.berlin.de/i9f/images/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="https://www.berlin.de/i9f/images/iphone.png" type="image/png"/>
+        <meta property="og:image" content="http://www.berlin.de/i9f/images/facebook_default_icon_land.png"/>
+        <meta property="og:image:secure_url" content="https://www.berlin.de/i9f/images/facebook_default_icon_land.png"/>
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="locale_de socialmediacounter">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        <div class="container-portal-header">
+            <div class="html5-header portal-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="red-line"></div>
+                            <div class="html5-figure main-image">
+                                <a href="http://www.berlin.de/">
+                                    <img class="portal-logo" src="{% static 'images/berlin_de.png' %}" alt="Zur Homepage von Berlin.de" />
+                                </a>
+                            </div><!-- /html5-figure -->
+                            <p class="navSkip">Navigiere direkt zu:</p>
+                            <ul class="navSkip">
+                                <li><a href="#aural_institutionssuche">Suche</a></li>
+                                <li><a href="#aural_maincontent">Inhalt</a></li>
+                            </ul>
+                            <div class="html5-nav" role="navigation" aria-label="Globale Portal-Links">
+                                <p class="aural" id="bo-portalnavilinkslabel">Besuchen Sie auch unsere anderen Themen-Bereiche:</p>
+                                <ul class="portal-navi" id="bo-portalnavilinks" aria-labelledby="bo-portalnavilinkslabel">
+                                    <li class="active"><a href="https://www.berlin.de/rubrik/politik-und-verwaltung/">Politik, Verwaltung, Bürger</a></li>
+                                    <li><a href="https://www.berlin.de/kultur-und-tickets/">Kultur &#38; Ausgehen</a></li>
+                                    <li><a href="https://www.berlin.de/tourismus/">Tourismus</a></li>
+                                    <li><a href="https://www.berlin.de/wirtschaft/">Wirtschaft</a></li>
+                                    <li><a href="https://www.berlin.de/special/">Themen</a></li>
+                                    <li><a href="https://www.berlin.de/adressen/">BerlinFinder</a></li>
+                                    <li><a href="https://www.berlin.de/stadtplan/">Stadtplan</a></li>
+                                </ul>
+                            </div><!-- /.html5-nav -->
+                        </div><!-- /.html5-header -->
+                    </div><!-- /.span12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.container-wrapper -->
+
+        <div id="top" class="container-wrapper container-content template-land_article">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="row">
+                            <div class="span12">
+                                <div class="content-navi-wrapper navbar">
+                                    <div class="html5-nav content-navi-top navbar-inner">
+                                        <button class="btn btn-navbar collapsed" type="button" data-toggle="collapse" data-target=".mainnav-collapse">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <div class="navi-suche visible-phone only-mobile">
+                                            <form method="get" action="/ba-treptow-koepenick/suche.php" role="search">
+                                                <div class="input-append searchform">
+                                                    <input type="search" placeholder="Suchbegriff"
+                                                    name="q" aria-labelledby="aural_institutionssuche"
+                                                    maxlength="255"
+                                                    title="Hier können Sie einen Text eingeben, um die Internetseite 'Bezirksamt Treptow-Köpenick' zu durchsuchen"
+                                                    />
+                                                    <button class="btn" type="submit"><i class="icon-search icon-white"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="nav-collapse mainnav-collapse collapse">
+                                            <p class="aural">Hauptnavigation</p>
+                                            <ul class="nav level1">
+                                                <li>
+                                                    <a href="/">Startseite</a>
+                                                </li>
+                                                <li id="meinberlin-logo">
+                                                    <img src="{% static 'images/LOGO.png' %}" alt="meinBerlin.de" height="130" width="130" />
+                                                </li>
+                                                {% get_top_nav as nav %}
+                                                {% for menuitem in nav %}
+                                                <li><a href="{% pageurl menuitem %}">{{ menuitem.title }}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="beberlin"><img alt="Logo beBerlin" title="Logo beBerlin" src="{% static 'images/logo_beberlin_darkblue.png' %}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% block content %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/meinberlin_wagtail.js' %}"></script>

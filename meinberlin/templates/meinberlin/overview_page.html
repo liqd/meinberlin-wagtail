@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <h2>{{ self.title }}</h2>
+    <div class="page-description">{{ self.description | richtext }}</div>
+
+    {% include "meinberlin/includes/processes_tile.html" with processes=self.processes %}
+{% endblock %}

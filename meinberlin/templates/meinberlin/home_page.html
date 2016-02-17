@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+    <div class="content-cover">
+        <div class="row">
+            <div class="span6">
+                <h2>meinBerlin – die Beteiligungsplattform</h2>
+
+                {{ self.description | richtext }}
+            </div>
+            <div class="span6">
+                <img src="{% static 'images/cover.jpg' %}" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="row boxes-3">
+        <div class="span4">
+            <h3 class="title">Warum meinBerlin?</h3>
+                <p>meinBerlin hat das Ziel, allen die sich beteiligen wollen, eine einfache Möglichkeit zu bieten, einzusteigen und ihren Vorschlag, ihre Meinung, ihr Votum einzubringen. Sie sind auch eingeladen, sich zur Art und Weise der Beteiligung zu äußern.</p>
+            <p></p>
+        </div>
+        <div class="span4">
+            <h3 class="title">Wie kann ich mitmachen?</h3>
+            <p>Mitmachen kann jede/r, es sei denn, die Teilnahme ist ausdrücklich geregelt. Wenn nichts anderes vorgegeben ist, kann der Name, der öffentlich erscheint, frei gewählt werden. Darüber hinaus gelten die Regeln eines fairen Miteinanders.</p>
+        </div>
+        <div class="span4">
+            <h3 class="title">Wie funktioniert meinBerlin?</h3>
+            <p>Die Plattform bietet eine Übersicht sowie Zugang zu diversen Verfahren. Für diese ist nur eine Anmeldung nötig. Die Beteiligung wird ermöglicht durch die Software Adhocracy, die je nach Verfahren verschiedene, einfach zu bedienende Funktionen bietet.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4 link-set">
+            <!--<a class="center" href="#">Mehr</a>-->
+        </div>
+        <div class="span4 link-set">
+            <a href="/netiquette/">Netiquette</a>
+            <a href="/datenschutz/">Datenschutz</a>
+        </div>
+        <div class="span4 link-set">
+            <a class="center" href="/beteiligungsverfahren/">Beteiligungsverfahren</a>
+        </div>
+    </div>
+
+    <h2 class="bar"><span class="bar-inner">Aktuelle Verfahren</span></h2>
+
+    {% include "meinberlin/includes/processes_tile.html" with processes=self.processes %}
+    <a href="/prozesse/">alle ansehen</a>
+
+    <h2 class="bar"><span class="bar-inner">Vergangene Verfahren</span></h2>
+
+    {% include "meinberlin/includes/processes_tile.html" with processes=self.archived %}
+    <a href="/archiv/">alle ansehen</a>
+
+    <h2 class="bar"><span class="bar-inner">Andere Verfahren</span></h2>
+
+    <div class="row">
+        <a class="span12 big-link" target="_blank" href="https://www.berlin.de/buergeraktiv/beteiligen/">
+            <h3 class="title">Weitere Beteiligungsmöglichkeiten</h3>
+            <p class="info">Klicken Sie hier, um andere Beteiligungsverfahren zu besuchen, die nicht auf meinBerlin stattfinden.</p>
+            <span class="click">Klicken Sie hier</span>
+        </a>
+    </div>
+{% endblock %}

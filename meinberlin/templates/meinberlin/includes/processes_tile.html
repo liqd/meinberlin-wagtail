@@ -1,0 +1,16 @@
+{% load wagtailcore_tags %}
+
+<div class="row">
+{% for process in processes %}
+    {% if process.externalprocess %}
+        {% include "meinberlin/includes/external_tile.html" with process=process %}
+    {% else %}
+        {% include "meinberlin/includes/adhocracy_tile.html" with process=process %}
+    {% endif %}
+{% if forloop.counter|divisibleby:4 %}
+</div><div class="row">
+{% endif %}
+{% empty %}
+    <div class="span4">Momentan keine Beteiligungsprozesse</div>
+{% endfor %}
+</div>

@@ -5,9 +5,9 @@
     <div class="content-cover">
         <div class="row">
             <div class="span6">
-                <h2>meinBerlin – die Beteiligungsplattform</h2>
+                <h2>{{ self.header }}</h2>
 
-                {{ self.description | richtext }}
+                {{ self.description }}
             </div>
             <div class="span6">
                 <img src="{% static 'images/cover.jpg' %}" alt=""/>
@@ -16,17 +16,17 @@
     </div>
     <div class="row boxes-3">
         <div class="span4">
-            <h3 class="title">Warum meinBerlin?</h3>
-                <p>meinBerlin hat das Ziel, allen die sich beteiligen wollen, eine einfache Möglichkeit zu bieten, einzusteigen und ihren Vorschlag, ihre Meinung, ihr Votum einzubringen. Sie sind auch eingeladen, sich zur Art und Weise der Beteiligung zu äußern.</p>
+            <h3 class="title">{{ self.info1_title }}</h3>
+                <p>{{ self.info1_text }}</p>
             <p></p>
         </div>
         <div class="span4">
-            <h3 class="title">Wie kann ich mitmachen?</h3>
-            <p>Mitmachen kann jede/r, es sei denn, die Teilnahme ist ausdrücklich geregelt. Wenn nichts anderes vorgegeben ist, kann der Name, der öffentlich erscheint, frei gewählt werden. Darüber hinaus gelten die Regeln eines fairen Miteinanders.</p>
+            <h3 class="title">{{ self.info2_title }}</h3>
+            <p>{{ self.info2_text }}</p>
         </div>
         <div class="span4">
-            <h3 class="title">Wie funktioniert meinBerlin?</h3>
-            <p>Die Plattform bietet eine Übersicht sowie Zugang zu diversen Verfahren. Für diese ist nur eine Anmeldung nötig. Die Beteiligung wird ermöglicht durch die Software Adhocracy, die je nach Verfahren verschiedene, einfach zu bedienende Funktionen bietet.</p>
+            <h3 class="title">{{ self.info3_title }}</h3>
+            <p>{{ self.info3_text }}</p>
         </div>
     </div>
     <div class="row">
@@ -34,31 +34,31 @@
             <!--<a class="center" href="#">Mehr</a>-->
         </div>
         <div class="span4 link-set">
-            <a href="/netiquette/">Netiquette</a>
-            <a href="/datenschutz/">Datenschutz</a>
+            <a href="/netiquette/">{{ self.netiquette_linktext }}</a>
+            <a href="/datenschutz/">{{ self.privacy_linktext }}</a>
         </div>
         <div class="span4 link-set">
-            <a class="center" href="/beteiligungsverfahren/">Beteiligungsverfahren</a>
+            <a class="center" href="/beteiligungsverfahren/">{{ self.processes_linktext }}</a>
         </div>
     </div>
 
-    <h2 class="bar"><span class="bar-inner">Aktuelle Verfahren</span></h2>
+    <h2 class="bar"><span class="bar-inner">{{ self.current_processes_title }}</span></h2>
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.processes %}
-    <a href="/prozesse/">alle ansehen</a>
+    <a href="/prozesse/">{{ self.view_all }}</a>
 
-    <h2 class="bar"><span class="bar-inner">Vergangene Verfahren</span></h2>
+    <h2 class="bar"><span class="bar-inner">{{ self.past_processes_title }}</span></h2>
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.archived %}
-    <a href="/archiv/">alle ansehen</a>
+    <a href="/archiv/">{{ self.view_all }}</a>
 
-    <h2 class="bar"><span class="bar-inner">Andere Verfahren</span></h2>
+    <h2 class="bar"><span class="bar-inner">{{ self.external_processes_title }}</span></h2>
 
     <div class="row">
         <a class="span12 big-link" target="_blank" href="https://www.berlin.de/buergeraktiv/beteiligen/">
-            <h3 class="title">Weitere Beteiligungsmöglichkeiten</h3>
-            <p class="info">Klicken Sie hier, um andere Beteiligungsverfahren zu besuchen, die nicht auf meinBerlin stattfinden.</p>
-            <span class="click">Klicken Sie hier</span>
+            <h3 class="title">{{ self.further_possibilities_title }}</h3>
+            <p class="info">{{ self.further_possibilities_infotext }}</p>
+            <span class="click">{{ self.click_here }}</span>
         </a>
     </div>
 {% endblock %}

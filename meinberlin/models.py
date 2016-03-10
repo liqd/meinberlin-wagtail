@@ -60,7 +60,29 @@ class AdhocracyProcess(Process):
 
 
 class HomePage(Page):
-    description = RichTextField(blank=True)
+
+    # Text fields
+
+    header = models.CharField(max_length=255, blank=True)
+    description = models.CharField(max_length=2047, blank=True)
+    info1_title = models.CharField(max_length=255, blank=True)
+    info1_text = models.CharField(max_length=2047, blank=True)
+    info2_title = models.CharField(max_length=255, blank=True)
+    info2_text = models.CharField(max_length=2047, blank=True)
+    info3_title = models.CharField(max_length=255, blank=True)
+    info3_text = models.CharField(max_length=2047, blank=True)
+    netiquette_linktext = models.CharField(max_length=255, blank=True)
+    privacy_linktext = models.CharField(max_length=255, blank=True)
+    processes_linktext = models.CharField(max_length=255, blank=True)
+    current_processes_title = models.CharField(max_length=255, blank=True)
+    view_all = models.CharField(max_length=255, blank=True)
+    past_processes_title = models.CharField(max_length=255, blank=True)
+    external_processes_title = models.CharField(max_length=255, blank=True)
+    further_possibilities_title = models.CharField(max_length=255,
+        blank=True)
+    further_possibilities_infotext = models.CharField(max_length=2047,
+        blank=True)
+    click_here = models.CharField(max_length=255)
 
     @property
     def processes(self):
@@ -72,7 +94,24 @@ class HomePage(Page):
 
     content_panels = [
         FieldPanel('title'),
+        FieldPanel('header'),
         FieldPanel('description'),
+        FieldPanel('info1_title'),
+        FieldPanel('info1_text'),
+        FieldPanel('info2_title'),
+        FieldPanel('info2_text'),
+        FieldPanel('info3_title'),
+        FieldPanel('info3_text'),
+        FieldPanel('netiquette_linktext'),
+        FieldPanel('privacy_linktext'),
+        FieldPanel('processes_linktext'),
+        FieldPanel('current_processes_title'),
+        FieldPanel('view_all'),
+        FieldPanel('past_processes_title'),
+        FieldPanel('external_processes_title'),
+        FieldPanel('further_possibilities_title'),
+        FieldPanel('further_possibilities_infotext'),
+        FieldPanel('click_here')
     ]
 
     parent_page_types = []

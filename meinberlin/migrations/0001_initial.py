@@ -26,6 +26,13 @@ class Migration(migrations.Migration):
                     to='wagtailcore.Page')),
                 ('header', models.CharField(max_length=255, blank=True)),
                 ('description', models.CharField(max_length=255, blank=True)),
+                ('cover_image', models.ForeignKey(
+                    'wagtailimages.Image',
+                    null=True,
+                    blank=True,
+                    on_delete=models.SET_NULL,
+                    related_name='+')
+                ),
                 ('info1_title', models.CharField(max_length=255, blank=True)),
                 ('info1_text', models.CharField(max_length=255, blank=True)),
                 ('info2_title', models.CharField(max_length=255, blank=True)),

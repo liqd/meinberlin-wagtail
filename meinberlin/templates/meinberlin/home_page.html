@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static wagtailcore_tags %}
+{% load static wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
     <div class="content-cover">
@@ -10,7 +10,7 @@
                 {{ self.description }}
             </div>
             <div class="span6">
-                <img src="{% static 'images/cover.jpg' %}" alt=""/>
+                {% image page.cover_image width-1280 %}
             </div>
         </div>
     </div>

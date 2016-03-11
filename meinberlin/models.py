@@ -1,8 +1,11 @@
 from django.db import models
-from wagtail.wagtailcore.models import Page
 from wagtail.wagtailadmin.edit_handlers import FieldPanel
-from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
+from wagtail.wagtailadmin.edit_handlers import MultiFieldPanel
+from wagtail.wagtailadmin.edit_handlers import ObjectList
+from wagtail.wagtailadmin.edit_handlers import TabbedInterface
 from wagtail.wagtailcore.fields import RichTextField
+from wagtail.wagtailcore.models import Page
+from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 
 
 class Process(Page):
@@ -94,19 +97,39 @@ class HomePage(Page):
         FieldPanel('header'),
         FieldPanel('description'),
         ImageChooserPanel('cover_image'),
-        FieldPanel('info1_title'),
-        FieldPanel('info1_text'),
-        FieldPanel('info2_title'),
-        FieldPanel('info2_text'),
-        FieldPanel('info3_title'),
-        FieldPanel('info3_text'),
-        FieldPanel('netiquette_linktext'),
-        FieldPanel('privacy_linktext'),
-        FieldPanel('processes_linktext'),
-        FieldPanel('current_processes_title'),
-        FieldPanel('view_all'),
-        FieldPanel('past_processes_title'),
     ]
+
+    info_panels = [
+        MultiFieldPanel([
+            FieldPanel('info1_title'),
+            FieldPanel('info1_text'),
+        ], heading="Info 1"),
+        MultiFieldPanel([
+            FieldPanel('info2_title'),
+            FieldPanel('info2_text'),
+            FieldPanel('netiquette_linktext'),
+            FieldPanel('privacy_linktext'),
+        ], heading="Info 2"),
+        MultiFieldPanel([
+            FieldPanel('info3_title'),
+            FieldPanel('info3_text'),
+            FieldPanel('processes_linktext'),
+        ], heading="Info 3"),
+    ]
+
+    system_panels = [
+        FieldPanel('current_processes_title'),
+        FieldPanel('past_processes_title'),
+        FieldPanel('view_all'),
+    ]
+
+    edit_handler = TabbedInterface([
+        ObjectList(content_panels, heading='Content'),
+        ObjectList(info_panels, heading='Info'),
+        ObjectList(system_panels, heading='System'),
+        ObjectList(Page.promote_panels, heading='Promote'),
+        ObjectList(Page.settings_panels, heading='Settings'),
+    ])
 
     parent_page_types = []
 

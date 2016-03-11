@@ -51,14 +51,4 @@
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.archived %}
     <a href="/archiv/">{{ self.view_all }}</a>
-
-    <h2 class="bar"><span class="bar-inner">{{ self.external_processes_title }}</span></h2>
-
-    <div class="row">
-        <a class="span12 big-link" target="_blank" href="https://www.berlin.de/buergeraktiv/beteiligen/">
-            <h3 class="title">{{ self.further_possibilities_title }}</h3>
-            <p class="info">{{ self.further_possibilities_infotext }}</p>
-            <span class="click">{{ self.click_here }}</span>
-        </a>
-    </div>
 {% endblock %}

@@ -80,12 +80,6 @@ class HomePage(Page):
     current_processes_title = models.CharField(max_length=255, blank=True)
     view_all = models.CharField(max_length=255, blank=True)
     past_processes_title = models.CharField(max_length=255, blank=True)
-    external_processes_title = models.CharField(max_length=255, blank=True)
-    further_possibilities_title = models.CharField(max_length=255,
-        blank=True)
-    further_possibilities_infotext = models.CharField(max_length=2047,
-        blank=True)
-    click_here = models.CharField(max_length=255)
 
     @property
     def processes(self):
@@ -112,10 +106,6 @@ class HomePage(Page):
         FieldPanel('current_processes_title'),
         FieldPanel('view_all'),
         FieldPanel('past_processes_title'),
-        FieldPanel('external_processes_title'),
-        FieldPanel('further_possibilities_title'),
-        FieldPanel('further_possibilities_infotext'),
-        FieldPanel('click_here')
     ]
 
     parent_page_types = []

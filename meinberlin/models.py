@@ -60,11 +60,8 @@ class AdhocracyProcess(Process):
 
 
 class HomePage(Page):
-
-    # Text fields
-
     header = models.CharField(max_length=255, blank=True)
-    description = models.CharField(max_length=2047, blank=True)
+    description = RichTextField(blank=True)
     cover_image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,

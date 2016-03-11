@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="adhocracy_marker"
+        data-widget="{{ self.widget }}"
+        data-noheader="true"
+        {% if self.widget == 'plain' %}
+        style="height: 800px"
+        data-autoresize="false"
+        data-autourl="true"
+        {% endif %}
+    ></div>
+{% endblock %}

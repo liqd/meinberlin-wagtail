@@ -77,5 +77,82 @@
   "fields": {
     "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalt</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"info-buergerhaushalt.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bebauungsplanverfahren</h2>                            <p>Das Bebauungsplanverfahren ist ein relativ komplexes Verfahren, das gesetzlich stark geregelt wird. Im Wesentlichen teilen sich die Beteiligungsmöglichkeiten in zwei Beteiligungsphasen auf: die frühzeitige Beteiligung der Öffentlichkeit und die öffentliche Auslegung. Alle interessierten Bürgerinnen und Bürger, die sich zu den Bebauungsplänen äußern möchten, können auf meinBerlin Ihre Stellungnahme zu den jeweiligen Bebauungsplänen einreichen.</p>                            <a class=\"info\" href=\"info-bebauungsplan.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/stadtforum.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforum</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"info-stadtforum.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen-Verfahren</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"info-kiezkassen.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
   }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 1,
+  "fields": {
+    "old_path": "/index.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 3,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 2,
+  "fields": {
+    "old_path": "/nutzungsbedingungen.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 6,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 3,
+  "fields": {
+    "old_path": "/impressum.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 7,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 4,
+  "fields": {
+    "old_path": "/hilfe.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 8,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 5,
+  "fields": {
+    "old_path": "/netiquette.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 9,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 6,
+  "fields": {
+    "old_path": "/datenschutz.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 10,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 7,
+  "fields": {
+    "old_path": "/beteiligungsverfahren.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 11,
+    "redirect_link": ""
+  }
 }
 ]

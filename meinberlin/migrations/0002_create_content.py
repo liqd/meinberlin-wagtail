@@ -256,26 +256,6 @@ def create_homepage(apps, schema_editor):
         body='',
     )
 
-    # create redirects for old URLs
-    Redirect = apps.get_model('wagtailredirects.Redirect')
-    Redirect.objects.create(
-        old_path='/index.html',
-        is_permanent=True,
-        redirect_page_id=homepage.id,
-    )
-    for page in [
-            nutzungsbedingungen,
-            impressum,
-            hilfe,
-            netiquette,
-            datenschutz,
-            beteiligungsverfahren]:
-        Redirect.objects.create(
-            old_path='/%s.html' % page.slug,
-            is_permanent=True,
-            redirect_page_id=page.id,
-        )
-
 
 class Migration(migrations.Migration):
 

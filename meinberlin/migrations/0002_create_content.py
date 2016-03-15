@@ -32,7 +32,7 @@ def create_homepage(apps, schema_editor):
         content_type=homepage_content_type,
         path='00010001',
         depth=2,
-        numchild=8,
+        numchild=12,
         url_path='/meinberlin/',
         description=(
             'meinBerlin ist die Plattform, auf der zukünftig alle '

@@ -75,7 +75,28 @@
   "model": "meinberlin.simplepage",
   "pk": 11,
   "fields": {
-    "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalt</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"info-buergerhaushalt.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bebauungsplanverfahren</h2>                            <p>Das Bebauungsplanverfahren ist ein relativ komplexes Verfahren, das gesetzlich stark geregelt wird. Im Wesentlichen teilen sich die Beteiligungsmöglichkeiten in zwei Beteiligungsphasen auf: die frühzeitige Beteiligung der Öffentlichkeit und die öffentliche Auslegung. Alle interessierten Bürgerinnen und Bürger, die sich zu den Bebauungsplänen äußern möchten, können auf meinBerlin Ihre Stellungnahme zu den jeweiligen Bebauungsplänen einreichen.</p>                            <a class=\"info\" href=\"info-bebauungsplan.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/stadtforum.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforum</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"info-stadtforum.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen-Verfahren</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"info-kiezkassen.html\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+  "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalte</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 12,
+  "fields": {
+    "body": "<h1>Allgemein<br/></h1><p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene organisiert, wobei alle Interessierten sich daran beteiligen k\u00f6nnen. Die B\u00fcrgerhaushaltsverfahren werden je nach Bezirk unterschiedlich umgesetzt. Bisherige Verfahren lassen sich hinsichtlich der Zeitplanung in zwei Modelle unterscheiden: Zum einen das Modell eines j\u00e4hrlichen Stichtags bzw. mehrerer Stichtage, wenn \u00fcber die Gelder f\u00fcr Projekte mehrmals im Jahr entschieden wird (z.B. in Lichtenberg \u2013 quartalsweise). Im zweiten Modell k\u00f6nnen B\u00fcrgerinnen und B\u00fcrger Projekte zu jedem beliebigen Zeitpunkt einreichen. Im\u00a0<b>Bezirk Treptow-K\u00f6penick</b>\u00a0soll das Einreichen von Vorschl\u00e4gen nicht zeitlich befristet sein. Die Beteiligung ist unabh\u00e4ngig von der aktuellen Phase der Haushaltsplanung jederzeit m\u00f6glich. Hintergrund ist, dass sonst wegen des Berliner Doppelhaushalts nur alle zwei Jahre Vorschl\u00e4ge gemacht werden k\u00f6nnen. In der Praxis betreffen aber viele Vorschl\u00e4ge nicht die Haushaltsplanung, sondern die Haushaltsdurchf\u00fchrung bzw. die Investitionsplanung.</p><h2>Ziel</h2><p>Ziel des B\u00fcrgerhaushalts auf meinBerlin ist, die B\u00fcrgerinnen und B\u00fcrger in die Entscheidung der Berliner Verwaltung \u00fcber die bezirkliche Haushaltsplanung und Durchf\u00fchrung einzubeziehen. Die zentrale Plattform meinBerlin soll einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die Vorschl\u00e4ge zum B\u00fcrgerhaushalt einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Bezirksverwaltung Treptow-K\u00f6penick (Serviceeinheit Personal und Finanzen)</li></ul><h2>Ablauf</h2><h3>Phase 1: Informieren</h3><p>Bevor Vorschl\u00e4ge eingereicht werden k\u00f6nnen, muss eine Phase der Information und der \u00d6ffentlichkeitsarbeit vorangehen, die das Verfahren bekannt und sichtbar macht. Auf der Internetseite des Bezirksamtes Treptow-K\u00f6penick sowie eine Einwohnerversammlung werden allen Interessierten Informationen zum Verfahren zur Verf\u00fcgung gestellt.</p><h3>Phase 2: Ideensammlung</h3><p>B\u00fcrgerinnen und B\u00fcrger bringen ihre Vorschl\u00e4ge zur Verwendung von Haushaltsmitteln online ein. Sie k\u00f6nnen die Vorschl\u00e4ge anderer Teilnehmerinnen und Teilnehmer bewerten und diskutieren. Die B\u00fcrgerinnen und B\u00fcrger k\u00f6nnen permanent online Vorschl\u00e4ge einbringen, die sich auf das laufende oder zuk\u00fcnftige Haushaltsjahre beziehen. Au\u00dferdem k\u00f6nnen Vorschl\u00e4ge per E-Mail oder offline telefonisch und per Post in der Serviceeinheit Personal und Finanzen eingereicht werden. Die offline eingebrachten Vorschl\u00e4ge werden online eingetragen und so zur Diskussion und Abstimmung gestellt.</p><h3>Phase 3: Ergebnisse</h3><p>Alle Interessierten k\u00f6nnen jederzeit sehen, ob ein Vorschlag angenommen oder abgelehnt wurde sowie sich zum Umsetzungsstand informieren. So wird der gesamte Prozess transparent und f\u00fcr alle einsehbar dokumentiert.</p><a href=\"..\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 13,
+  "fields": {
+    "body": "<h2>Allgemein</h2><p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt (SenStadtUm) f\u00fchrt j\u00e4hrlich mehrere sogenannte Stadtforen durch. Jedes Stadtforum widmet sich mit einer Offline-Veranstaltung einer bestimmten stadtpolitischen Fragestellung, der sogenannten Debattenfrage, die gemeinsam mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert werden soll.</p><h2>Ziel</h2><p>Das Ziel ist es ein Stimmungsbild unter den Berlinerinnen und Berlinern einzufangen und ihnen die M\u00f6glichkeit zu bieten, interessante Themen gemeinsam mit Experten zu diskutieren.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Berliner Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>In dieser Phase werden alle potenziellen Beteiligten z.B. durch Werbung, \u00d6ffentlichkeitsarbeit und \u00fcber meinBerlin auf die Beteiligung (online und offline) aufmerksam gemacht.</p><h3>Phase 2: Debatte</h3><p>Ab dem 29. Februar 2016 sind alle B\u00fcrgerinnen und B\u00fcrger gefragt die Debattenfrage jedes anstehenden Stadtforums mit \u201eJa\u201c oder \u201eNein\u201c zu beantworten. Ferner k\u00f6nnen kurze Statements, Anregungen und Hinweise, die mit der Debattenfrage und dem Veranstaltungsthema im Zusammenhang stehen, online abgegeben werden. Durch die Ja/Nein-Antworten kann ein vorl\u00e4ufiges Stimmungsbild (auch visuell) erstellt werden. Die angef\u00fchrten Beitr\u00e4ge aller online-Teilnehmenden k\u00f6nnen in der Veranstaltung aufgegriffen und gemeinsam diskutiert werden.</p><h3>Phase 3: Ergebnisse</h3><p>Die online-Beitr\u00e4ge flie\u00dfen in die Veranstaltungsvorbereitung und Diskussion w\u00e4hrend des Stadtforums ein. Im Nachgang k\u00f6nnen Interessierte die Diskussion online f\u00fcr einen kurzen Zeitraum (bis zum 4. April 2016) fortf\u00fchren.</p><a href=\"..\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 14,
+  "fields": {
+    "body": "<h2>Allgemein</h2><p>Die Kiezkasse ist ein Projekt, bei dem B\u00fcrgerinnen und B\u00fcrger ihren Ortsteil aktiv mitgestalten k\u00f6nnen. Sie k\u00f6nnen Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Vorschl\u00e4ge k\u00f6nnen online, schriftlich, oder bei den Offline-Dialogen (z.B. B\u00fcrgerversammlungen oder Stadteilkonferenzen) eingereicht werden. Die Mittel f\u00fcr die Kiezkassen sind an das jeweilige Haushaltsjahr des Bezirks gebunden. Am Ende jeden Jahres erfolgt eine Abrechnung der laufenden Kiezkassen.</p><p>Im Bezirk Treptow-K\u00f6penick stehen f\u00fcr das Jahr 2015 insgesamt 50.000 \u20ac zur Verf\u00fcgung. Die Verteilung auf die Bezirksregionen erfolgt anhand der Einwohnerzahl. Mit den Kiezkassen k\u00f6nnen Projekte vor Ort unterst\u00fctzt werden, um so das b\u00fcrgerschaftliche Engagement zu f\u00f6rdern.</p><h2>Ziel</h2><p>Ziel des Kiezkassen-Verfahrens auf meinBerlin ist es, den B\u00fcrgerinnen und B\u00fcrgern die M\u00f6glichkeit zu bieten, ihren Ortsteil mitzugestalten, indem sie Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Dabei soll meinBerlin einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Iniatiatoren: Bezirksverwaltung Treptow-K\u00f6penick</li><li>Moderation: Kiezpatinnen und Kiezpaten</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen k\u00f6nnen, Projektvorschl\u00e4ge einzureichen und zu diskutieren, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der B\u00fcrgerversammlung wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten durch \u00f6ffentliche Bekanntmachungen in der Presse und auf meinBerlin auf das Verfahren aufmerksam gemacht.</p><h3>Phase 2: Ideensammlung</h3><p>Alle Interessierten werden aufgerufen, Ideen und Vorschl\u00e4ge f\u00fcr Projekte in der Bezirksregion zu machen. Sie k\u00f6nnen somit Vorschl\u00e4ge online einreichen, kommentieren und bewerten. Die Angabe der Kosten soll bereits die Mehrwertsteuer enthalten. Vorschl\u00e4ge k\u00f6nnen zudem offline gemacht werden.</p><h3>Phase 3: B\u00fcrgerversammlung</h3><p>In dieser Phase k\u00f6nnen keine Vorschl\u00e4ge mehr online eingereicht, kommentiert oder bewertet werden. Vorschl\u00e4ge k\u00f6nnen aber noch offline in der B\u00fcrgerversammlung gemacht werden. Alle Vorschl\u00e4ge werden dann vor Ort vorgestellt und abgestimmt. Die Art und Weise der Abstimmung bestimmt die B\u00fcrgerversammlung selbst. Offline-Vorschl\u00e4ge werden online eingereicht.</p><h3>Phase 4: Ergebnisse</h3><p>Nach der Pr\u00fcfung durch das zust\u00e4ndige Fachamt des Bezirksamtes werden die Vorschl\u00e4ge, die realisiert werden und ggf. diejenigen, die nicht realisierbar sind, online markiert und angezeigt. Die Projekte m\u00fcssen bis Mitte Dezember realisiert und abgerechnet werden.</p><a href=\"/..\">Zur\u00fcck zur Liste</a>"
   }
 },
 {
@@ -153,6 +174,331 @@
     "is_permanent": true,
     "redirect_page": 11,
     "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "title": "Root",
+    "slug": "root",
+    "content_type": 1,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 3,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 12,
+    "title": "meinBerlin",
+    "slug": "home",
+    "content_type": 3,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 4,
+  "fields": {
+    "path": "000100010001",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Prozesse",
+    "slug": "prozesse",
+    "content_type": 5,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/prozesse/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 5,
+  "fields": {
+    "path": "000100010002",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Archiv",
+    "slug": "archiv",
+    "content_type": 6,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/archiv/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 6,
+  "fields": {
+    "path": "000100010003",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Nutzungsbedingungen",
+    "slug": "nutzungsbedingungen",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/nutzungsbedingungen/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": true,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 7,
+  "fields": {
+    "path": "000100010004",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Impressum",
+    "slug": "impressum",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/impressum/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": true,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 8,
+  "fields": {
+    "path": "000100010005",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Hilfe",
+    "slug": "hilfe",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/hilfe/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": true,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 9,
+  "fields": {
+    "path": "000100010006",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Netiquette",
+    "slug": "netiquette",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/netiquette/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 10,
+  "fields": {
+    "path": "000100010007",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Datenschutz",
+    "slug": "datenschutz",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/datenschutz/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 11,
+  "fields": {
+    "path": "000100010008",
+    "depth": 3,
+    "numchild": 3,
+    "title": "Beteiligungsverfahren",
+    "slug": "beteiligungsverfahren",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/beteiligungsverfahren/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "latest_revision_created_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 12,
+  "fields": {
+    "path": "0001000100080001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "B\u00fcrgerhaushalte",
+    "slug": "burgerhaushalte",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/beteiligungsverfahren/burgerhaushalte/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-03-15T14:17:42.264Z",
+    "latest_revision_created_at": "2016-03-15T14:17:42.203Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 13,
+  "fields": {
+    "path": "0001000100080002",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Stadtforen",
+    "slug": "stadtforen",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/beteiligungsverfahren/stadtforen/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-03-15T14:18:10.797Z",
+    "latest_revision_created_at": "2016-03-15T14:18:10.733Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 14,
+  "fields": {
+    "path": "0001000100080003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Kiezkassen",
+    "slug": "kiezkassen",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/beteiligungsverfahren/kiezkassen/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-03-15T14:18:43.501Z",
+    "latest_revision_created_at": "2016-03-15T14:18:43.442Z"
   }
 }
 ]

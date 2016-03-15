@@ -1,4 +1,4 @@
-{% load static wagtailuserbar wagtailcore_tags navigation %}
+{% load static wagtailuserbar wagtailcore_tags navigation base_tags %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -23,7 +23,7 @@
         {% endblock %}
     </head>
 
-    <body class="locale_de socialmediacounter">
+    <body class="locale_de socialmediacounter" data-adhocracy-url="{% settings_value "ADHOCRACY_URL" %}">
         {% wagtailuserbar %}
 
         <div class="container-portal-header">
@@ -113,6 +113,7 @@
         </div>
 
         {# Global javascript #}
+        <script type="text/javascript" src="{% settings_value "ADHOCRACY_URL" %}/static/js/AdhocracySDK.js"></script>
         <script type="text/javascript" src="{% static 'js/meinberlin_wagtail.js' %}"></script>
 
         {% block extra_js %}

@@ -75,7 +75,7 @@
   "model": "meinberlin.simplepage",
   "pk": 11,
   "fields": {
-  "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalte</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+  "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalte</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bebauungsplanverfahren</h2>                            <p>Das Bebauungsplanverfahren ist ein relativ komplexes Verfahren, das gesetzlich stark geregelt wird. Im Wesentlichen teilen sich die Beteiligungsmöglichkeiten in zwei Beteiligungsphasen auf: die frühzeitige Beteiligung der Öffentlichkeit und die öffentliche Auslegung. Alle interessierten Bürgerinnen und Bürger, die sich zu den Bebauungsplänen äußern möchten, können auf meinBerlin Ihre Stellungnahme zu den jeweiligen Bebauungsplänen einreichen.</p>                            <a class=\"info\" href=\"bebauungsplane\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section><section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/stadtforum.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
   }
 },
 {
@@ -96,7 +96,14 @@
   "model": "meinberlin.simplepage",
   "pk": 14,
   "fields": {
-    "body": "<h2>Allgemein</h2><p>Die Kiezkasse ist ein Projekt, bei dem B\u00fcrgerinnen und B\u00fcrger ihren Ortsteil aktiv mitgestalten k\u00f6nnen. Sie k\u00f6nnen Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Vorschl\u00e4ge k\u00f6nnen online, schriftlich, oder bei den Offline-Dialogen (z.B. B\u00fcrgerversammlungen oder Stadteilkonferenzen) eingereicht werden. Die Mittel f\u00fcr die Kiezkassen sind an das jeweilige Haushaltsjahr des Bezirks gebunden. Am Ende jeden Jahres erfolgt eine Abrechnung der laufenden Kiezkassen.</p><p>Im Bezirk Treptow-K\u00f6penick stehen f\u00fcr das Jahr 2015 insgesamt 50.000 \u20ac zur Verf\u00fcgung. Die Verteilung auf die Bezirksregionen erfolgt anhand der Einwohnerzahl. Mit den Kiezkassen k\u00f6nnen Projekte vor Ort unterst\u00fctzt werden, um so das b\u00fcrgerschaftliche Engagement zu f\u00f6rdern.</p><h2>Ziel</h2><p>Ziel des Kiezkassen-Verfahrens auf meinBerlin ist es, den B\u00fcrgerinnen und B\u00fcrgern die M\u00f6glichkeit zu bieten, ihren Ortsteil mitzugestalten, indem sie Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Dabei soll meinBerlin einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Iniatiatoren: Bezirksverwaltung Treptow-K\u00f6penick</li><li>Moderation: Kiezpatinnen und Kiezpaten</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen k\u00f6nnen, Projektvorschl\u00e4ge einzureichen und zu diskutieren, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der B\u00fcrgerversammlung wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten durch \u00f6ffentliche Bekanntmachungen in der Presse und auf meinBerlin auf das Verfahren aufmerksam gemacht.</p><h3>Phase 2: Ideensammlung</h3><p>Alle Interessierten werden aufgerufen, Ideen und Vorschl\u00e4ge f\u00fcr Projekte in der Bezirksregion zu machen. Sie k\u00f6nnen somit Vorschl\u00e4ge online einreichen, kommentieren und bewerten. Die Angabe der Kosten soll bereits die Mehrwertsteuer enthalten. Vorschl\u00e4ge k\u00f6nnen zudem offline gemacht werden.</p><h3>Phase 3: B\u00fcrgerversammlung</h3><p>In dieser Phase k\u00f6nnen keine Vorschl\u00e4ge mehr online eingereicht, kommentiert oder bewertet werden. Vorschl\u00e4ge k\u00f6nnen aber noch offline in der B\u00fcrgerversammlung gemacht werden. Alle Vorschl\u00e4ge werden dann vor Ort vorgestellt und abgestimmt. Die Art und Weise der Abstimmung bestimmt die B\u00fcrgerversammlung selbst. Offline-Vorschl\u00e4ge werden online eingereicht.</p><h3>Phase 4: Ergebnisse</h3><p>Nach der Pr\u00fcfung durch das zust\u00e4ndige Fachamt des Bezirksamtes werden die Vorschl\u00e4ge, die realisiert werden und ggf. diejenigen, die nicht realisierbar sind, online markiert und angezeigt. Die Projekte m\u00fcssen bis Mitte Dezember realisiert und abgerechnet werden.</p><a href=\"/..\">Zur\u00fcck zur Liste</a>"
+    "body": "<h2>Allgemein</h2><p>Die Kiezkasse ist ein Projekt, bei dem B\u00fcrgerinnen und B\u00fcrger ihren Ortsteil aktiv mitgestalten k\u00f6nnen. Sie k\u00f6nnen Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Vorschl\u00e4ge k\u00f6nnen online, schriftlich, oder bei den Offline-Dialogen (z.B. B\u00fcrgerversammlungen oder Stadteilkonferenzen) eingereicht werden. Die Mittel f\u00fcr die Kiezkassen sind an das jeweilige Haushaltsjahr des Bezirks gebunden. Am Ende jeden Jahres erfolgt eine Abrechnung der laufenden Kiezkassen.</p><p>Im Bezirk Treptow-K\u00f6penick stehen f\u00fcr das Jahr 2015 insgesamt 50.000 \u20ac zur Verf\u00fcgung. Die Verteilung auf die Bezirksregionen erfolgt anhand der Einwohnerzahl. Mit den Kiezkassen k\u00f6nnen Projekte vor Ort unterst\u00fctzt werden, um so das b\u00fcrgerschaftliche Engagement zu f\u00f6rdern.</p><h2>Ziel</h2><p>Ziel des Kiezkassen-Verfahrens auf meinBerlin ist es, den B\u00fcrgerinnen und B\u00fcrgern die M\u00f6glichkeit zu bieten, ihren Ortsteil mitzugestalten, indem sie Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Dabei soll meinBerlin einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Iniatiatoren: Bezirksverwaltung Treptow-K\u00f6penick</li><li>Moderation: Kiezpatinnen und Kiezpaten</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen k\u00f6nnen, Projektvorschl\u00e4ge einzureichen und zu diskutieren, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der B\u00fcrgerversammlung wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten durch \u00f6ffentliche Bekanntmachungen in der Presse und auf meinBerlin auf das Verfahren aufmerksam gemacht.</p><h3>Phase 2: Ideensammlung</h3><p>Alle Interessierten werden aufgerufen, Ideen und Vorschl\u00e4ge f\u00fcr Projekte in der Bezirksregion zu machen. Sie k\u00f6nnen somit Vorschl\u00e4ge online einreichen, kommentieren und bewerten. Die Angabe der Kosten soll bereits die Mehrwertsteuer enthalten. Vorschl\u00e4ge k\u00f6nnen zudem offline gemacht werden.</p><h3>Phase 3: B\u00fcrgerversammlung</h3><p>In dieser Phase k\u00f6nnen keine Vorschl\u00e4ge mehr online eingereicht, kommentiert oder bewertet werden. Vorschl\u00e4ge k\u00f6nnen aber noch offline in der B\u00fcrgerversammlung gemacht werden. Alle Vorschl\u00e4ge werden dann vor Ort vorgestellt und abgestimmt. Die Art und Weise der Abstimmung bestimmt die B\u00fcrgerversammlung selbst. Offline-Vorschl\u00e4ge werden online eingereicht.</p><h3>Phase 4: Ergebnisse</h3><p>Nach der Pr\u00fcfung durch das zust\u00e4ndige Fachamt des Bezirksamtes werden die Vorschl\u00e4ge, die realisiert werden und ggf. diejenigen, die nicht realisierbar sind, online markiert und angezeigt. Die Projekte m\u00fcssen bis Mitte Dezember realisiert und abgerechnet werden.</p><a href=\"..\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 15,
+  "fields": {
+    "body": "<h2>Allgemein</h2><p>Das Bebauungsplanverfahren (oftmals schlicht B-Plan genannt) ist ein komplexes Verfahren, das gesetzlich stark geregelt wird. Unter Ber\u00fccksichtigung der rechtlichen Rahmenbedingungen teilen sich die Beteiligungsm\u00f6glichkeiten im Wesentlichen in zwei Beteiligungsphasen auf. Zum einen die fakultative Phase der fr\u00fchzeitigen Beteiligung, die einen flexibleren Handlungsspielraum anbietet und zum anderen die Phase der \u00f6ffentlichen Auslegung, die an engeren rechtlichen Vorgaben gebunden ist und sich durch ihren verbindlichen Charakter auszeichnet.</p><p>Die Bebauungsplan-Verfahren der Berliner Bezirke und der Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt, die bisher offline oder teilweise online stattgefunden haben, werden ab dem Launch der Plattform als konfiguriertes Verfahren kontinuierlich auf meinBerlin eingesetzt und von Liquid Democracy e.V. weiterentwickelt.</p><h2>Ziel</h2><p>Ziel der Umsetzung besteht darin, den B\u00fcrgerinnen und B\u00fcrgern eine zentrale Plattform f\u00fcr die Teilhabe an Bebauungspl\u00e4nen zur Verf\u00fcgung zu stellen, die eine leichte und nutzerfreundliche Beteiligung erm\u00f6glicht. Mit der zentralen Beteiligungsplattform meinBerlin wird auch beabsichtigt, die bisher ausgestalteten Beteiligungsverfahren der Bebauungspl\u00e4ne f\u00fcr ganz Berlin zu vereinheitlichen und die internen und externen Workflows der Berliner Verwaltungen schrittweise zu verbessern.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: B\u00fcrgerinnen und B\u00fcrger, die sich zu den Planentw\u00fcrfen (Berliner Bezirke und Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt \u00e4u\u00dfern m\u00f6chten</li><li>Initiatorinnen und Nutzer: Berliner Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt und Berliner Bezirksverwaltungen</li></ul><h2>Ablauf</h2><h3>Phase 1: Informieren</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen, Stellungnahmen zu den Bebauungspl\u00e4nen im Verfahren einzureichen, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der \u00f6ffentlichen Auslegung, bzw. der fr\u00fchzeitigen Beteiligung der \u00d6ffentlichkeit wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten z.B. durch \u00f6ffentliche Bekanntmachung in der Presse und auf meinBerlin auf die M\u00f6glichkeit zur Beteiligung im Rahmen des Bebauungsplan-Verfahrens aufmerksam gemacht.</p><h3>Phase 2: Stellungnahme</h3><p>Alle registrierten Nutzerinnen und Nutzer k\u00f6nnen zu den Bebauungspl\u00e4nen anhand eines Formulars eine Stellungnahme einreichen (online). Daf\u00fcr m\u00fcssen alle B\u00fcrgerinnen und B\u00fcrger, die sich zu dem Planentwurf \u00e4u\u00dfern m\u00f6chten, Vorname, Name, Anschrift und E-Mail-Adresse in ein Formular eingeben.</p><p>Im Rahmen der \u00f6ffentlichen Auslegung haben die B\u00fcrgerinnen und B\u00fcrger nun einen Monat Zeit, um ihre Stellungnahme zu dem entsprechenden Planentwurf einzureichen und ihre \u00c4nderungsw\u00fcnschen zum Planentwurf zu \u00e4u\u00dfern. Nach dieser Frist werden die Stellungnahmen nicht mehr ber\u00fccksichtigt.</p><h3>Phase 3: Auswertung</h3><p>Nach der Beteiligungsphase wertet die Bauverwaltung die Stellungnahmen aus und legt das Auswertungsergebnis der Bezirksverordnetenversammlung (BVV) bzw. dem Abgeordnetenhaus zur Entscheidung vor. Die BVV bzw. das Abgeordnetenhaus w\u00e4gt die \u00f6ffentlichen und privaten Belange gegeneinander und untereinander ab und entscheidet dann \u00fcber ihre Ber\u00fccksichtigung oder Zur\u00fcckweisung.</p><p>Haben sich die B\u00fcrgerinnen und B\u00fcrger an einer \u00f6ffentlichen Auslegung beteiligt, werden Sie zudem nach Festsetzung des Bebauungsplans von der verantwortlichen Stelle schriftlich (per E-Mail oder postalisch) \u00fcber das Ergebnis informiert, sofern Sie Ihre Adresse angegeben haben.</p><a href=\"..\">Zur\u00fcck zur Liste</a>"
   }
 },
 {
@@ -173,6 +180,50 @@
     "site": null,
     "is_permanent": true,
     "redirect_page": 11,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 8,
+  "fields": {
+    "old_path": "/info-buergerhaushalt.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 15,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 9,
+  "fields": {
+    "old_path": "/info-stadtforum.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 13,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 10,
+  "fields": {
+    "old_path": "/info-kiezkassen.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 14,
+    "redirect_link": ""
+  }
+},
+{
+  "model": "wagtailredirects.redirect",
+  "pk": 11,
+  "fields": {
+    "old_path": "/info-bebauungsplan.html",
+    "site": null,
+    "is_permanent": true,
+    "redirect_page": 15,
     "redirect_link": ""
   }
 },
@@ -499,6 +550,31 @@
     "locked": false,
     "first_published_at": "2016-03-15T14:18:43.501Z",
     "latest_revision_created_at": "2016-03-15T14:18:43.442Z"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 15,
+  "fields": {
+    "path": "0001000100080004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Bebauungspl\u00e4ne",
+    "slug": "bebauungsplane",
+    "content_type": 4,
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/meinberlin/beteiligungsverfahren/bebauungsplane/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2016-03-17T09:10:13.346Z",
+    "latest_revision_created_at": "2016-03-17T09:10:13.286Z"
   }
 }
 ]

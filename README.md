@@ -15,7 +15,7 @@
 6.  run `python manage.py loaddata initial_content.json`
 7.  run `python manage.py createsuperuser`
 8.  run `python manage.py runserver`
-9.  Browse to <http://localhost:8000/admin>
+9.  Browse to <http://localhost:8000/w/admin>
 
 
 ## TODOs

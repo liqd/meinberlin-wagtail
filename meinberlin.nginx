@@ -1,0 +1,32 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name localhost;
+
+    location = / {
+        return 302 $scheme://$host/w;
+    }
+
+    location /w {
+        proxy_pass http://localhost:8000/w;
+    }
+
+    location / {
+        proxy_pass http://localhost:6551;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_http_version 1.1;
+    }
+    location /api {
+        proxy_pass http://localhost:6541/api;
+        proxy_set_header SCRIPT_NAME /api;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_http_version 1.1;
+    }
+    location /ws {
+        proxy_pass http://localhost:6561/;
+        proxy_http_version 1.1;
+    }
+}

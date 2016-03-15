@@ -13,7 +13,7 @@ SECRET_KEY = 'gy$z^$s1k*u=okx%5kqx*lg-u$l*yp6()pq(=yi(a)5bs35e30'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ADHOCRACY_URL = 'http://localhost:6551'
+ADHOCRACY_URL = 'http://arrow'
 
 try:
     from .local import *

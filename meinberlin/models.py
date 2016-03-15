@@ -142,7 +142,7 @@ class SimplePage(Page):
         FieldPanel('body'),
     ]
 
-    parent_page_types = ['meinberlin.HomePage']
+    parent_page_types = ['meinberlin.HomePage', 'meinberlin.SimplePage']
 
 
 class OverviewPage(Page):

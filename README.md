@@ -17,6 +17,15 @@
 8.  run `python manage.py runserver`
 9.  Browse to <http://localhost:8000/w/admin>
 
+## run wagtail and adhocracy on same origin
+
+Running adhocracy and wagtail on the same origin is required if you want to
+have a tight integration, e.g.  show an adhocracy login in wagtail.  An example
+nginx config is included. You also have to adjust the following settings in
+your adhocracy frontend config:
+
+    adhocracy.frontend.ws_url = ws://localhost/ws/
+    adhocracy.frontend.rest_url = http://localhost/api/
 
 ## TODOs
 

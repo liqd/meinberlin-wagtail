@@ -8,6 +8,14 @@ server {
         return 302 $scheme://$host/w;
     }
 
+    location = /login {
+        return 302 $scheme://$host/w/adh/#!/login;
+    }
+
+    location = /register {
+        return 302 $scheme://$host/w/adh/#!/register;
+    }
+
     location /w {
         proxy_pass http://localhost:8000/w;
     }

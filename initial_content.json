@@ -1,102 +1,1080 @@
 [
 {
-  "model": "meinberlin.homepage",
-  "pk": 3,
+  "model": "wagtailcore.site",
+  "pk": 2,
   "fields": {
-    "header": "meinBerlin – die Beteiligungsplattform",
-    "description": "meinBerlin ist die Plattform, auf der zukünftig alle öffentlichen Beteiligungsverfahren der Verwaltungen des Landes Berlin erreichbar sein werden. Es gibt Beteiligungsverfahren für viele Bereiche. Manche sind rechtlich vorgeschrieben und haben gesetzlich vorgegebene Regeln (z.B. Bebauungsplanverfahren). Andere Verfahren richten sich nach der jeweiligen Fragestellung. Es gibt unterschiedliche Wege der Beteiligung – von der Frage nach Vorschlägen und Meinungen bis hin zu Entscheidungsfindungen. Machen Sie mit!",
-    "cover_image": 1,
-    "info1_title": "Warum meinBerlin?",
-    "info1_text": "meinBerlin hat das Ziel, allen die sich beteiligen wollen, eine einfache Möglichkeit zu bieten, einzusteigen und ihren Vorschlag, ihre Meinung, ihr Votum einzubringen. Sie sind auch eingeladen, sich zur Art und Weise der Beteiligung zu äußern.",
-    "info2_title": "Wie kann ich mitmachen?",
-    "info2_text": "Mitmachen kann jede/r, es sei denn, die Teilnahme ist ausdrücklich geregelt. Wenn nichts anderes vorgegeben ist, kann der Name, der öffentlich erscheint, frei gewählt werden. Darüber hinaus gelten die Regeln eines fairen Miteinanders.",
-    "info3_title": "Wie funktioniert meinBerlin?",
-    "info3_text": "Die Plattform bietet eine Übersicht sowie Zugang zu diversen Verfahren. Für diese ist nur eine Anmeldung nötig. Die Beteiligung wird ermöglicht durch die Software Adhocracy, die je nach Verfahren verschiedene, einfach zu bedienende Funktionen bietet.",
-    "netiquette_linktext": "Netiquette",
-    "privacy_linktext": "Datenschutz",
-    "processes_linktext": "Beteiligungsverfahren",
-    "current_processes_title": "Aktuelle Verfahren",
-    "view_all": "alle anzeigen",
-    "past_processes_title": "Vergangene Verfahren"
+    "hostname": "localhost",
+    "port": 80,
+    "site_name": null,
+    "root_page": 3,
+    "is_default_site": true
   }
 },
 {
-  "model": "wagtailimages.image",
+  "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
-    "title": "cover",
-    "file": "original_images/cover.jpg",
-    "width": 1280,
-    "height": 854,
-    "created_at": "2016-03-11T11:43:23.122Z",
-    "focal_point_x": null,
-    "focal_point_y": null,
-    "focal_point_width": null,
-    "focal_point_height": null,
-    "file_size": null
+    "app_label": "wagtailcore",
+    "model": "page"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "wagtailimages",
+    "model": "image"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "meinberlin",
+    "model": "homepage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "meinberlin",
+    "model": "simplepage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "meinberlin",
+    "model": "overviewpage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
   "pk": 6,
   "fields": {
-    "body": "<p>Mit der Anmeldung als Nutzerin bzw. Nutzer bei meinBerlin akzeptieren Sie die nachfolgenden Nutzungsbedingungen. Die Plattform meinBerlin wird vom Liquid Democracy e.V. im Auftrag des Landes Berlin, vertreten durch die Senatskanzlei Berlin betrieben. Die Kontaktdaten sind dem Impressum zu entnehmen.</p><h4>Zugangsvoraussetzungen, Registrierung</h4><p>Jede natürliche Person kann sich auf der Plattform registrieren unter Angabe eines selbst gewählten Benutzernamens (Pseudonyms), der E-Mail-Adresse und eines selbst gewählten Passworts. Weitere Angaben können freiwillig hinzugefügt werden.  Nimmt der Anbieter den Registrierungsantrag an, erhält der registrierte Nutzer eine entsprechende Bestätigung per E-Mail.</p><p>Für jede natürliche Person ist nur eine Registrierung zulässig. Eine stellvertretende Registrierung für Dritte ist unzulässig. Der Betreiber behält sich vor, Nutzungsverhältnisse fristlos zu kündigen, wenn sie auf mehrfacher Registrierung derselben natürlichen Person oder auf Stellvertretung für einen Dritten beruhen.</p><p>Die Nutzung der Plattform ist unentgeltlich.</p><h4>Einstellen von Inhalten</h4><p>Registrierte Nutzerinnen bzw. Nutzer können Beiträge – auch solche, die sich auf Beiträge anderer Nutzerinnen und Nutzer beziehen - über die entsprechenden Funktionen in die Plattform einstellen. Beiträge müssen in deutscher Sprache verfasst sein.</p><p>Die Beiträge müssen sachlich sein; sie dürfen keinen beleidigenden Charakter haben und keine Inhalte umfassen, die straf- oder zivilrechtlich verboten sind. Für die weitere Diskussionskultur gilt die&nbsp;<a href=\"/netiquette/\">Netiquette</a>, die hier einsehbar ist.</p><h4>Haftung für Inhalte</h4><p>Die Abläufe der Plattform sind automatisiert. Der Betreiber prüft eingestellte Daten und Inhalte vor Veröffentlichung nicht auf inhaltliche Angemessenheit, sachliche Richtigkeit oder auf etwaige Rechtsverstöße. Der Betreiber verpflichtet sich jedoch, konkreten Hinweisen auf problematische Daten unverzüglich nachzugehen.</p><h4>Rechte an Inhalten</h4><p>Nutzerinnen bzw. Nutzer räumen dem Betreiber mit dem Einstellen eines Beitrags ein unbeschränktes, unwiderrufliches und übertragbares Nutzungsrecht an dem jeweiligen Beitrag ein, welches den Betreiber Vorhaltung des Beitrags auf den Seiten des Stadtinformationssystems berlin.de berechtigt sowie zur Veröffentlichung, Vervielfältigung und Verbreitung in Printmedien.</p><p>Nutzerinnen bzw. Nutzer stellen den Betreiber von allen Ansprüchen frei, die Dritte gegenüber dem Betreiber wegen etwaiger Rechtsverletzungen durch die eingestellten Beiträge erheben. Der Freistellungsanspruch umfasst auch die in einem solchen Zusammenhang erforderlich werdenden Kosten einer angemessenen Prüfung und ggf.  Rechtsverteidigung, es sei denn, dass die Nutzerinnen bzw. Nutzer die Beanstandung des Dritten nicht zu vertreten haben.</p><h4>Beendigung des Nutzungsverhältnisses</h4><p>Jeder Nutzerin bzw. jeder Nutzer kann jederzeit sein Nutzungsverhältnis gegenüber dem Betreiber kündigen.</p><p>Die Beendigung eines Nutzungsverhältnisses berührt nicht die dem Betreiber bis dahin eingeräumten Rechte; diese gelten vielmehr fort. Gesetzlich unabdingbare Rechte der Nutzerinnen und Nutzer, etwa auf Rückruf seiner Rechte, bleiben unberührt.</p><p>Die Plattform wird auf unbestimmte Zeit betrieben; ein Anspruch der Nutzer auf unbegrenzte Laufzeit besteht nicht.</p>"
+    "app_label": "meinberlin",
+    "model": "archivepage"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 7,
   "fields": {
-    "body": "<h3>Herausgeber</h3><p>Senatskanzlei Berlin</br>Berliner Rathaus</br>Jüdenstraße 1</br>10178 Berlin</p><h3>Vertretungsberechtigt:</h3><p>Chef der Senatskanzlei</br>Björn Böhning</p><h3>Inhaltlich verantwortlich:</h3><p>Chefin des Presse- und Informationsamts</br>Daniela Augenstein</br>Berliner Rathaus</br>Jüdenstraße 1</br>10178 Berlin</p><h3>Redaktion:</h3><p>Senatskanzlei Berlin</br>Landesredaktion / Koordinierung Berlin.de</br>Telefon: (030) 9026 – 2435</br>Telefax: (030) 9026 – 2285</br>E-Mail: <a href=\"mailto:landesredaktion@senatskanzlei.berlin.de\">landesredaktion@senatskanzlei.berlin.de</a></p><h3>Hinweis:</h3><p>Die einzelnen Beteiligungsverfahren auf der Plattform meinBerlin werden von den zuständigen Behörden eigenverantwortlich aufbereitet und durchgeführt. Die entsprechenden Angaben finden Sie bei den jeweiligen Beteiligungsverfahren.</p><h3>Betreiber und technischer Betrieb:</h3><p>Das Stadtinformationssystem berlin.de wird von der <a href=\"http://www.berlin.de/wir-ueber-uns-be/impressum/\" target=\"_blank\">BerlinOnline Stadtportal GmbH & Co.KG</a>  betrieben. Betreiber der Beteiligungsplattform meinBerlin ist Liquid Democracy e.V. (<a href=\"https://liqd.net/about/\" target=\"_blank\">https://liqd.net/about/</a>)</p>"
+    "app_label": "wagtailadmin",
+    "model": "admin"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 8,
   "fields": {
-    "body": "<h3>Wie kann ich mich registrieren?</h3><img alt=\"meinberlin.de\" src=\"../media/original_images/registrieren.png\"/><p>Sie können sich auf der Seite registrieren, indem Sie auf das Feld \"Registrieren\" klicken und dort einen Nutzernamen, eine E-Mail-Adresse und ein Passwort eingeben. Der Nutzername muss nicht Ihrem echten Namen entsprechen. Anschließend wird eine automatische E-Mail mit einem Validierungslink an Ihre eingegebene E-Mail-Adresse gesendet. Klicken Sie auf den Link, und schon sind Sie angemeldet. Der Link ist für eine Woche gültig.</p><p></p><p></p><h3>Wie kann ich mich anmelden?</h3><p>Sie können sich auf der Seite anmelden, indem Sie auf das Feld \"Anmelden\" klicken und dort Ihren Nutzernamen sowie Ihr Passwort eingeben und auf den Button \"anmelden\" klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/anmelden.png\"/><p></p><p></p><h3>Wie kann ich die Ansicht ändern?</h3><p>Sie können die Ansicht eines Beteiligungsverfahrens ändern, indem Sie auf das Symbol oben auf der rechten Seite klicken. Ein Klick auf das Kartensymbol (ganz rechts) wird die Kartenansicht anzeigen.</p><h4>Kartensymbol</h4><img alt=\"meinberlin.de\" height=\"130\" src=\"../media/original_images/Kartesymbol.png\" width=\"130\"/><h4>Kartenansicht</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/kartenansicht.png\"/><p>Da die Vorschläge eines Verfahrens nicht immer einem Ort zugeordnet sind, können Sie auch die Listenansicht auswählen, indem Sie das Listensymbol anklicken.</p><h4>Listensymbol</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/Listensymbol.png\"/><h4>Listenansicht</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/Listenansicht.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag anlegen?</h3><p>Sie können einen Vorschlag anlegen, indem Sie oben auf der rechten Seite auf den Button „Vorschlag anlegen“ klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_anlegen.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag auf der Karte verorten?</h3><p>Sie können Ihren Vorschlag auf der interaktiven Karte geografisch verorten, indem Sie auf die Karte klicken. Um die geografische Position Ihres Vorschlags zu ändern, ziehen Sie den Pin mit der Maus auf der Karte an den gewünschten Ort. Sie können die Position Ihres Vorschlags auch entfernen, indem Sie auf „Pin entfernen“ klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_verorten.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag veröffentlichen?</h3><p>Wenn Sie bereit sind, Ihren Vorschlag zu veröffentlichen, klicken Sie unten auf den Button „Veröffentlichen“. Ihr Vorschlag wird in der Liste von Vorschlägen angezeigt und gegebenenfalls auf der Karte, sofern Sie Ihren Vorschlag darauf verortet haben.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_veroeffentlichen.png\"/><p></p><p></p><h3>Wie kann ich für oder gegen einen Vorschlag abstimmen?</h3><p>Wenn Sie Ihren Vorschlag bearbeiten möchten, können Sie nach der Veröffentlichung Ihres Vorschlags oben links auf „bearbeiten“ klicken und Ihren Vorschlag ändern.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_abstimmen.png\"/><p></p><p></p><h3>Wie kann ich Kommentare lesen?</h3><p>Sie können die Anzahl der Kommentare eines Vorschlags neben der Sprechblase sehen und Vorschläge lesen, indem Sie oben links oder auf der rechten Seite auf die Sprechblase klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_sehen.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar erstellen?</h3><p>Sie können Vorschläge kommentieren, indem Sie auf die Kommentar-Sprechblase klicken, Ihren Kommentar in dem Feld schreiben und auf den Button „Erstellen“ klicken, um Ihren Kommentar zu veröffentlichen.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_erstellen.png\"/><p></p><p></p><h3>Wie kann ich für oder gegen einen Kommentar abstimmen?</h3><p>Sie können Kommentare positiv oder negativ bewerten, indem Sie oben auf der rechten Seite auf den Pfeil klicken, der nach oben bzw. nach unten zeigt.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_bewerten.png\"/><p></p><p></p><h3>Wie kann ich meinen Kommentar bearbeiten?</h3><p>Sie können Ihren Kommentar bearbeiten, indem Sie oben rechts auf das Stift-Symbol klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/symbol_bearbeiten.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar beantworten?</h3><p>Sie können Kommentare beantworten, indem Sie oben rechts auf den Pfeil klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/symbol_beantworten.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar melden?</h3><p>Unethische oder beleidigende Kommentare, welche die Netiquette verletzen, können Sie melden, indem Sie oben rechts auf das Melden-Symbol klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Symbol_melden.png\"/><p></p><p></p><h3>Technischer Support</h3><p>Falls Sie zusätzliche Fragen haben, können Sie uns gerne per E-Mail kontaktieren:&nbsp;<a href=\"mailto:berlin@liqd.de\">berlin@liqd.de</a></p><p></p>"
+    "app_label": "wagtaildocs",
+    "model": "document"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 9,
   "fields": {
-    "body": "<p>Willkommen auf der Partizipationsplattform meinBerlin des Landes Berlin!<br/>Sie haben mit meinBerlin die Möglichkeit, sich aktiv an Entscheidungsprozessen der Berliner Politik und Verwaltung zu beteiligen.<br/>Ihr Wissen, Ihre Erfahrungen und Ihre Meinung sind gefragt!<br/>Mit meinBerlin haben Sie die Möglichkeit sich aktiv, transparent und diskursiv in diverse Entscheidungsfindungen im Land Berlin einzubringen.<br/>Um einen offenen Austausch und eine angenehme Atmosphäre zu gewährleisten, bitten wir Sie, - wie bei einer persönlichen Diskussion auch – folgende Regeln und Hinweise einzuhalten und zu würdigen.</p><h3><b>Regeln</b></h3><p>Um einen konstruktiven Dialog zwischen allen Nutzerinnen und Nutzern und den beteiligten Stellen im Land Berlin zu gewährleisten, müssen Sie sich beim Verfassen von Beiträgen an folgende Grundregeln halten:</p><ul><li><p>Beziehen Sie sich in Ihren Beiträgen immer nur auf den zur Diskussion gestellten Inhalt.</p></li><li><p>Bitte achten Sie in der Diskussion auf dem Beteiligungsportal auf faire Umgangsformen, auch wenn Sie einer Meinung nicht zustimmen. Vermeiden Sie Provokationen.</p></li><li><p>Gewaltverherrlichende, menschenverachtende, rassistische, fremdenfeindliche, stigmatisierende, sexistische oder beleidigende Inhalte, Aufrufe zu Straftaten, Verleumdungen, geschäfts- oder rufschädigende \u00c4ußerungen sind selbstverständlich inakzeptabel und werden gelöscht.</p></li><li><p>Verzichten Sie auf kommerzielle Inhalte.</p></li><li><p>Achten Sie darauf, welche personenbezogenen Daten Sie in Ihren Beiträgen veröffentlichen. Diese sind frei zugänglich. Persönliche oder personenbezogene Daten Dritter dürfen von Ihnen nicht veröffentlicht werden. Um die Persönlichkeitsrechte betroffener Personen zu wahren, werden solche Beiträge ebenfalls gelöscht.</p></li><li><p>Beachten Sie in Ihren Beiträgen das Urheberrecht. Bei fremden Inhalten müssen die Rechte für diese freigegeben sein. Kennzeichnen Sie auch Zitate als solche und geben Sie die Quelle an. Für die Aussagekraft Ihres Beitrages ist es außerdem sinnvoll, Zitate nur als Ergänzung zu Ihren eigenen Aussagen zu verwenden.</p></li><li><p>Beachten Sie auch bei Verlinkungen auf die Einhaltung der genannten Regeln. Wir behalten uns jedoch vor, Links zu entfernen, wenn deren Inhalte gegen die genannten Regeln verstoßen.</p></li><li><p>Verzichten Sie darauf, Mehrfach-Accounts anzulegen oder den gleichen Kommentar mehrmals zu veröffentlichen. Wir behalten uns vor, mehrfache Accounts und Beiträge zu entfernen.</p></li></ul><h3><b>Moderation</b></h3><p>Das Redaktionsteam von meinBerlin moderiert die Diskussionen und Kommentierungen entsprechend den nachstehenden Grundsätzen:</p><ul><li><p>Alle Beiträge werden auf Einhaltung der oben genannten Regeln hin überprüft. Bei Verstößen behalten wir uns vor, den entsprechenden Beitrag zu entfernen.</p></li><li><p>Sie haben als Nutzerin/Nutzer die Möglichkeit, die Beiträge anderer als anstößig zu melden, wenn diese gegen die Netiquette verstoßen. In diesem Falle wird sowohl das Redaktionsteam als auch die Verfasserin/der Verfasser des Beitrages informiert und der betreffende Kommentar vorübergehend unsichtbar. Der Beitrag wird überprüft und wieder veröffentlicht, wenn er als unbedenklich eingestuft wurde. Andernfalls wird er gelöscht. In beiden Fällen wird die Verfasserin/der Verfasser benachrichtigt.</p></li><li><p>Bei schweren oder wiederholten Verstößen gegen die Regeln der Netiquette oder der missbräuchlichen Nutzung anderer Funktionen behalten wir uns vor, einzelne Nutzerinnen und Nutzer zu sperren und von der Teilnahme an Prozessen auf dem meinBerlin auszuschließen.</p></li></ul><p>Für Fragen oder Anmerkungen können Sie gern das Redaktionsteam kontaktieren (<a href=\"mailto:landesredaktion@senatskanzlei.berlin.de\">E-Mail</a>)</p><p>Wir hoffen auf eine rege Beteiligung, freuen uns auf Ihre Meinungen zu aktuellen politischen Themen und Projekten im Land Berlin und wünschen Ihnen viel Freude bei der Teilnahme!</p><p></p><p><br/></p>"
+    "app_label": "meinberlin",
+    "model": "process"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 10,
   "fields": {
-    "body": "<p>Die Beteiligungsplattform meinBerlin ist Teil des Stadtinformationssystems&nbsp;<a href=\"http://www.berlin.de/\">www.berlin.de</a>. Bitte beachten Sie die entsprechende&nbsp;<a href=\"http://www.berlin.de/wir-ueber-uns-be/agb/pp/20150101/\">Datenschutzerklärung</a>&nbsp;der BerlinOnline Stadtportal GmbH &amp; Co.KG.</p><h3>Für die Beteiligungsplattform meinBerlin gilt zusätzlich folgende Datenschutzerklärung:</h3><p>Um Beiträge auf meinBerlin veröffentlichen zu können, müssen Sie sich auf meinBerlin registrieren. Hierzu ist die Eingabe Ihrer E-Mail-Adresse sowie eines von Ihnen zu bestimmenden Nutzernamens (Pseudonym) und eines von Ihnen zu bestimmenden Passworts erforderlich. Die Kombination dieser drei Daten ist Grundlage Ihres Nutzerkontos, mit dem Ihre Beiträge zugeordnet werden. Ihre E-Mail-Adresse benötigen wir, damit wir Ihr Passwort zurücksetzen können für den Fall, dass Sie es einmal vergessen sollten. Diese Daten werden für die Dauer des Bestehens Ihres Nutzerkontos gespeichert. Von Ihnen veröffentlichte Beiträge bleiben auch nach Auflösung Ihres Nutzerkontos auf meinBerlin.de erhalten; Ihre Beiträge werden dann jedoch anonymisiert und nicht mehr zusammen mit Ihrem Nutzernamen angezeigt.</p><p>Bei bestimmten Verfahren ist die Eingabe weiterer Daten wie Vor- und Nachnamen sowie der aktuelle Wohnort erforderlich. Weitergehende Hinweise finden Sie bei den einzelnen Verfahren.</p><h4>Haftungshinweis:</h4><p>Trotz sorgfältiger inhaltlicher Kontrolle übernimmt die Senatskanzlei keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>"
+    "app_label": "meinberlin",
+    "model": "externalprocess"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 11,
   "fields": {
-  "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Bürgerhaushalte</h2>                            <p>Bürgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 können sich alle interessierten Bürgerinnen und Bürger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum Bürgerhaushalt Treptow-Köpenick beteiligen. Hier können Sie Vorschläge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung für Stadtentwicklung und Umwelt führt jährlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer für die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den Bürgerinnen und Bürgern diskutiert. Ab dem 29. Februar können Sie sich zu der Debattenfrage online äußern. Anschließend – unabhängig von Ihrer Teilnahme am Online-Forum – sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren können alle interessierten Bürgerinnen und Bürger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> können Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+    "app_label": "meinberlin",
+    "model": "adhocracyprocess"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 12,
   "fields": {
-    "body": "<h1>Allgemein<br/></h1><p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene organisiert, wobei alle Interessierten sich daran beteiligen k\u00f6nnen. Die B\u00fcrgerhaushaltsverfahren werden je nach Bezirk unterschiedlich umgesetzt. Bisherige Verfahren lassen sich hinsichtlich der Zeitplanung in zwei Modelle unterscheiden: Zum einen das Modell eines j\u00e4hrlichen Stichtags bzw. mehrerer Stichtage, wenn \u00fcber die Gelder f\u00fcr Projekte mehrmals im Jahr entschieden wird (z.B. in Lichtenberg \u2013 quartalsweise). Im zweiten Modell k\u00f6nnen B\u00fcrgerinnen und B\u00fcrger Projekte zu jedem beliebigen Zeitpunkt einreichen. Im\u00a0<b>Bezirk Treptow-K\u00f6penick</b>\u00a0soll das Einreichen von Vorschl\u00e4gen nicht zeitlich befristet sein. Die Beteiligung ist unabh\u00e4ngig von der aktuellen Phase der Haushaltsplanung jederzeit m\u00f6glich. Hintergrund ist, dass sonst wegen des Berliner Doppelhaushalts nur alle zwei Jahre Vorschl\u00e4ge gemacht werden k\u00f6nnen. In der Praxis betreffen aber viele Vorschl\u00e4ge nicht die Haushaltsplanung, sondern die Haushaltsdurchf\u00fchrung bzw. die Investitionsplanung.</p><h2>Ziel</h2><p>Ziel des B\u00fcrgerhaushalts auf meinBerlin ist, die B\u00fcrgerinnen und B\u00fcrger in die Entscheidung der Berliner Verwaltung \u00fcber die bezirkliche Haushaltsplanung und Durchf\u00fchrung einzubeziehen. Die zentrale Plattform meinBerlin soll einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die Vorschl\u00e4ge zum B\u00fcrgerhaushalt einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Bezirksverwaltung Treptow-K\u00f6penick (Serviceeinheit Personal und Finanzen)</li></ul><h2>Ablauf</h2><h3>Phase 1: Informieren</h3><p>Bevor Vorschl\u00e4ge eingereicht werden k\u00f6nnen, muss eine Phase der Information und der \u00d6ffentlichkeitsarbeit vorangehen, die das Verfahren bekannt und sichtbar macht. Auf der Internetseite des Bezirksamtes Treptow-K\u00f6penick sowie eine Einwohnerversammlung werden allen Interessierten Informationen zum Verfahren zur Verf\u00fcgung gestellt.</p><h3>Phase 2: Ideensammlung</h3><p>B\u00fcrgerinnen und B\u00fcrger bringen ihre Vorschl\u00e4ge zur Verwendung von Haushaltsmitteln online ein. Sie k\u00f6nnen die Vorschl\u00e4ge anderer Teilnehmerinnen und Teilnehmer bewerten und diskutieren. Die B\u00fcrgerinnen und B\u00fcrger k\u00f6nnen permanent online Vorschl\u00e4ge einbringen, die sich auf das laufende oder zuk\u00fcnftige Haushaltsjahre beziehen. Au\u00dferdem k\u00f6nnen Vorschl\u00e4ge per E-Mail oder offline telefonisch und per Post in der Serviceeinheit Personal und Finanzen eingereicht werden. Die offline eingebrachten Vorschl\u00e4ge werden online eingetragen und so zur Diskussion und Abstimmung gestellt.</p><h3>Phase 3: Ergebnisse</h3><p>Alle Interessierten k\u00f6nnen jederzeit sehen, ob ein Vorschlag angenommen oder abgelehnt wurde sowie sich zum Umsetzungsstand informieren. So wird der gesamte Prozess transparent und f\u00fcr alle einsehbar dokumentiert.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+    "app_label": "wagtailforms",
+    "model": "formsubmission"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 13,
   "fields": {
-    "body": "<h2>Allgemein</h2><p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt (SenStadtUm) f\u00fchrt j\u00e4hrlich mehrere sogenannte Stadtforen durch. Jedes Stadtforum widmet sich mit einer Offline-Veranstaltung einer bestimmten stadtpolitischen Fragestellung, der sogenannten Debattenfrage, die gemeinsam mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert werden soll.</p><h2>Ziel</h2><p>Das Ziel ist es ein Stimmungsbild unter den Berlinerinnen und Berlinern einzufangen und ihnen die M\u00f6glichkeit zu bieten, interessante Themen gemeinsam mit Experten zu diskutieren.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Berliner Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>In dieser Phase werden alle potenziellen Beteiligten z.B. durch Werbung, \u00d6ffentlichkeitsarbeit und \u00fcber meinBerlin auf die Beteiligung (online und offline) aufmerksam gemacht.</p><h3>Phase 2: Debatte</h3><p>Ab dem 29. Februar 2016 sind alle B\u00fcrgerinnen und B\u00fcrger gefragt die Debattenfrage jedes anstehenden Stadtforums mit \u201eJa\u201c oder \u201eNein\u201c zu beantworten. Ferner k\u00f6nnen kurze Statements, Anregungen und Hinweise, die mit der Debattenfrage und dem Veranstaltungsthema im Zusammenhang stehen, online abgegeben werden. Durch die Ja/Nein-Antworten kann ein vorl\u00e4ufiges Stimmungsbild (auch visuell) erstellt werden. Die angef\u00fchrten Beitr\u00e4ge aller online-Teilnehmenden k\u00f6nnen in der Veranstaltung aufgegriffen und gemeinsam diskutiert werden.</p><h3>Phase 3: Ergebnisse</h3><p>Die online-Beitr\u00e4ge flie\u00dfen in die Veranstaltungsvorbereitung und Diskussion w\u00e4hrend des Stadtforums ein. Im Nachgang k\u00f6nnen Interessierte die Diskussion online f\u00fcr einen kurzen Zeitraum (bis zum 4. April 2016) fortf\u00fchren.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+    "app_label": "wagtailredirects",
+    "model": "redirect"
   }
 },
 {
-  "model": "meinberlin.simplepage",
+  "model": "contenttypes.contenttype",
   "pk": 14,
   "fields": {
-    "body": "<h2>Allgemein</h2><p>Die Kiezkasse ist ein Projekt, bei dem B\u00fcrgerinnen und B\u00fcrger ihren Ortsteil aktiv mitgestalten k\u00f6nnen. Sie k\u00f6nnen Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Vorschl\u00e4ge k\u00f6nnen online, schriftlich, oder bei den Offline-Dialogen (z.B. B\u00fcrgerversammlungen oder Stadteilkonferenzen) eingereicht werden. Die Mittel f\u00fcr die Kiezkassen sind an das jeweilige Haushaltsjahr des Bezirks gebunden. Am Ende jeden Jahres erfolgt eine Abrechnung der laufenden Kiezkassen.</p><p>Im Bezirk Treptow-K\u00f6penick stehen f\u00fcr das Jahr 2015 insgesamt 50.000 \u20ac zur Verf\u00fcgung. Die Verteilung auf die Bezirksregionen erfolgt anhand der Einwohnerzahl. Mit den Kiezkassen k\u00f6nnen Projekte vor Ort unterst\u00fctzt werden, um so das b\u00fcrgerschaftliche Engagement zu f\u00f6rdern.</p><h2>Ziel</h2><p>Ziel des Kiezkassen-Verfahrens auf meinBerlin ist es, den B\u00fcrgerinnen und B\u00fcrgern die M\u00f6glichkeit zu bieten, ihren Ortsteil mitzugestalten, indem sie Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Dabei soll meinBerlin einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Iniatiatoren: Bezirksverwaltung Treptow-K\u00f6penick</li><li>Moderation: Kiezpatinnen und Kiezpaten</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen k\u00f6nnen, Projektvorschl\u00e4ge einzureichen und zu diskutieren, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der B\u00fcrgerversammlung wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten durch \u00f6ffentliche Bekanntmachungen in der Presse und auf meinBerlin auf das Verfahren aufmerksam gemacht.</p><h3>Phase 2: Ideensammlung</h3><p>Alle Interessierten werden aufgerufen, Ideen und Vorschl\u00e4ge f\u00fcr Projekte in der Bezirksregion zu machen. Sie k\u00f6nnen somit Vorschl\u00e4ge online einreichen, kommentieren und bewerten. Die Angabe der Kosten soll bereits die Mehrwertsteuer enthalten. Vorschl\u00e4ge k\u00f6nnen zudem offline gemacht werden.</p><h3>Phase 3: B\u00fcrgerversammlung</h3><p>In dieser Phase k\u00f6nnen keine Vorschl\u00e4ge mehr online eingereicht, kommentiert oder bewertet werden. Vorschl\u00e4ge k\u00f6nnen aber noch offline in der B\u00fcrgerversammlung gemacht werden. Alle Vorschl\u00e4ge werden dann vor Ort vorgestellt und abgestimmt. Die Art und Weise der Abstimmung bestimmt die B\u00fcrgerversammlung selbst. Offline-Vorschl\u00e4ge werden online eingereicht.</p><h3>Phase 4: Ergebnisse</h3><p>Nach der Pr\u00fcfung durch das zust\u00e4ndige Fachamt des Bezirksamtes werden die Vorschl\u00e4ge, die realisiert werden und ggf. diejenigen, die nicht realisierbar sind, online markiert und angezeigt. Die Projekte m\u00fcssen bis Mitte Dezember realisiert und abgerechnet werden.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+    "app_label": "wagtailembeds",
+    "model": "embed"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "wagtailusers",
+    "model": "userprofile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "wagtailimages",
+    "model": "filter"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "wagtailimages",
+    "model": "rendition"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "wagtailsearch",
+    "model": "query"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "wagtailsearch",
+    "model": "querydailyhits"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "wagtailcore",
+    "model": "site"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "wagtailcore",
+    "model": "pagerevision"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "wagtailcore",
+    "model": "grouppagepermission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "wagtailcore",
+    "model": "pageviewrestriction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 24,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 25,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 26,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 27,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 28,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 29,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 30,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 31,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add image",
+    "content_type": 2,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change image",
+    "content_type": 2,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete image",
+    "content_type": 2,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can access Wagtail admin",
+    "content_type": 7,
+    "codename": "access_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add document",
+    "content_type": 8,
+    "codename": "add_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change document",
+    "content_type": 8,
+    "codename": "change_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete document",
+    "content_type": 8,
+    "codename": "delete_document"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can add process",
+    "content_type": 9,
+    "codename": "add_process"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can change process",
+    "content_type": 9,
+    "codename": "change_process"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can delete process",
+    "content_type": 9,
+    "codename": "delete_process"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can add external process",
+    "content_type": 10,
+    "codename": "add_externalprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can change external process",
+    "content_type": 10,
+    "codename": "change_externalprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can delete external process",
+    "content_type": 10,
+    "codename": "delete_externalprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can add adhocracy process",
+    "content_type": 11,
+    "codename": "add_adhocracyprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can change adhocracy process",
+    "content_type": 11,
+    "codename": "change_adhocracyprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can delete adhocracy process",
+    "content_type": 11,
+    "codename": "delete_adhocracyprocess"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add home page",
+    "content_type": 3,
+    "codename": "add_homepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change home page",
+    "content_type": 3,
+    "codename": "change_homepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete home page",
+    "content_type": 3,
+    "codename": "delete_homepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can add simple page",
+    "content_type": 4,
+    "codename": "add_simplepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can change simple page",
+    "content_type": 4,
+    "codename": "change_simplepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can delete simple page",
+    "content_type": 4,
+    "codename": "delete_simplepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can add overview page",
+    "content_type": 5,
+    "codename": "add_overviewpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can change overview page",
+    "content_type": 5,
+    "codename": "change_overviewpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can delete overview page",
+    "content_type": 5,
+    "codename": "delete_overviewpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can add archive page",
+    "content_type": 6,
+    "codename": "add_archivepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can change archive page",
+    "content_type": 6,
+    "codename": "change_archivepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can delete archive page",
+    "content_type": 6,
+    "codename": "delete_archivepage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add form submission",
+    "content_type": 12,
+    "codename": "add_formsubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change form submission",
+    "content_type": 12,
+    "codename": "change_formsubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete form submission",
+    "content_type": 12,
+    "codename": "delete_formsubmission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can add redirect",
+    "content_type": 13,
+    "codename": "add_redirect"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can change redirect",
+    "content_type": 13,
+    "codename": "change_redirect"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can delete redirect",
+    "content_type": 13,
+    "codename": "delete_redirect"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can add embed",
+    "content_type": 14,
+    "codename": "add_embed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can change embed",
+    "content_type": 14,
+    "codename": "change_embed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can delete embed",
+    "content_type": 14,
+    "codename": "delete_embed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can add user profile",
+    "content_type": 15,
+    "codename": "add_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can change user profile",
+    "content_type": 15,
+    "codename": "change_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can delete user profile",
+    "content_type": 15,
+    "codename": "delete_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add filter",
+    "content_type": 16,
+    "codename": "add_filter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change filter",
+    "content_type": 16,
+    "codename": "change_filter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete filter",
+    "content_type": 16,
+    "codename": "delete_filter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can add rendition",
+    "content_type": 17,
+    "codename": "add_rendition"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can change rendition",
+    "content_type": 17,
+    "codename": "change_rendition"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can delete rendition",
+    "content_type": 17,
+    "codename": "delete_rendition"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can add query",
+    "content_type": 18,
+    "codename": "add_query"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can change query",
+    "content_type": 18,
+    "codename": "change_query"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can delete query",
+    "content_type": 18,
+    "codename": "delete_query"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can add Query Daily Hits",
+    "content_type": 19,
+    "codename": "add_querydailyhits"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can change Query Daily Hits",
+    "content_type": 19,
+    "codename": "change_querydailyhits"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can delete Query Daily Hits",
+    "content_type": 19,
+    "codename": "delete_querydailyhits"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 20,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 20,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 20,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can add page",
+    "content_type": 1,
+    "codename": "add_page"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can change page",
+    "content_type": 1,
+    "codename": "change_page"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can delete page",
+    "content_type": 1,
+    "codename": "delete_page"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can add page revision",
+    "content_type": 21,
+    "codename": "add_pagerevision"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can change page revision",
+    "content_type": 21,
+    "codename": "change_pagerevision"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can delete page revision",
+    "content_type": 21,
+    "codename": "delete_pagerevision"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can add group page permission",
+    "content_type": 22,
+    "codename": "add_grouppagepermission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can change group page permission",
+    "content_type": 22,
+    "codename": "change_grouppagepermission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can delete group page permission",
+    "content_type": 22,
+    "codename": "delete_grouppagepermission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add page view restriction",
+    "content_type": 23,
+    "codename": "add_pageviewrestriction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change page view restriction",
+    "content_type": 23,
+    "codename": "change_pageviewrestriction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete page view restriction",
+    "content_type": 23,
+    "codename": "delete_pageviewrestriction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can add Tag",
+    "content_type": 24,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can change Tag",
+    "content_type": 24,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can delete Tag",
+    "content_type": 24,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can add Tagged Item",
+    "content_type": 25,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can change Tagged Item",
+    "content_type": 25,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can delete Tagged Item",
+    "content_type": 25,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 26,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 26,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 26,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 27,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 27,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 27,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 28,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 28,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 28,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 29,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 29,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 29,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 30,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 30,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 30,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 31,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 31,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 31,
+    "codename": "delete_session"
   }
 },
 {
@@ -174,6 +1152,92 @@
     "is_permanent": true,
     "redirect_page": 11,
     "redirect_link": ""
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      4,
+      5,
+      6,
+      7,
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      4,
+      5,
+      6,
+      7,
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 1,
+  "fields": {
+    "group": 1,
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 2,
+  "fields": {
+    "group": 1,
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 3,
+  "fields": {
+    "group": 1,
+    "page": 1,
+    "permission_type": "publish"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 4,
+  "fields": {
+    "group": 2,
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 5,
+  "fields": {
+    "group": 2,
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 6,
+  "fields": {
+    "group": 1,
+    "page": 1,
+    "permission_type": "lock"
   }
 },
 {
@@ -499,6 +1563,126 @@
     "locked": false,
     "first_published_at": "2016-03-15T14:18:43.501Z",
     "latest_revision_created_at": "2016-03-15T14:18:43.442Z"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 1,
+  "fields": {
+    "title": "cover",
+    "file": "original_images/cover.jpg",
+    "width": 1280,
+    "height": 854,
+    "created_at": "2016-03-11T11:43:23.122Z",
+    "uploaded_by_user": null,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": null
+  }
+},
+{
+  "model": "meinberlin.archivepage",
+  "pk": 5,
+  "fields": {}
+},
+{
+  "model": "meinberlin.overviewpage",
+  "pk": 4,
+  "fields": {
+    "description": ""
+  }
+},
+{
+  "model": "meinberlin.overviewpage",
+  "pk": 5,
+  "fields": {
+    "description": ""
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 6,
+  "fields": {
+    "body": "<p>Mit der Anmeldung als Nutzerin bzw. Nutzer bei meinBerlin akzeptieren Sie die nachfolgenden Nutzungsbedingungen. Die Plattform meinBerlin wird vom Liquid Democracy e.V. im Auftrag des Landes Berlin, vertreten durch die Senatskanzlei Berlin betrieben. Die Kontaktdaten sind dem Impressum zu entnehmen.</p><h4>Zugangsvoraussetzungen, Registrierung</h4><p>Jede nat\u00fcrliche Person kann sich auf der Plattform registrieren unter Angabe eines selbst gew\u00e4hlten Benutzernamens (Pseudonyms), der E-Mail-Adresse und eines selbst gew\u00e4hlten Passworts. Weitere Angaben k\u00f6nnen freiwillig hinzugef\u00fcgt werden.  Nimmt der Anbieter den Registrierungsantrag an, erh\u00e4lt der registrierte Nutzer eine entsprechende Best\u00e4tigung per E-Mail.</p><p>F\u00fcr jede nat\u00fcrliche Person ist nur eine Registrierung zul\u00e4ssig. Eine stellvertretende Registrierung f\u00fcr Dritte ist unzul\u00e4ssig. Der Betreiber beh\u00e4lt sich vor, Nutzungsverh\u00e4ltnisse fristlos zu k\u00fcndigen, wenn sie auf mehrfacher Registrierung derselben nat\u00fcrlichen Person oder auf Stellvertretung f\u00fcr einen Dritten beruhen.</p><p>Die Nutzung der Plattform ist unentgeltlich.</p><h4>Einstellen von Inhalten</h4><p>Registrierte Nutzerinnen bzw. Nutzer k\u00f6nnen Beitr\u00e4ge \u2013 auch solche, die sich auf Beitr\u00e4ge anderer Nutzerinnen und Nutzer beziehen - \u00fcber die entsprechenden Funktionen in die Plattform einstellen. Beitr\u00e4ge m\u00fcssen in deutscher Sprache verfasst sein.</p><p>Die Beitr\u00e4ge m\u00fcssen sachlich sein; sie d\u00fcrfen keinen beleidigenden Charakter haben und keine Inhalte umfassen, die straf- oder zivilrechtlich verboten sind. F\u00fcr die weitere Diskussionskultur gilt die&nbsp;<a href=\"/netiquette/\">Netiquette</a>, die hier einsehbar ist.</p><h4>Haftung f\u00fcr Inhalte</h4><p>Die Abl\u00e4ufe der Plattform sind automatisiert. Der Betreiber pr\u00fcft eingestellte Daten und Inhalte vor Ver\u00f6ffentlichung nicht auf inhaltliche Angemessenheit, sachliche Richtigkeit oder auf etwaige Rechtsverst\u00f6\u00dfe. Der Betreiber verpflichtet sich jedoch, konkreten Hinweisen auf problematische Daten unverz\u00fcglich nachzugehen.</p><h4>Rechte an Inhalten</h4><p>Nutzerinnen bzw. Nutzer r\u00e4umen dem Betreiber mit dem Einstellen eines Beitrags ein unbeschr\u00e4nktes, unwiderrufliches und \u00fcbertragbares Nutzungsrecht an dem jeweiligen Beitrag ein, welches den Betreiber Vorhaltung des Beitrags auf den Seiten des Stadtinformationssystems berlin.de berechtigt sowie zur Ver\u00f6ffentlichung, Vervielf\u00e4ltigung und Verbreitung in Printmedien.</p><p>Nutzerinnen bzw. Nutzer stellen den Betreiber von allen Anspr\u00fcchen frei, die Dritte gegen\u00fcber dem Betreiber wegen etwaiger Rechtsverletzungen durch die eingestellten Beitr\u00e4ge erheben. Der Freistellungsanspruch umfasst auch die in einem solchen Zusammenhang erforderlich werdenden Kosten einer angemessenen Pr\u00fcfung und ggf.  Rechtsverteidigung, es sei denn, dass die Nutzerinnen bzw. Nutzer die Beanstandung des Dritten nicht zu vertreten haben.</p><h4>Beendigung des Nutzungsverh\u00e4ltnisses</h4><p>Jeder Nutzerin bzw. jeder Nutzer kann jederzeit sein Nutzungsverh\u00e4ltnis gegen\u00fcber dem Betreiber k\u00fcndigen.</p><p>Die Beendigung eines Nutzungsverh\u00e4ltnisses ber\u00fchrt nicht die dem Betreiber bis dahin einger\u00e4umten Rechte; diese gelten vielmehr fort. Gesetzlich unabdingbare Rechte der Nutzerinnen und Nutzer, etwa auf R\u00fcckruf seiner Rechte, bleiben unber\u00fchrt.</p><p>Die Plattform wird auf unbestimmte Zeit betrieben; ein Anspruch der Nutzer auf unbegrenzte Laufzeit besteht nicht.</p>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 7,
+  "fields": {
+    "body": "<h3>Herausgeber</h3><p>Senatskanzlei Berlin</br>Berliner Rathaus</br>J\u00fcdenstra\u00dfe 1</br>10178 Berlin</p><h3>Vertretungsberechtigt:</h3><p>Chef der Senatskanzlei</br>Bj\u00f6rn B\u00f6hning</p><h3>Inhaltlich verantwortlich:</h3><p>Chefin des Presse- und Informationsamts</br>Daniela Augenstein</br>Berliner Rathaus</br>J\u00fcdenstra\u00dfe 1</br>10178 Berlin</p><h3>Redaktion:</h3><p>Senatskanzlei Berlin</br>Landesredaktion / Koordinierung Berlin.de</br>Telefon: (030) 9026 \u2013 2435</br>Telefax: (030) 9026 \u2013 2285</br>E-Mail: <a href=\"mailto:landesredaktion@senatskanzlei.berlin.de\">landesredaktion@senatskanzlei.berlin.de</a></p><h3>Hinweis:</h3><p>Die einzelnen Beteiligungsverfahren auf der Plattform meinBerlin werden von den zust\u00e4ndigen Beh\u00f6rden eigenverantwortlich aufbereitet und durchgef\u00fchrt. Die entsprechenden Angaben finden Sie bei den jeweiligen Beteiligungsverfahren.</p><h3>Betreiber und technischer Betrieb:</h3><p>Das Stadtinformationssystem berlin.de wird von der <a href=\"http://www.berlin.de/wir-ueber-uns-be/impressum/\" target=\"_blank\">BerlinOnline Stadtportal GmbH & Co.KG</a>  betrieben. Betreiber der Beteiligungsplattform meinBerlin ist Liquid Democracy e.V. (<a href=\"https://liqd.net/about/\" target=\"_blank\">https://liqd.net/about/</a>)</p>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 8,
+  "fields": {
+    "body": "<h3>Wie kann ich mich registrieren?</h3><img alt=\"meinberlin.de\" src=\"../media/original_images/registrieren.png\"/><p>Sie k\u00f6nnen sich auf der Seite registrieren, indem Sie auf das Feld \"Registrieren\" klicken und dort einen Nutzernamen, eine E-Mail-Adresse und ein Passwort eingeben. Der Nutzername muss nicht Ihrem echten Namen entsprechen. Anschlie\u00dfend wird eine automatische E-Mail mit einem Validierungslink an Ihre eingegebene E-Mail-Adresse gesendet. Klicken Sie auf den Link, und schon sind Sie angemeldet. Der Link ist f\u00fcr eine Woche g\u00fcltig.</p><p></p><p></p><h3>Wie kann ich mich anmelden?</h3><p>Sie k\u00f6nnen sich auf der Seite anmelden, indem Sie auf das Feld \"Anmelden\" klicken und dort Ihren Nutzernamen sowie Ihr Passwort eingeben und auf den Button \"anmelden\" klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/anmelden.png\"/><p></p><p></p><h3>Wie kann ich die Ansicht \u00e4ndern?</h3><p>Sie k\u00f6nnen die Ansicht eines Beteiligungsverfahrens \u00e4ndern, indem Sie auf das Symbol oben auf der rechten Seite klicken. Ein Klick auf das Kartensymbol (ganz rechts) wird die Kartenansicht anzeigen.</p><h4>Kartensymbol</h4><img alt=\"meinberlin.de\" height=\"130\" src=\"../media/original_images/Kartesymbol.png\" width=\"130\"/><h4>Kartenansicht</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/kartenansicht.png\"/><p>Da die Vorschl\u00e4ge eines Verfahrens nicht immer einem Ort zugeordnet sind, k\u00f6nnen Sie auch die Listenansicht ausw\u00e4hlen, indem Sie das Listensymbol anklicken.</p><h4>Listensymbol</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/Listensymbol.png\"/><h4>Listenansicht</h4><img alt=\"meinberlin.de\" src=\"../media/original_images/Listenansicht.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag anlegen?</h3><p>Sie k\u00f6nnen einen Vorschlag anlegen, indem Sie oben auf der rechten Seite auf den Button \u201eVorschlag anlegen\u201c klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_anlegen.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag auf der Karte verorten?</h3><p>Sie k\u00f6nnen Ihren Vorschlag auf der interaktiven Karte geografisch verorten, indem Sie auf die Karte klicken. Um die geografische Position Ihres Vorschlags zu \u00e4ndern, ziehen Sie den Pin mit der Maus auf der Karte an den gew\u00fcnschten Ort. Sie k\u00f6nnen die Position Ihres Vorschlags auch entfernen, indem Sie auf \u201ePin entfernen\u201c klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_verorten.png\"/><p></p><p></p><h3>Wie kann ich einen Vorschlag ver\u00f6ffentlichen?</h3><p>Wenn Sie bereit sind, Ihren Vorschlag zu ver\u00f6ffentlichen, klicken Sie unten auf den Button \u201eVer\u00f6ffentlichen\u201c. Ihr Vorschlag wird in der Liste von Vorschl\u00e4gen angezeigt und gegebenenfalls auf der Karte, sofern Sie Ihren Vorschlag darauf verortet haben.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_veroeffentlichen.png\"/><p></p><p></p><h3>Wie kann ich f\u00fcr oder gegen einen Vorschlag abstimmen?</h3><p>Wenn Sie Ihren Vorschlag bearbeiten m\u00f6chten, k\u00f6nnen Sie nach der Ver\u00f6ffentlichung Ihres Vorschlags oben links auf \u201ebearbeiten\u201c klicken und Ihren Vorschlag \u00e4ndern.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Vorschlag_abstimmen.png\"/><p></p><p></p><h3>Wie kann ich Kommentare lesen?</h3><p>Sie k\u00f6nnen die Anzahl der Kommentare eines Vorschlags neben der Sprechblase sehen und Vorschl\u00e4ge lesen, indem Sie oben links oder auf der rechten Seite auf die Sprechblase klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_sehen.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar erstellen?</h3><p>Sie k\u00f6nnen Vorschl\u00e4ge kommentieren, indem Sie auf die Kommentar-Sprechblase klicken, Ihren Kommentar in dem Feld schreiben und auf den Button \u201eErstellen\u201c klicken, um Ihren Kommentar zu ver\u00f6ffentlichen.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_erstellen.png\"/><p></p><p></p><h3>Wie kann ich f\u00fcr oder gegen einen Kommentar abstimmen?</h3><p>Sie k\u00f6nnen Kommentare positiv oder negativ bewerten, indem Sie oben auf der rechten Seite auf den Pfeil klicken, der nach oben bzw. nach unten zeigt.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Kommentar_bewerten.png\"/><p></p><p></p><h3>Wie kann ich meinen Kommentar bearbeiten?</h3><p>Sie k\u00f6nnen Ihren Kommentar bearbeiten, indem Sie oben rechts auf das Stift-Symbol klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/symbol_bearbeiten.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar beantworten?</h3><p>Sie k\u00f6nnen Kommentare beantworten, indem Sie oben rechts auf den Pfeil klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/symbol_beantworten.png\"/><p></p><p></p><h3>Wie kann ich einen Kommentar melden?</h3><p>Unethische oder beleidigende Kommentare, welche die Netiquette verletzen, k\u00f6nnen Sie melden, indem Sie oben rechts auf das Melden-Symbol klicken.</p><img alt=\"meinberlin.de\" src=\"../media/original_images/Symbol_melden.png\"/><p></p><p></p><h3>Technischer Support</h3><p>Falls Sie zus\u00e4tzliche Fragen haben, k\u00f6nnen Sie uns gerne per E-Mail kontaktieren:&nbsp;<a href=\"mailto:berlin@liqd.de\">berlin@liqd.de</a></p><p></p>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 9,
+  "fields": {
+    "body": "<p>Willkommen auf der Partizipationsplattform meinBerlin des Landes Berlin!<br/>Sie haben mit meinBerlin die M\u00f6glichkeit, sich aktiv an Entscheidungsprozessen der Berliner Politik und Verwaltung zu beteiligen.<br/>Ihr Wissen, Ihre Erfahrungen und Ihre Meinung sind gefragt!<br/>Mit meinBerlin haben Sie die M\u00f6glichkeit sich aktiv, transparent und diskursiv in diverse Entscheidungsfindungen im Land Berlin einzubringen.<br/>Um einen offenen Austausch und eine angenehme Atmosph\u00e4re zu gew\u00e4hrleisten, bitten wir Sie, - wie bei einer pers\u00f6nlichen Diskussion auch \u2013 folgende Regeln und Hinweise einzuhalten und zu w\u00fcrdigen.</p><h3><b>Regeln</b></h3><p>Um einen konstruktiven Dialog zwischen allen Nutzerinnen und Nutzern und den beteiligten Stellen im Land Berlin zu gew\u00e4hrleisten, m\u00fcssen Sie sich beim Verfassen von Beitr\u00e4gen an folgende Grundregeln halten:</p><ul><li><p>Beziehen Sie sich in Ihren Beitr\u00e4gen immer nur auf den zur Diskussion gestellten Inhalt.</p></li><li><p>Bitte achten Sie in der Diskussion auf dem Beteiligungsportal auf faire Umgangsformen, auch wenn Sie einer Meinung nicht zustimmen. Vermeiden Sie Provokationen.</p></li><li><p>Gewaltverherrlichende, menschenverachtende, rassistische, fremdenfeindliche, stigmatisierende, sexistische oder beleidigende Inhalte, Aufrufe zu Straftaten, Verleumdungen, gesch\u00e4fts- oder rufsch\u00e4digende \u00c4u\u00dferungen sind selbstverst\u00e4ndlich inakzeptabel und werden gel\u00f6scht.</p></li><li><p>Verzichten Sie auf kommerzielle Inhalte.</p></li><li><p>Achten Sie darauf, welche personenbezogenen Daten Sie in Ihren Beitr\u00e4gen ver\u00f6ffentlichen. Diese sind frei zug\u00e4nglich. Pers\u00f6nliche oder personenbezogene Daten Dritter d\u00fcrfen von Ihnen nicht ver\u00f6ffentlicht werden. Um die Pers\u00f6nlichkeitsrechte betroffener Personen zu wahren, werden solche Beitr\u00e4ge ebenfalls gel\u00f6scht.</p></li><li><p>Beachten Sie in Ihren Beitr\u00e4gen das Urheberrecht. Bei fremden Inhalten m\u00fcssen die Rechte f\u00fcr diese freigegeben sein. Kennzeichnen Sie auch Zitate als solche und geben Sie die Quelle an. F\u00fcr die Aussagekraft Ihres Beitrages ist es au\u00dferdem sinnvoll, Zitate nur als Erg\u00e4nzung zu Ihren eigenen Aussagen zu verwenden.</p></li><li><p>Beachten Sie auch bei Verlinkungen auf die Einhaltung der genannten Regeln. Wir behalten uns jedoch vor, Links zu entfernen, wenn deren Inhalte gegen die genannten Regeln versto\u00dfen.</p></li><li><p>Verzichten Sie darauf, Mehrfach-Accounts anzulegen oder den gleichen Kommentar mehrmals zu ver\u00f6ffentlichen. Wir behalten uns vor, mehrfache Accounts und Beitr\u00e4ge zu entfernen.</p></li></ul><h3><b>Moderation</b></h3><p>Das Redaktionsteam von meinBerlin moderiert die Diskussionen und Kommentierungen entsprechend den nachstehenden Grunds\u00e4tzen:</p><ul><li><p>Alle Beitr\u00e4ge werden auf Einhaltung der oben genannten Regeln hin \u00fcberpr\u00fcft. Bei Verst\u00f6\u00dfen behalten wir uns vor, den entsprechenden Beitrag zu entfernen.</p></li><li><p>Sie haben als Nutzerin/Nutzer die M\u00f6glichkeit, die Beitr\u00e4ge anderer als anst\u00f6\u00dfig zu melden, wenn diese gegen die Netiquette versto\u00dfen. In diesem Falle wird sowohl das Redaktionsteam als auch die Verfasserin/der Verfasser des Beitrages informiert und der betreffende Kommentar vor\u00fcbergehend unsichtbar. Der Beitrag wird \u00fcberpr\u00fcft und wieder ver\u00f6ffentlicht, wenn er als unbedenklich eingestuft wurde. Andernfalls wird er gel\u00f6scht. In beiden F\u00e4llen wird die Verfasserin/der Verfasser benachrichtigt.</p></li><li><p>Bei schweren oder wiederholten Verst\u00f6\u00dfen gegen die Regeln der Netiquette oder der missbr\u00e4uchlichen Nutzung anderer Funktionen behalten wir uns vor, einzelne Nutzerinnen und Nutzer zu sperren und von der Teilnahme an Prozessen auf dem meinBerlin auszuschlie\u00dfen.</p></li></ul><p>F\u00fcr Fragen oder Anmerkungen k\u00f6nnen Sie gern das Redaktionsteam kontaktieren (<a href=\"mailto:landesredaktion@senatskanzlei.berlin.de\">E-Mail</a>)</p><p>Wir hoffen auf eine rege Beteiligung, freuen uns auf Ihre Meinungen zu aktuellen politischen Themen und Projekten im Land Berlin und w\u00fcnschen Ihnen viel Freude bei der Teilnahme!</p><p></p><p><br/></p>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 10,
+  "fields": {
+    "body": "<p>Die Beteiligungsplattform meinBerlin ist Teil des Stadtinformationssystems&nbsp;<a href=\"http://www.berlin.de/\">www.berlin.de</a>. Bitte beachten Sie die entsprechende&nbsp;<a href=\"http://www.berlin.de/wir-ueber-uns-be/agb/pp/20150101/\">Datenschutzerkl\u00e4rung</a>&nbsp;der BerlinOnline Stadtportal GmbH &amp; Co.KG.</p><h3>F\u00fcr die Beteiligungsplattform meinBerlin gilt zus\u00e4tzlich folgende Datenschutzerkl\u00e4rung:</h3><p>Um Beitr\u00e4ge auf meinBerlin ver\u00f6ffentlichen zu k\u00f6nnen, m\u00fcssen Sie sich auf meinBerlin registrieren. Hierzu ist die Eingabe Ihrer E-Mail-Adresse sowie eines von Ihnen zu bestimmenden Nutzernamens (Pseudonym) und eines von Ihnen zu bestimmenden Passworts erforderlich. Die Kombination dieser drei Daten ist Grundlage Ihres Nutzerkontos, mit dem Ihre Beitr\u00e4ge zugeordnet werden. Ihre E-Mail-Adresse ben\u00f6tigen wir, damit wir Ihr Passwort zur\u00fccksetzen k\u00f6nnen f\u00fcr den Fall, dass Sie es einmal vergessen sollten. Diese Daten werden f\u00fcr die Dauer des Bestehens Ihres Nutzerkontos gespeichert. Von Ihnen ver\u00f6ffentlichte Beitr\u00e4ge bleiben auch nach Aufl\u00f6sung Ihres Nutzerkontos auf meinBerlin.de erhalten; Ihre Beitr\u00e4ge werden dann jedoch anonymisiert und nicht mehr zusammen mit Ihrem Nutzernamen angezeigt.</p><p>Bei bestimmten Verfahren ist die Eingabe weiterer Daten wie Vor- und Nachnamen sowie der aktuelle Wohnort erforderlich. Weitergehende Hinweise finden Sie bei den einzelnen Verfahren.</p><h4>Haftungshinweis:</h4><p>Trotz sorgf\u00e4ltiger inhaltlicher Kontrolle \u00fcbernimmt die Senatskanzlei keine Haftung f\u00fcr die Inhalte externer Links. F\u00fcr den Inhalt der verlinkten Seiten sind ausschlie\u00dflich deren Betreiber verantwortlich.</p>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 11,
+  "fields": {
+    "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>B\u00fcrgerhaushalte</h2>                            <p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 k\u00f6nnen sich alle interessierten B\u00fcrgerinnen und B\u00fcrger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum B\u00fcrgerhaushalt Treptow-K\u00f6penick beteiligen. Hier k\u00f6nnen Sie Vorschl\u00e4ge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt f\u00fchrt j\u00e4hrlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer f\u00fcr die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert. Ab dem 29. Februar k\u00f6nnen Sie sich zu der Debattenfrage online \u00e4u\u00dfern. Anschlie\u00dfend \u2013 unabh\u00e4ngig von Ihrer Teilnahme am Online-Forum \u2013 sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren k\u00f6nnen alle interessierten B\u00fcrgerinnen und B\u00fcrger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> k\u00f6nnen Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 12,
+  "fields": {
+    "body": "<h1>Allgemein<br/></h1><p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene organisiert, wobei alle Interessierten sich daran beteiligen k\u00f6nnen. Die B\u00fcrgerhaushaltsverfahren werden je nach Bezirk unterschiedlich umgesetzt. Bisherige Verfahren lassen sich hinsichtlich der Zeitplanung in zwei Modelle unterscheiden: Zum einen das Modell eines j\u00e4hrlichen Stichtags bzw. mehrerer Stichtage, wenn \u00fcber die Gelder f\u00fcr Projekte mehrmals im Jahr entschieden wird (z.B. in Lichtenberg \u2013 quartalsweise). Im zweiten Modell k\u00f6nnen B\u00fcrgerinnen und B\u00fcrger Projekte zu jedem beliebigen Zeitpunkt einreichen. Im\u00a0<b>Bezirk Treptow-K\u00f6penick</b>\u00a0soll das Einreichen von Vorschl\u00e4gen nicht zeitlich befristet sein. Die Beteiligung ist unabh\u00e4ngig von der aktuellen Phase der Haushaltsplanung jederzeit m\u00f6glich. Hintergrund ist, dass sonst wegen des Berliner Doppelhaushalts nur alle zwei Jahre Vorschl\u00e4ge gemacht werden k\u00f6nnen. In der Praxis betreffen aber viele Vorschl\u00e4ge nicht die Haushaltsplanung, sondern die Haushaltsdurchf\u00fchrung bzw. die Investitionsplanung.</p><h2>Ziel</h2><p>Ziel des B\u00fcrgerhaushalts auf meinBerlin ist, die B\u00fcrgerinnen und B\u00fcrger in die Entscheidung der Berliner Verwaltung \u00fcber die bezirkliche Haushaltsplanung und Durchf\u00fchrung einzubeziehen. Die zentrale Plattform meinBerlin soll einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die Vorschl\u00e4ge zum B\u00fcrgerhaushalt einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Bezirksverwaltung Treptow-K\u00f6penick (Serviceeinheit Personal und Finanzen)</li></ul><h2>Ablauf</h2><h3>Phase 1: Informieren</h3><p>Bevor Vorschl\u00e4ge eingereicht werden k\u00f6nnen, muss eine Phase der Information und der \u00d6ffentlichkeitsarbeit vorangehen, die das Verfahren bekannt und sichtbar macht. Auf der Internetseite des Bezirksamtes Treptow-K\u00f6penick sowie eine Einwohnerversammlung werden allen Interessierten Informationen zum Verfahren zur Verf\u00fcgung gestellt.</p><h3>Phase 2: Ideensammlung</h3><p>B\u00fcrgerinnen und B\u00fcrger bringen ihre Vorschl\u00e4ge zur Verwendung von Haushaltsmitteln online ein. Sie k\u00f6nnen die Vorschl\u00e4ge anderer Teilnehmerinnen und Teilnehmer bewerten und diskutieren. Die B\u00fcrgerinnen und B\u00fcrger k\u00f6nnen permanent online Vorschl\u00e4ge einbringen, die sich auf das laufende oder zuk\u00fcnftige Haushaltsjahre beziehen. Au\u00dferdem k\u00f6nnen Vorschl\u00e4ge per E-Mail oder offline telefonisch und per Post in der Serviceeinheit Personal und Finanzen eingereicht werden. Die offline eingebrachten Vorschl\u00e4ge werden online eingetragen und so zur Diskussion und Abstimmung gestellt.</p><h3>Phase 3: Ergebnisse</h3><p>Alle Interessierten k\u00f6nnen jederzeit sehen, ob ein Vorschlag angenommen oder abgelehnt wurde sowie sich zum Umsetzungsstand informieren. So wird der gesamte Prozess transparent und f\u00fcr alle einsehbar dokumentiert.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 13,
+  "fields": {
+    "body": "<h2>Allgemein</h2><p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt (SenStadtUm) f\u00fchrt j\u00e4hrlich mehrere sogenannte Stadtforen durch. Jedes Stadtforum widmet sich mit einer Offline-Veranstaltung einer bestimmten stadtpolitischen Fragestellung, der sogenannten Debattenfrage, die gemeinsam mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert werden soll.</p><h2>Ziel</h2><p>Das Ziel ist es ein Stimmungsbild unter den Berlinerinnen und Berlinern einzufangen und ihnen die M\u00f6glichkeit zu bieten, interessante Themen gemeinsam mit Experten zu diskutieren.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Initiatoren: Berliner Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>In dieser Phase werden alle potenziellen Beteiligten z.B. durch Werbung, \u00d6ffentlichkeitsarbeit und \u00fcber meinBerlin auf die Beteiligung (online und offline) aufmerksam gemacht.</p><h3>Phase 2: Debatte</h3><p>Ab dem 29. Februar 2016 sind alle B\u00fcrgerinnen und B\u00fcrger gefragt die Debattenfrage jedes anstehenden Stadtforums mit \u201eJa\u201c oder \u201eNein\u201c zu beantworten. Ferner k\u00f6nnen kurze Statements, Anregungen und Hinweise, die mit der Debattenfrage und dem Veranstaltungsthema im Zusammenhang stehen, online abgegeben werden. Durch die Ja/Nein-Antworten kann ein vorl\u00e4ufiges Stimmungsbild (auch visuell) erstellt werden. Die angef\u00fchrten Beitr\u00e4ge aller online-Teilnehmenden k\u00f6nnen in der Veranstaltung aufgegriffen und gemeinsam diskutiert werden.</p><h3>Phase 3: Ergebnisse</h3><p>Die online-Beitr\u00e4ge flie\u00dfen in die Veranstaltungsvorbereitung und Diskussion w\u00e4hrend des Stadtforums ein. Im Nachgang k\u00f6nnen Interessierte die Diskussion online f\u00fcr einen kurzen Zeitraum (bis zum 4. April 2016) fortf\u00fchren.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.simplepage",
+  "pk": 14,
+  "fields": {
+    "body": "<h2>Allgemein</h2><p>Die Kiezkasse ist ein Projekt, bei dem B\u00fcrgerinnen und B\u00fcrger ihren Ortsteil aktiv mitgestalten k\u00f6nnen. Sie k\u00f6nnen Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Vorschl\u00e4ge k\u00f6nnen online, schriftlich, oder bei den Offline-Dialogen (z.B. B\u00fcrgerversammlungen oder Stadteilkonferenzen) eingereicht werden. Die Mittel f\u00fcr die Kiezkassen sind an das jeweilige Haushaltsjahr des Bezirks gebunden. Am Ende jeden Jahres erfolgt eine Abrechnung der laufenden Kiezkassen.</p><p>Im Bezirk Treptow-K\u00f6penick stehen f\u00fcr das Jahr 2015 insgesamt 50.000 \u20ac zur Verf\u00fcgung. Die Verteilung auf die Bezirksregionen erfolgt anhand der Einwohnerzahl. Mit den Kiezkassen k\u00f6nnen Projekte vor Ort unterst\u00fctzt werden, um so das b\u00fcrgerschaftliche Engagement zu f\u00f6rdern.</p><h2>Ziel</h2><p>Ziel des Kiezkassen-Verfahrens auf meinBerlin ist es, den B\u00fcrgerinnen und B\u00fcrgern die M\u00f6glichkeit zu bieten, ihren Ortsteil mitzugestalten, indem sie Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen und bestehende Vorschl\u00e4ge kommentieren und bewerten. Dabei soll meinBerlin einen Kommunikationskanal bieten, der dabei hilft, Informationen zentral auffindbar zu machen und die Online- und Offline-Beteiligung zu verbinden.</p><h2>Beteiligte Akteure</h2><ul><li>Nutzerinnen und Nutzer: Alle B\u00fcrgerinnen und B\u00fcrger, die sich in das Stadtleben einbringen m\u00f6chten</li><li>Initiatorinnen und Iniatiatoren: Bezirksverwaltung Treptow-K\u00f6penick</li><li>Moderation: Kiezpatinnen und Kiezpaten</li></ul><h2>Ablauf</h2><h3>Phase 1: Information</h3><p>Bevor die B\u00fcrgerinnen und B\u00fcrger anfangen k\u00f6nnen, Projektvorschl\u00e4ge einzureichen und zu diskutieren, wird das Verfahren \u00f6ffentlich angek\u00fcndigt. Der Termin der B\u00fcrgerversammlung wird bestimmt. In dieser Phase werden alle potenziellen Beteiligten durch \u00f6ffentliche Bekanntmachungen in der Presse und auf meinBerlin auf das Verfahren aufmerksam gemacht.</p><h3>Phase 2: Ideensammlung</h3><p>Alle Interessierten werden aufgerufen, Ideen und Vorschl\u00e4ge f\u00fcr Projekte in der Bezirksregion zu machen. Sie k\u00f6nnen somit Vorschl\u00e4ge online einreichen, kommentieren und bewerten. Die Angabe der Kosten soll bereits die Mehrwertsteuer enthalten. Vorschl\u00e4ge k\u00f6nnen zudem offline gemacht werden.</p><h3>Phase 3: B\u00fcrgerversammlung</h3><p>In dieser Phase k\u00f6nnen keine Vorschl\u00e4ge mehr online eingereicht, kommentiert oder bewertet werden. Vorschl\u00e4ge k\u00f6nnen aber noch offline in der B\u00fcrgerversammlung gemacht werden. Alle Vorschl\u00e4ge werden dann vor Ort vorgestellt und abgestimmt. Die Art und Weise der Abstimmung bestimmt die B\u00fcrgerversammlung selbst. Offline-Vorschl\u00e4ge werden online eingereicht.</p><h3>Phase 4: Ergebnisse</h3><p>Nach der Pr\u00fcfung durch das zust\u00e4ndige Fachamt des Bezirksamtes werden die Vorschl\u00e4ge, die realisiert werden und ggf. diejenigen, die nicht realisierbar sind, online markiert und angezeigt. Die Projekte m\u00fcssen bis Mitte Dezember realisiert und abgerechnet werden.</p><a href=\"/w/beteiligungsverfahren/\">Zur\u00fcck zur Liste</a>"
+  }
+},
+{
+  "model": "meinberlin.homepage",
+  "pk": 3,
+  "fields": {
+    "header": "meinBerlin \u2013 die Beteiligungsplattform",
+    "description": "meinBerlin ist die Plattform, auf der zuk\u00fcnftig alle \u00f6ffentlichen Beteiligungsverfahren der Verwaltungen des Landes Berlin erreichbar sein werden. Es gibt Beteiligungsverfahren f\u00fcr viele Bereiche. Manche sind rechtlich vorgeschrieben und haben gesetzlich vorgegebene Regeln (z.B. Bebauungsplanverfahren). Andere Verfahren richten sich nach der jeweiligen Fragestellung. Es gibt unterschiedliche Wege der Beteiligung \u2013 von der Frage nach Vorschl\u00e4gen und Meinungen bis hin zu Entscheidungsfindungen. Machen Sie mit!",
+    "cover_image": 1,
+    "info1_title": "Warum meinBerlin?",
+    "info1_text": "meinBerlin hat das Ziel, allen die sich beteiligen wollen, eine einfache M\u00f6glichkeit zu bieten, einzusteigen und ihren Vorschlag, ihre Meinung, ihr Votum einzubringen. Sie sind auch eingeladen, sich zur Art und Weise der Beteiligung zu \u00e4u\u00dfern.",
+    "info2_title": "Wie kann ich mitmachen?",
+    "info2_text": "Mitmachen kann jede/r, es sei denn, die Teilnahme ist ausdr\u00fccklich geregelt. Wenn nichts anderes vorgegeben ist, kann der Name, der \u00f6ffentlich erscheint, frei gew\u00e4hlt werden. Dar\u00fcber hinaus gelten die Regeln eines fairen Miteinanders.",
+    "info3_title": "Wie funktioniert meinBerlin?",
+    "info3_text": "Die Plattform bietet eine \u00dcbersicht sowie Zugang zu diversen Verfahren. F\u00fcr diese ist nur eine Anmeldung n\u00f6tig. Die Beteiligung wird erm\u00f6glicht durch die Software Adhocracy, die je nach Verfahren verschiedene, einfach zu bedienende Funktionen bietet.",
+    "netiquette_linktext": "Netiquette",
+    "privacy_linktext": "Datenschutz",
+    "processes_linktext": "Beteiligungsverfahren",
+    "current_processes_title": "Aktuelle Verfahren",
+    "view_all": "alle anzeigen",
+    "past_processes_title": "Vergangene Verfahren"
   }
 }
 ]

@@ -16,7 +16,7 @@ class Process(Page):
         on_delete=models.SET_NULL,
         related_name='+'
     )
-    image_copyright = models.CharField(max_length=255)
+    image_copyright = models.CharField(max_length=255, blank=True)
     city = models.CharField(max_length=255)
     archived = models.BooleanField()
 
@@ -29,7 +29,7 @@ class Process(Page):
         FieldPanel('archived'),
     ]
 
-    parent_page_types = []
+    parent_page_types = ['meinberlin.OverviewPage']
 
 
 class ExternalProcess(Process):
@@ -47,8 +47,9 @@ class ExternalProcess(Process):
 
 
 class AdhocracyProcess(Process):
-    embed_code = models.TextField()
+    embed_url = models.CharField(max_length=255, blank=True)
     description = RichTextField(blank=True)
+    process_type = models.CharField(max_length=255, blank=True)
 
     @property
     def external(self):

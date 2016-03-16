@@ -68,7 +68,7 @@ class Migration(migrations.Migration):
             name='AdhocracyProcess',
             fields=[
                 ('process_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='meinberlin.Process')),
-                ('embed_code', models.TextField()),
+                ('embed_url', models.TextField()),
                 ('description', wagtail.wagtailcore.fields.RichTextField(blank=True)),
             ],
             options={

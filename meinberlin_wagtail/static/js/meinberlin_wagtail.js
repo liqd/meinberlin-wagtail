@@ -7,6 +7,8 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
 (function() {
     "use strict";
 
+    var loggedIn = null;
+
     var http = function(url, cb) {
         var req = new XMLHttpRequest();
 
@@ -23,10 +25,18 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
     var onLogin = function(userName) {
         document.getElementById("user-name").textContent = userName;
         document.getElementById("user-indicator").className = "is-logged-in";
+
+        // this check is a bit shaky, but should be fine
+        if (loggedIn === false && location.href.match(/adh/)) {
+            location.href = '/';
+        }
+
+        loggedIn = true;
     };
 
     var onLogout = function() {
         document.getElementById("user-indicator").className = "";
+        loggedIn = false;
     };
 
     var getUserName = function(url, cb) {

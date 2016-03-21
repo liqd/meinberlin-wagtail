@@ -8,6 +8,22 @@ from wagtail.wagtailcore.models import Page
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 
 
+def original_status_string(self):
+    # see wagtailcore.models.Page.status_string
+    if not self.live:
+        if self.expired:
+            return "expired"
+        elif self.approved_schedule:
+            return "scheduled"
+        else:
+            return "draft"
+    else:
+        if self.has_unpublished_changes:
+            return "live + draft"
+        else:
+            return "live"
+
+
 class Process(Page):
     short_description = models.CharField(max_length=255)
     image = models.ForeignKey(
@@ -19,6 +35,17 @@ class Process(Page):
     image_copyright = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     archived = models.BooleanField()
+
+    # HACK: show archived in status string
+    def status_string(self):
+        s = original_status_string(self)
+        try:
+            if self.process.archived:
+                s += ' (archived)'
+        except Exception:
+            pass
+        return s
+    Page.status_string = property(status_string)
 
     content_panels = [
         FieldPanel('title'),

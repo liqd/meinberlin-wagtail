@@ -45,10 +45,10 @@
     <h2 class="bar"><span class="bar-inner">{{ self.current_processes_title }}</span></h2>
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.processes %}
-    <a href="/prozesse/">{{ self.view_all }}</a>
+    <a href="/w/prozesse/">{{ self.view_all }}</a>
 
     <h2 class="bar"><span class="bar-inner">{{ self.past_processes_title }}</span></h2>
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.archived %}
-    <a href="/archiv/">{{ self.view_all }}</a>
+    <a href="/w/archiv/">{{ self.view_all }}</a>
 {% endblock %}

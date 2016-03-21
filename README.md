@@ -22,10 +22,15 @@
 Running adhocracy and wagtail on the same origin is required if you want to
 have a tight integration, e.g.  show an adhocracy login in wagtail.  An example
 nginx config is included. You also have to adjust the following settings in
-your adhocracy frontend config:
+your adhocracy config:
 
+    # development.ini
+    adhocracy.frontend_url = http://localhost/w/adh/#!
+
+    # frontend_development.ini
     adhocracy.frontend.ws_url = ws://localhost/ws/
     adhocracy.frontend.rest_url = http://localhost/api/
+    adhocracy.canonical_url = http://localhost/w/adh/#!
 
 ## TODOs
 

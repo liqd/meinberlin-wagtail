@@ -166,3 +166,14 @@ class ArchivePage(OverviewPage):
         return Process.objects.filter(archived=True).all()
 
     parent_page_types = []
+
+
+class AdhocracyPage(Page):
+    widget = models.CharField(max_length=255)
+
+    content_panels = [
+        FieldPanel('title'),
+        FieldPanel('widget'),
+    ]
+
+    parent_page_types = ['meinberlin.HomePage']

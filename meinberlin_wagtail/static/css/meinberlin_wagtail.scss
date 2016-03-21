@@ -390,6 +390,23 @@ $logo-offset: 50px;
     }
 }
 
+#user-indicator {
+    text-align: right;
+    line-height: 1.385em;
+
+    #user-name,
+    #logout,
+    &.is-logged-in #register,
+    &.is-logged-in #login {
+        display: none;
+    }
+
+    &.is-logged-in #user-name,
+    &.is-logged-in #logout {
+        display: initial;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .portal-header .red-line {
         top: -15px !important;

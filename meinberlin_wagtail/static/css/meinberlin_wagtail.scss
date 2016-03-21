@@ -406,3 +406,24 @@ $logo-offset: 50px;
         display: initial;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .portal-header .red-line {
+        top: -15px !important;
+        right: -10px !important;
+    }
+    .content-navi-top .nav {
+        width: 100%;
+    }
+    #meinberlin-logo {
+        display: none;
+    }
+    .content-navi-wrapper.navbar {
+        display: block !important;
+
+        .collapse {
+            border: 0;
+            height: auto;
+        }
+    }
+}

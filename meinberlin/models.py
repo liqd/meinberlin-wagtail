@@ -82,6 +82,14 @@ class AdhocracyProcess(Process):
     def external(self):
         return False
 
+    @property
+    def relative_embed_url(self):
+        return self.embed_url[self.embed_url.find('api/') + 4:]
+
+    @property
+    def embed_widget(self):
+        return 'mein.berlin.de'
+
     content_panels = Process.content_panels + [
         FieldPanel('description'),
         FieldPanel('embed_url'),

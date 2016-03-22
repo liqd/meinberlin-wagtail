@@ -90,6 +90,17 @@ class AdhocracyProcess(Process):
     def embed_widget(self):
         return 'mein.berlin.de'
 
+    @property
+    def teaser_text(self):
+        if self.process_type == 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess':
+            return "Machen Sie Vorschläge, um Politik und Verwaltung dabei zu unterstützen, die knappen Finanzen des Bezirks bedarfsgerecht einzusetzen."
+        elif self.process_type == 'adhocracy_meinberlin.resources.kiezkassen.IProcess':
+            return "Hier können Sie Ihre Ideen und Vorschläge für die Kiezkasse abgeben."
+        elif self.process_type == 'adhocracy_meinberlin.resources.stadtforum.IProcess':
+            return "Berlin braucht neuen Wohnraum – schnell, viel und gut. Wie würden Sie gesamtstädtische, gesellschaftliche und individuelle Ansprüche an das Wohnen zusammenbringen? Diskutieren Sie mit!"
+        else:
+            return ""
+
     content_panels = Process.content_panels + [
         FieldPanel('description'),
         FieldPanel('embed_url'),

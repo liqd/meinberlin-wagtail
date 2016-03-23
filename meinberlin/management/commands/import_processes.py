@@ -56,9 +56,9 @@ def create_process(process, parent_process=None):
     embed_url = process['path']
     description = process['data'][SIDESCRIPTION]['description']
     if process['content_type'] == RIPROPOSAL:
-        quest = process['data'][SITITLE]['title']
-        slug = slugify(quest)[:50]
-        short_description = quest
+        question = process['data'][SITITLE]['title']
+        slug = slugify(question)[:50]
+        short_description = question
         title = 'Stadtforum'
         ws = 'workflow_state'
         archived = parent_process['data'][SIWORKFLOW][ws] == 'result'
@@ -97,7 +97,7 @@ def create_process(process, parent_process=None):
         process_type=process['content_type'])
 
 
-def create_ext_process(process):
+def create_external_process(process):
     image, image_copyright = get_image(process)
     short_description = process['data'][SIDESCRIPTION]['short_description']
     city = ''
@@ -160,9 +160,9 @@ class Command(BaseCommand):
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
-                    ext_process = create_ext_process(process)
-                    process_index.add_child(instance=ext_process)
+                    external_process = create_external_process(process)
+                    process_index.add_child(instance=external_process)
 
             else:
-                adh_process = create_process(process)
-                process_index.add_child(instance=adh_process)
+                adhocracy_process = create_process(process)
+                process_index.add_child(instance=adhocracy_process)

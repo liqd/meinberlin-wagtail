@@ -74,9 +74,28 @@ class ExternalProcess(Process):
 
 
 class AdhocracyProcess(Process):
+    ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
+    BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
+    BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
+    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
+    COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
+
+    PROCESS_CHOICES = (
+        (ALEXANDERPLATZ, 'Alexanderplatz'),
+        (BPLAN, 'Bebauungsplan'),
+        (BUERGERHAUSHALT, 'Bürgerhaushalt'),
+        (DIALOG, 'Dialog'),
+        (KIEZKASSE, 'Kiezkasse'),
+        (COLLABORATIVE, 'Kollaborative Textarbeit'),
+    )
+
     embed_url = models.CharField(max_length=255, blank=True)
     description = RichTextField(blank=True)
-    process_type = models.CharField(max_length=255, blank=True)
+    process_type = models.CharField(
+        max_length=255,
+        choices=PROCESS_CHOICES,
+        default=KIEZKASSE)
 
     @property
     def external(self):

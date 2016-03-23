@@ -158,7 +158,6 @@ class Command(BaseCommand):
 
                     adhocracy_process = create_process(poll, exported_process)
                     process_index.add_child(instance=adhocracy_process)
-                    # print(adhocracy_process)
 
                 continue
 
@@ -172,4 +171,3 @@ class Command(BaseCommand):
             else:
                 adh_process = create_process(exported_process)
                 process_index.add_child(instance=adh_process)
-            # print(adhocracy_process)

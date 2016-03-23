@@ -19,6 +19,18 @@
   }
 },
 {
+  "model": "wagtailimages.rendition",
+  "pk": 6,
+  "fields": {
+    "filter": 1,
+    "file": "images/bplan_HEM2RTg.max-165x165.png",
+    "width": 165,
+    "height": 123,
+    "focal_point_key": "",
+    "image": 6
+  }
+},
+{
   "model": "wagtailcore.site",
   "pk": 2,
   "fields": {
@@ -1722,6 +1734,23 @@
     "focal_point_width": null,
     "focal_point_height": null,
     "file_size": 625933
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 6,
+  "fields": {
+    "title": "bplan.png",
+    "file": "original_images/bplan_HEM2RTg.png",
+    "width": 500,
+    "height": 375,
+    "created_at": "2016-03-23T11:09:06.493Z",
+    "uploaded_by_user": 1,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 472846
   }
 },
 {

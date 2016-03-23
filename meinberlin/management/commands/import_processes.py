@@ -145,27 +145,27 @@ class Command(BaseCommand):
             'depth': 'all',
             'elements': 'content',
         }).json()
-        exported_processes = r['data'][SIPOOL]['elements']
+        processes = r['data'][SIPOOL]['elements']
 
         process_index = OverviewPage.objects.first()
 
-        for exported_process in exported_processes:
-            process_type = exported_process['content_type']
+        for process in processes:
+            process_type = process['content_type']
 
-            if check_process_exists(exported_process):
+            if check_process_exists(process):
                 continue
 
             if process_type == RISTADTFORUM:
-                for poll in iter_stadtforum_polls(exported_process):
-                    adhocracy_process = create_process(poll, exported_process)
+                for poll in iter_stadtforum_polls(process):
+                    adhocracy_process = create_process(poll, process)
                     process_index.add_child(instance=adhocracy_process)
 
             elif process_type == RIBPLAN:
-                workflow_sheet = exported_process['data'][SIWORKFLOW]
+                workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
-                    ext_process = create_ext_process(exported_process)
+                    ext_process = create_ext_process(process)
                     process_index.add_child(instance=ext_process)
 
             else:
-                adh_process = create_process(exported_process)
+                adh_process = create_process(process)
                 process_index.add_child(instance=adh_process)

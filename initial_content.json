@@ -1,5 +1,12 @@
 [
 {
+  "model": "wagtailimages.filter",
+  "pk": 1,
+  "fields": {
+    "spec": "max-165x165"
+  }
+},
+{
   "model": "wagtailcore.site",
   "pk": 2,
   "fields": {
@@ -1643,6 +1650,87 @@
   }
 },
 {
+  "model": "wagtailimages.image",
+  "pk": 2,
+  "fields": {
+    "title": "engagementlandschaft.jpg",
+    "file": "original_images/engagementlandschaft.jpg",
+    "width": 232,
+    "height": 174,
+    "created_at": "2016-03-23T09:34:54.903Z",
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 30753
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 3,
+  "fields": {
+    "title": "Kiezkasse.png",
+    "file": "original_images/Kiezkasse.png",
+    "width": 232,
+    "height": 174,
+    "created_at": "2016-03-11T11:43:23.122Z",
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 62935
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 4,
+  "fields": {
+    "title": "buergerhaushalt.jpg",
+    "file": "original_images/buergerhaushalt.jpg",
+    "width": 444,
+    "height": 303,
+    "created_at": "2016-03-11T11:43:23.122Z",
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 139562
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 5,
+  "fields": {
+    "title": "umfrage.jpg",
+    "file": "original_images/umfrage.jpg",
+    "width": 1920,
+    "height": 1359,
+    "created_at": "2016-03-11T11:43:23.122Z",
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 625933
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 6,
+  "fields": {
+    "title": "bplan.png",
+    "file": "original_images/bplan.png",
+    "width": 500,
+    "height": 375,
+    "created_at": "2016-03-23T11:09:06.493Z",
+    "uploaded_by_user": null,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 472846
+  }
+},
+{
   "model": "meinberlin.adhocracypage",
   "pk": 15,
   "fields": {
@@ -1707,7 +1795,7 @@
   "model": "meinberlin.simplepage",
   "pk": 11,
   "fields": {
-    "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>B\u00fcrgerhaushalte</h2>                            <p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 k\u00f6nnen sich alle interessierten B\u00fcrgerinnen und B\u00fcrger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum B\u00fcrgerhaushalt Treptow-K\u00f6penick beteiligen. Hier k\u00f6nnen Sie Vorschl\u00e4ge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Humboldthafen.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt f\u00fchrt j\u00e4hrlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer f\u00fcr die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert. Ab dem 29. Februar k\u00f6nnen Sie sich zu der Debattenfrage online \u00e4u\u00dfern. Anschlie\u00dfend \u2013 unabh\u00e4ngig von Ihrer Teilnahme am Online-Forum \u2013 sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren k\u00f6nnen alle interessierten B\u00fcrgerinnen und B\u00fcrger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> k\u00f6nnen Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
+    "body": "<section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/logo_burgerhaushalt.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>B\u00fcrgerhaushalte</h2>                            <p>B\u00fcrgerhaushalte werden in Berlin auf Bezirksebene umgesetzt. Ab dem 02. September 2015 k\u00f6nnen sich alle interessierten B\u00fcrgerinnen und B\u00fcrger <a href=\"http://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/buergerhaushalt/\" target=\"_blank\">hier</a> am Verfahren zum B\u00fcrgerhaushalt Treptow-K\u00f6penick beteiligen. Hier k\u00f6nnen Sie Vorschl\u00e4ge zum Bezirkshaushalt einreichen, diskutieren und bewerten.</p>                            <a class=\"info\" href=\"burgerhaushalte\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row\">                        <div class=\"span3\">                            <img src=\"../media/original_images/umfrage.jpg\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Stadtforen</h2>                            <p>Die Senatsverwaltung f\u00fcr Stadtentwicklung und Umwelt f\u00fchrt j\u00e4hrlich mehrere Stadtforen durch. Jedes Stadtforum widmet sich einer f\u00fcr die Stadtentwicklung relevanten Debattenfrage. Diese wird bei einer Veranstaltung und in einer Online-Diskussion mit den B\u00fcrgerinnen und B\u00fcrgern diskutiert. Ab dem 29. Februar k\u00f6nnen Sie sich zu der Debattenfrage online \u00e4u\u00dfern. Anschlie\u00dfend \u2013 unabh\u00e4ngig von Ihrer Teilnahme am Online-Forum \u2013 sind Sie zu der Diskussionsveranstaltung am 4. April eingeladen.</p>                            <a class=\"info\" href=\"stadtforen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>                    <section class=\"row participation-row last\">                        <div class=\"span3\">                            <img src=\"../media/original_images/Kiezkasse.png\" alt=\"\"/>                        </div>                        <div class=\"span9 text\">                            <h2>Kiezkassen</h2>                            <p>Mit dem Kiezkassen-Verfahren k\u00f6nnen alle interessierten B\u00fcrgerinnen und B\u00fcrger  Ideen zur Verwendung von Mitteln aus dem Bezirkshaushalt einreichen, diskutieren und bewerten. <a href=\"https://www.berlin.de/ba-treptow-koepenick/aktuelles/buergerbeteiligung/kiezkassen/\" target=\"_blank\">Hier</a> k\u00f6nnen Sie die Ergebnisse des Kiezkassen-Verfahrens 2015 einsehen.</p>                            <a class=\"info\" href=\"kiezkassen\">Mehr</a>                        </div>                        <div class=\"span12 hr\"></div>                    </section>"
   }
 },
 {

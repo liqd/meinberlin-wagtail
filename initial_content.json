@@ -7,30 +7,6 @@
   }
 },
 {
-  "model": "wagtailimages.rendition",
-  "pk": 1,
-  "fields": {
-    "filter": 1,
-    "file": "images/cover.max-165x165_pDd4tSn.jpg",
-    "width": 165,
-    "height": 110,
-    "focal_point_key": "",
-    "image": 1
-  }
-},
-{
-  "model": "wagtailimages.rendition",
-  "pk": 6,
-  "fields": {
-    "filter": 1,
-    "file": "images/bplan_HEM2RTg.max-165x165.png",
-    "width": 165,
-    "height": 123,
-    "focal_point_key": "",
-    "image": 6
-  }
-},
-{
   "model": "wagtailcore.site",
   "pk": 2,
   "fields": {

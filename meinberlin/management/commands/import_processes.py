@@ -55,7 +55,6 @@ def create_process(process, parent_process=None):
     city = ''
     embed_url = process['path']
     description = process['data'][SIDESCRIPTION]['description']
-    process_type = process['content_type']
     if process['content_type'] == RIPROPOSAL:
         quest = process['data'][SITITLE]['title']
         slug = slugify(quest)[:50]
@@ -68,13 +67,13 @@ def create_process(process, parent_process=None):
         title = process['data'][SITITLE]['title']
         archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
         if archived is False and short_description == "":
-            if process_type == RIBURGERHAUSHALT:
+            if process['content_type'] == RIBURGERHAUSHALT:
                 short_description = (
                     "Machen Sie Vorschläge, um Politik und "
                     "Verwaltung dabei zu unterstützen, die knappen Finanzen "
                     "des Bezirks bedarfsgerecht einzusetzen."
                     )
-            elif process_type == RIKIEZKASSE:
+            elif process['content_type'] == RIKIEZKASSE:
                 short_description = (
                     "Hier können Sie Ihre Ideen und Vorschläge für die "
                     "Kiezkasse abgeben."
@@ -95,7 +94,7 @@ def create_process(process, parent_process=None):
         archived=archived,
         embed_url=embed_url,
         description=description,
-        process_type=process_type)
+        process_type=process['content_type'])
 
 
 def create_ext_process(process):
@@ -150,17 +149,15 @@ class Command(BaseCommand):
         process_index = OverviewPage.objects.first()
 
         for process in processes:
-            process_type = process['content_type']
-
             if check_process_exists(process):
                 continue
 
-            if process_type == RISTADTFORUM:
+            if process['content_type'] == RISTADTFORUM:
                 for poll in iter_stadtforum_polls(process):
                     adhocracy_process = create_process(poll, process)
                     process_index.add_child(instance=adhocracy_process)
 
-            elif process_type == RIBPLAN:
+            elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
                     ext_process = create_ext_process(process)

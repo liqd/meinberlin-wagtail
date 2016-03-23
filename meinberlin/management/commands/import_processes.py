@@ -67,23 +67,24 @@ def create_process(process, parent_process=None):
         title = process['data'][SITITLE]['title']
         archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
 
-        if archived is False and short_description == "":
-            if process['content_type'] == RIBURGERHAUSHALT:
+        if short_description == '':
+            if archived:
                 short_description = (
-                    "Machen Sie Vorschläge, um Politik und "
-                    "Verwaltung dabei zu unterstützen, die knappen Finanzen "
-                    "des Bezirks bedarfsgerecht einzusetzen."
+                    "Ergebnisse dieses Beteiligungsverfahrens "
+                    "im Überblick"
                     )
-            elif process['content_type'] == RIKIEZKASSE:
-                short_description = (
-                    "Hier können Sie Ihre Ideen und Vorschläge für die "
-                    "Kiezkasse abgeben."
-                    )
-        elif short_description == "":
-            short_description = (
-                "Ergebnisse dieses Beteiligungsverfahrens "
-                "im Überblick"
-                )
+            else:
+                if process['content_type'] == RIBURGERHAUSHALT:
+                    short_description = (
+                        "Machen Sie Vorschläge, um Politik und "
+                        "Verwaltung dabei zu unterstützen, die knappen "
+                        "Finanzen des Bezirks bedarfsgerecht einzusetzen."
+                        )
+                elif process['content_type'] == RIKIEZKASSE:
+                    short_description = (
+                        "Hier können Sie Ihre Ideen und Vorschläge für die "
+                        "Kiezkasse abgeben."
+                        )
 
     return AdhocracyProcess(
         title=title,

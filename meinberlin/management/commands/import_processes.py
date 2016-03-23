@@ -145,7 +145,7 @@ class Command(BaseCommand):
                 proposal = 'adhocracy_core.resources.proposal.IProposalVersion'
                 q = requests.get(exported_process['path'], params={
                     'content_type': proposal,
-=======
+
 class Command(BaseCommand):
     help = u'Imports all processes from adhocracy that are not BPlan processes and imports them to the meinberlin CMS'
 

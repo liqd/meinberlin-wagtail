@@ -56,7 +56,7 @@ class Process(Page):
         FieldPanel('archived'),
     ]
 
-    parent_page_types = ['meinberlin.OverviewPage']
+    parent_page_types = []
 
 
 class ExternalProcess(Process):

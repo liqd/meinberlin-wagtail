@@ -15,7 +15,7 @@ IMAGES = {
     'adhocracy_meinberlin.resources.burgerhaushalt.IProcess': (4, ''),
     'adhocracy_meinberlin.resources.stadtforum.IProcess': (5, ''),
     'adhocracy_meinberlin.resources.bplan.IProcess': (
-        1, 'SenStadtUm'),
+        6, 'SenStadtUm'),
 }
 
 

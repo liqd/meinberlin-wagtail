@@ -13,7 +13,9 @@ IMAGES = {
     'adhocracy_meinberlin.resources.kiezkassen.IProcess': (
         3, 'Foto K - Fotolia.com'),
     'adhocracy_meinberlin.resources.burgerhaushalt.IProcess': (4, ''),
-    'adhocracy_core.resources.proposal.IProposalVersion': (5, ''),
+    'adhocracy_meinberlin.resources.stadtforum.IProcess': (5, ''),
+    'adhocracy_meinberlin.resources.bplan.IProcess': (
+        1, 'SenStadtUm'),
 }
 
 
@@ -91,6 +93,29 @@ def create_process(process, parent_process=None):
         process_type=process_type)
 
 
+def create_ext_process(process):
+    image, image_copyright = get_image(process)
+    desc = 'adhocracy_core.sheets.description.IDescription'
+    short_description = process['data'][desc]['short_description']
+    city = ''
+    domain = (
+        'http://www.stadtentwicklung.berlin.de/planen/'
+        'b-planverfahren/de/oeffauslegung/')
+    external_url = domain + process['path'].split('/')[-2].lower()
+    slug = process['data']['adhocracy_core.sheets.name.IName']['name']
+    title = process['data']['adhocracy_core.sheets.title.ITitle']['title']
+    archived = False
+    return ExternalProcess(
+        title=title,
+        slug=slug,
+        short_description=short_description,
+        image=image,
+        image_copyright=image_copyright,
+        city=city,
+        archived=archived,
+        external_url=external_url)
+
+
 class Command(BaseCommand):
     help = (
         'Imports all new processes from adhocracy that are not BPlan processes'
@@ -112,9 +137,6 @@ class Command(BaseCommand):
             process_type = exported_process['content_type']
 
             if check_process_exists(exported_process):
-                continue
-
-            if process_type == 'adhocracy_meinberlin.resources.bplan.IProcess':
                 continue
 
             # if it's a Stadtforum process, import the polls 'as processes'
@@ -140,6 +162,14 @@ class Command(BaseCommand):
 
                 continue
 
-            adhocracy_process = create_process(exported_process)
-            process_index.add_child(instance=adhocracy_process)
+            if process_type == 'adhocracy_meinberlin.resources.bplan.IProcess':
+                assignment = (
+                    'adhocracy_core.sheets.workflow.IWorkflowAssignment')
+                ws = 'workflow_state'
+                if exported_process['data'][assignment][ws] == 'participate':
+                    ext_process = create_ext_process(exported_process)
+                    process_index.add_child(instance=ext_process)
+            else:
+                adh_process = create_process(exported_process)
+                process_index.add_child(instance=adh_process)
             # print(adhocracy_process)

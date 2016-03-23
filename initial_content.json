@@ -1745,7 +1745,7 @@
     "width": 500,
     "height": 375,
     "created_at": "2016-03-23T11:09:06.493Z",
-    "uploaded_by_user": 1,
+    "uploaded_by_user": null,
     "focal_point_x": null,
     "focal_point_y": null,
     "focal_point_width": null,

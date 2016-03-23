@@ -34,7 +34,4 @@ your adhocracy config:
 
 ## TODOs
 
--   write script to to automatically import processes from adhocracy
-    (see unfinished branch feature-adh-pull)
 -   build sass instead of just linking pre-build file
--   make home page more customizable (e.g. cover image)

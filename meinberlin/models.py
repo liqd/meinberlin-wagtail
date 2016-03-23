@@ -103,16 +103,26 @@ class AdhocracyProcess(Process):
 
     @property
     def embed_options(self):
-        relative_url = self.embed_url[self.embed_url.find('api/') + 4:]
+        if self.process_type == self.DIALOG:
+            return {
+                'data-widget': 'meinberlin-stadtforum-proposal-detail',
+                'data-path': self.embed_url,
+                'data-autoresize': 'true',
+                'data-locale': 'de',
+                'data-autourl': 'false',
+                'data-noheader': 'true',
+            }
+        else:
+            relative_url = self.embed_url[self.embed_url.find('api/') + 4:]
 
-        return {
-            'data-widget':  'mein.berlin.de',
-            'data-initial-url': '/r/' + relative_url,
-            'data-autoresize': 'false',
-            'data-locale': 'de',
-            'data-autourl': 'true',
-            'style': 'height: 800px',
-        }
+            return {
+                'data-widget':  'mein.berlin.de',
+                'data-initial-url': '/r/' + relative_url,
+                'data-autoresize': 'false',
+                'data-locale': 'de',
+                'data-autourl': 'true',
+                'style': 'height: 800px',
+            }
 
     content_panels = Process.content_panels + [
         FieldPanel('description'),

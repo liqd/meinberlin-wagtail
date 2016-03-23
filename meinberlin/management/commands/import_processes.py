@@ -9,14 +9,24 @@ from meinberlin.models import AdhocracyProcess
 from meinberlin.models import ExternalProcess
 from meinberlin.models import OverviewPage
 
+RIBPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
+RIBURGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
+RICOLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
+RIKIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
+RIPROPOSAL = 'adhocracy_core.resources.proposal.IProposalVersion'
+RISTADTFORUM = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
+SIDESCRIPTION = 'adhocracy_core.sheets.description.IDescription'
+SINAME = 'adhocracy_core.sheets.name.IName'
+SIPOOL = 'adhocracy_core.sheets.pool.IPool'
+SITITLE = 'adhocracy_core.sheets.title.ITitle'
+SIWORKFLOW = 'adhocracy_core.sheets.workflow.IWorkflowAssignment'
+
 IMAGES = {
-    'adhocracy_meinberlin.resources.collaborative_text.IProcess': (2, ''),
-    'adhocracy_meinberlin.resources.kiezkassen.IProcess': (
-        3, 'Foto K - Fotolia.com'),
-    'adhocracy_meinberlin.resources.burgerhaushalt.IProcess': (4, ''),
-    'adhocracy_core.resources.proposal.IProposalVersion': (5, ''),
-    'adhocracy_meinberlin.resources.bplan.IProcess': (
-        6, 'SenStadtUm'),
+    RICOLLABORATIVE: (2, ''),
+    RIKIEZKASSE: (3, 'Foto K - Fotolia.com'),
+    RIBURGERHAUSHALT: (4, ''),
+    RIPROPOSAL: (5, ''),
+    RIBPLAN: (6, 'SenStadtUm'),
 }
 
 
@@ -41,35 +51,30 @@ def get_image(process):
 
 def create_process(process, parent_process=None):
     image, image_copyright = get_image(process)
-    proposal = 'adhocracy_core.resources.proposal.IProposalVersion'
-    assignment = 'adhocracy_core.sheets.workflow.IWorkflowAssignment'
-    desc = 'adhocracy_core.sheets.description.IDescription'
-    short_description = process['data'][desc]['short_description']
+    short_description = process['data'][SIDESCRIPTION]['short_description']
     city = ''
     embed_url = process['path']
-    description = process['data'][desc]['description']
+    description = process['data'][SIDESCRIPTION]['description']
     process_type = process['content_type']
-    if process['content_type'] == proposal:
-        quest = process['data']['adhocracy_core.sheets.title.ITitle']['title']
+    if process['content_type'] == RIPROPOSAL:
+        quest = process['data'][SITITLE]['title']
         slug = slugify(quest)[:50]
         short_description = quest
         title = 'Stadtforum'
         ws = 'workflow_state'
-        archived = parent_process['data'][assignment][ws] == 'result'
+        archived = parent_process['data'][SIWORKFLOW][ws] == 'result'
     else:
-        slug = process['data']['adhocracy_core.sheets.name.IName']['name']
-        title = process['data']['adhocracy_core.sheets.title.ITitle']['title']
-        archived = process['data'][assignment]['workflow_state'] == 'result'
+        slug = process['data'][SINAME]['name']
+        title = process['data'][SITITLE]['title']
+        archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
         if archived is False and short_description == "":
-            bh = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
-            kk = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
-            if process_type == bh:
+            if process_type == RIBURGERHAUSHALT:
                 short_description = (
                     "Machen Sie Vorschläge, um Politik und "
                     "Verwaltung dabei zu unterstützen, die knappen Finanzen "
                     "des Bezirks bedarfsgerecht einzusetzen."
                     )
-            elif process_type == kk:
+            elif process_type == RIKIEZKASSE:
                 short_description = (
                     "Hier können Sie Ihre Ideen und Vorschläge für die "
                     "Kiezkasse abgeben."
@@ -95,15 +100,14 @@ def create_process(process, parent_process=None):
 
 def create_ext_process(process):
     image, image_copyright = get_image(process)
-    desc = 'adhocracy_core.sheets.description.IDescription'
-    short_description = process['data'][desc]['short_description']
+    short_description = process['data'][SIDESCRIPTION]['short_description']
     city = ''
     domain = (
         'http://www.stadtentwicklung.berlin.de/planen/'
         'b-planverfahren/de/oeffauslegung/')
     external_url = domain + process['path'].split('/')[-2].lower()
-    slug = process['data']['adhocracy_core.sheets.name.IName']['name']
-    title = process['data']['adhocracy_core.sheets.title.ITitle']['title']
+    slug = process['data'][SINAME]['name']
+    title = process['data'][SITITLE]['title']
     archived = False
     return ExternalProcess(
         title=title,
@@ -128,8 +132,7 @@ class Command(BaseCommand):
             'depth': 'all',
             'elements': 'content',
         }).json()
-        pool = 'adhocracy_core.sheets.pool.IPool'
-        exported_processes = r['data'][pool]['elements']
+        exported_processes = r['data'][SIPOOL]['elements']
 
         process_index = OverviewPage.objects.first()
 
@@ -140,17 +143,14 @@ class Command(BaseCommand):
                 continue
 
             # if it's a Stadtforum process, import the polls 'as processes'
-            stadtf = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
-            if process_type == stadtf:
-                proposal = 'adhocracy_core.resources.proposal.IProposalVersion'
+            if process_type == RISTADTFORUM:
                 q = requests.get(exported_process['path'], params={
-                    'content_type': proposal,
+                    'content_type': RIPROPOSAL,
                     'depth': 2,
                     'tag': 'LAST',
                     'elements': 'content',
                     }).json()
-                pool = 'adhocracy_core.sheets.pool.IPool'
-                polls = q['data'][pool]['elements']
+                polls = q['data'][SIPOOL]['elements']
                 for poll in polls:
 
                     if check_process_exists(poll):
@@ -161,11 +161,9 @@ class Command(BaseCommand):
 
                 continue
 
-            if process_type == 'adhocracy_meinberlin.resources.bplan.IProcess':
-                assignment = (
-                    'adhocracy_core.sheets.workflow.IWorkflowAssignment')
-                ws = 'workflow_state'
-                if exported_process['data'][assignment][ws] == 'participate':
+            if process_type == RIBPLAN:
+                workflow_sheet = exported_process['data'][SIWORKFLOW]
+                if workflow_sheet['workflow_state'] == 'participate':
                     ext_process = create_ext_process(exported_process)
                     process_index.add_child(instance=ext_process)
             else:

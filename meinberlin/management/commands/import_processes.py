@@ -1,6 +1,7 @@
 import requests
 
 from django.core.management.base import BaseCommand
+from django.db.utils import IntegrityError
 from django.template.defaultfilters import slugify
 
 from wagtail.wagtailimages.models import Image
@@ -28,16 +29,6 @@ IMAGES = {
     RIPROPOSAL: (5, ''),
     RIBPLAN: (6, 'SenStadtUm'),
 }
-
-
-def check_process_exists(process):
-    # FIXME: does not work for external processes
-    # FIXME: does not work for versioned resources
-    try:
-        AdhocracyProcess.objects.get(embed_url=process['path'])
-        return True
-    except AdhocracyProcess.DoesNotExist:
-        return False
 
 
 def get_image(process):
@@ -132,9 +123,16 @@ def iter_stadtforum_polls(process):
         'elements': 'content',
     }).json()
 
-    for poll in request['data'][SIPOOL]['elements']:
-        if not check_process_exists(poll):
-            yield poll
+    return request['data'][SIPOOL]['elements']
+
+
+def add_process(path, process):
+    process_index = OverviewPage.objects.first()
+    try:
+        process_index.add_child(instance=process)
+        print('imported %s' % path)
+    except IntegrityError:
+        print('skipped %s' % path)
 
 
 class Command(BaseCommand):
@@ -157,27 +155,18 @@ class Command(BaseCommand):
         }).json()
         processes = r['data'][SIPOOL]['elements']
 
-        process_index = OverviewPage.objects.first()
-
         for process in processes:
-            if check_process_exists(process):
-                print('Skipped %s' % process['path'])
-                continue
-
             if process['content_type'] == RISTADTFORUM:
                 for poll in iter_stadtforum_polls(process):
                     adhocracy_process = create_process(poll, process)
-                    process_index.add_child(instance=adhocracy_process)
-                    print('imported stadtforum %s' % process['path'])
+                    add_process(process['path'], adhocracy_process)
 
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
                     external_process = create_external_process(process)
-                    process_index.add_child(instance=external_process)
-                    print('imported bplan %s' % process['path'])
+                    add_process(process['path'], external_process)
 
             else:
                 adhocracy_process = create_process(process)
-                process_index.add_child(instance=adhocracy_process)
-                print('imported %s' % process['path'])
+                add_process(process['path'], adhocracy_process)

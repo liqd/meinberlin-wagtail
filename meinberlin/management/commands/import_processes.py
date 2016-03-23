@@ -45,7 +45,6 @@ def get_image(process):
     else:
         pk, image_copyright = image_data
         image = Image.objects.get(pk=pk)
-        # image = None
         return image, image_copyright
 
 
@@ -55,6 +54,7 @@ def create_process(process, parent_process=None):
     city = ''
     embed_url = process['path']
     description = process['data'][SIDESCRIPTION]['description']
+
     if process['content_type'] == RIPROPOSAL:
         question = process['data'][SITITLE]['title']
         slug = slugify(question)[:50]
@@ -66,6 +66,7 @@ def create_process(process, parent_process=None):
         slug = process['data'][SINAME]['name']
         title = process['data'][SITITLE]['title']
         archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
+
         if archived is False and short_description == "":
             if process['content_type'] == RIBURGERHAUSHALT:
                 short_description = (

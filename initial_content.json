@@ -1677,7 +1677,7 @@
   "pk": 2,
   "fields": {
     "title": "engagementlandschaft.jpg",
-    "file": "original_images/engagementlandschaft_i8XWbA8.jpg",
+    "file": "original_images/engagementlandschaft.jpg",
     "width": 232,
     "height": 174,
     "created_at": "2016-03-23T09:34:54.903Z",
@@ -1693,7 +1693,7 @@
   "pk": 3,
   "fields": {
     "title": "Kiezkasse.png",
-    "file": "original_images/Kiezkasse_tOo4p6u.png",
+    "file": "original_images/Kiezkasse.png",
     "width": 232,
     "height": 174,
     "created_at": "2016-03-11T11:43:23.122Z",
@@ -1708,8 +1708,8 @@
   "model": "wagtailimages.image",
   "pk": 4,
   "fields": {
-    "title": "buergerhaushalt_1.jpg",
-    "file": "original_images/buergerhaushalt_1_pet24x7.jpg",
+    "title": "buergerhaushalt.jpg",
+    "file": "original_images/buergerhaushalt.jpg",
     "width": 444,
     "height": 303,
     "created_at": "2016-03-11T11:43:23.122Z",
@@ -1725,7 +1725,7 @@
   "pk": 5,
   "fields": {
     "title": "umfrage.jpg",
-    "file": "original_images/umfrage_cnrXNZH.jpg",
+    "file": "original_images/umfrage.jpg",
     "width": 1920,
     "height": 1359,
     "created_at": "2016-03-11T11:43:23.122Z",
@@ -1741,7 +1741,7 @@
   "pk": 6,
   "fields": {
     "title": "bplan.png",
-    "file": "original_images/bplan_HEM2RTg.png",
+    "file": "original_images/bplan.png",
     "width": 500,
     "height": 375,
     "created_at": "2016-03-23T11:09:06.493Z",

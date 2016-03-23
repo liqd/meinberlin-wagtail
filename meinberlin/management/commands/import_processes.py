@@ -158,19 +158,23 @@ class Command(BaseCommand):
 
         for process in processes:
             if check_process_exists(process):
+                print('Skipped %s' % process['path'])
                 continue
 
             if process['content_type'] == RISTADTFORUM:
                 for poll in iter_stadtforum_polls(process):
                     adhocracy_process = create_process(poll, process)
                     process_index.add_child(instance=adhocracy_process)
+                    print('imported stadtforum %s' % process['path'])
 
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
                     external_process = create_external_process(process)
                     process_index.add_child(instance=external_process)
+                    print('imported bplan %s' % process['path'])
 
             else:
                 adhocracy_process = create_process(process)
                 process_index.add_child(instance=adhocracy_process)
+                print('imported %s' % process['path'])

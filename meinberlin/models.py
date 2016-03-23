@@ -95,7 +95,7 @@ class AdhocracyProcess(Process):
     process_type = models.CharField(
         max_length=255,
         choices=PROCESS_CHOICES,
-        default='KIEZKASSE')
+        default=KIEZKASSE)
 
     @property
     def external(self):

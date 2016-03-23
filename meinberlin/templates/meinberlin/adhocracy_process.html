@@ -5,7 +5,13 @@
     <h2>{{ self.title }}</h2>
     <div class="page-description">{{ self.description | richtext }}</div>
 
-    {% autoescape off %}
-    {{ self.embed_code }}
-    {% endautoescape %}
+    <div
+        class="adhocracy_marker"
+        data-widget="{{ self.embed_widget }}"
+        data-initial-url="/r/{{ self.relative_embed_url }}"
+        data-autoresize="false"
+        data-locale="de"
+        data-autourl="true"
+        style="height:500px">
+    </div>
 {% endblock %}

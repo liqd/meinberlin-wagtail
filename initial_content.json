@@ -1,5 +1,24 @@
 [
 {
+  "model": "wagtailimages.filter",
+  "pk": 1,
+  "fields": {
+    "spec": "max-165x165"
+  }
+},
+{
+  "model": "wagtailimages.rendition",
+  "pk": 1,
+  "fields": {
+    "filter": 1,
+    "file": "images/cover.max-165x165_pDd4tSn.jpg",
+    "width": 165,
+    "height": 110,
+    "focal_point_key": "",
+    "image": 1
+  }
+},
+{
   "model": "wagtailcore.site",
   "pk": 2,
   "fields": {
@@ -1640,6 +1659,68 @@
     "focal_point_width": null,
     "focal_point_height": null,
     "file_size": null
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 2,
+  "fields": {
+    "title": "engagementlandschaft.jpg",
+    "file": "original_images/engagementlandschaft_i8XWbA8.jpg",
+    "width": 232,
+    "height": 174,
+    "created_at": "2016-03-23T09:34:54.903Z",
+    "uploaded_by_user": 1,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 30753
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 3,
+  "fields": {
+    "title": "Kiezkasse.png",
+    "file": "original_images/Kiezkasse_tOo4p6u.png",
+    "width": 232,
+    "height": 174,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 62935
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 4,
+  "fields": {
+    "title": "buergerhaushalt_1.jpg",
+    "file": "original_images/buergerhaushalt_1_pet24x7.jpg",
+    "width": 444,
+    "height": 303,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 139562
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 5,
+  "fields": {
+    "title": "umfrage.jpg",
+    "file": "original_images/umfrage_cnrXNZH.jpg",
+    "width": 1920,
+    "height": 1359,
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 625933
   }
 },
 {

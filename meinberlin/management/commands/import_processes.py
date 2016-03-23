@@ -31,6 +31,8 @@ IMAGES = {
 
 
 def check_process_exists(process):
+    # FIXME: does not work for external processes
+    # FIXME: does not work for versioned resources
     try:
         AdhocracyProcess.objects.get(embed_url=process['path'])
         return True
@@ -61,6 +63,7 @@ def create_process(process, parent_process=None):
         short_description = question
         title = 'Stadtforum'
         ws = 'workflow_state'
+        # FIXME: also check proposal item workflow state
         archived = parent_process['data'][SIWORKFLOW][ws] == 'result'
     else:
         slug = process['data'][SINAME]['name']

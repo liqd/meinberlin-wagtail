@@ -120,6 +120,19 @@ def create_ext_process(process):
         external_url=external_url)
 
 
+def iter_stadtforum_polls(process):
+    request = requests.get(process['path'], params={
+        'content_type': RIPROPOSAL,
+        'depth': 2,
+        'tag': 'LAST',
+        'elements': 'content',
+    }).json()
+
+    for poll in request['data'][SIPOOL]['elements']:
+        if not check_process_exists(poll):
+            yield poll
+
+
 class Command(BaseCommand):
     help = (
         'Imports all new processes from adhocracy that are not BPlan processes'
@@ -142,30 +155,17 @@ class Command(BaseCommand):
             if check_process_exists(exported_process):
                 continue
 
-            # if it's a Stadtforum process, import the polls 'as processes'
             if process_type == RISTADTFORUM:
-                q = requests.get(exported_process['path'], params={
-                    'content_type': RIPROPOSAL,
-                    'depth': 2,
-                    'tag': 'LAST',
-                    'elements': 'content',
-                    }).json()
-                polls = q['data'][SIPOOL]['elements']
-                for poll in polls:
-
-                    if check_process_exists(poll):
-                        continue
-
+                for poll in iter_stadtforum_polls(exported_process):
                     adhocracy_process = create_process(poll, exported_process)
                     process_index.add_child(instance=adhocracy_process)
 
-                continue
-
-            if process_type == RIBPLAN:
+            elif process_type == RIBPLAN:
                 workflow_sheet = exported_process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
                     ext_process = create_ext_process(exported_process)
                     process_index.add_child(instance=ext_process)
+
             else:
                 adh_process = create_process(exported_process)
                 process_index.add_child(instance=adh_process)

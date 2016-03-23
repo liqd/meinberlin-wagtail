@@ -46,6 +46,10 @@ def create_process(process, parent_process=None):
     image, image_copyright = get_image(process)
 
     if process['content_type'] == RIPOLL:
+        q = AdhocracyProcess.objects
+        if q.filter(embed_url__startswith=process['path']).exists():
+            raise IntegrityError
+
         item = process
         process = requests.get(item['data'][SITAGS]['LAST']).json()
 
@@ -162,8 +166,11 @@ class Command(BaseCommand):
         for process in processes:
             if process['content_type'] == RISTADTFORUM:
                 for poll in iter_stadtforum_polls(process):
-                    adhocracy_process = create_process(poll, process)
-                    add_process(poll['path'], adhocracy_process)
+                    try:
+                        adhocracy_process = create_process(poll, process)
+                        add_process(poll['path'], adhocracy_process)
+                    except IntegrityError:
+                        print('skipped %s' % poll['path'])
 
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]

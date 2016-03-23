@@ -1,12 +1,13 @@
 import requests
-import json
-import dateutil.parser
 
 from django.core.management.base import BaseCommand
 from django.template.defaultfilters import slugify
 
-from meinberlin.models import *
 from wagtail.wagtailimages.models import Image
+
+from meinberlin.models import AdhocracyProcess
+from meinberlin.models import ExternalProcess
+from meinberlin.models import OverviewPage
 
 IMAGES = {
     'adhocracy_meinberlin.resources.collaborative_text.IProcess': (2, ''),
@@ -15,14 +16,13 @@ IMAGES = {
     'adhocracy_meinberlin.resources.burgerhaushalt.IProcess': (4, ''),
     'adhocracy_meinberlin.resources.stadtforum.IProcess': (5, ''),
     'adhocracy_meinberlin.resources.bplan.IProcess': (
-        1, 'SenStadtUm'),
+        6, 'SenStadtUm'),
 }
 
 
 def check_process_exists(process):
     try:
-        wagtailprocess = AdhocracyProcess.objects.get(
-            embed_url=process['path'])
+        AdhocracyProcess.objects.get(embed_url=process['path'])
         return True
     except AdhocracyProcess.DoesNotExist:
         return False

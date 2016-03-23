@@ -140,8 +140,14 @@ class Command(BaseCommand):
         ' and imports them to the meinberlin CMS'
     )
 
-    def handle(self, *args, **options):
-        r = requests.get('https://embed.mein.berlin.de/api', params={
+    def add_arguments(self, parser):
+        parser.add_argument(
+            'adhocracy_url',
+            nargs='?',
+            default='https://embed.mein.berlin.de/api')
+
+    def handle(self, adhocracy_url, **options):
+        r = requests.get(adhocracy_url, params={
             'content_type': 'adhocracy_core.resources.process.IProcess',
             'depth': 'all',
             'elements': 'content',

@@ -32,11 +32,11 @@ class Process(Page):
         on_delete=models.SET_NULL,
         related_name='+'
     )
-    image_copyright = models.CharField(max_length=255)
+    image_copyright = models.CharField(max_length=255, blank=True)
     city = models.CharField(max_length=255)
     archived = models.BooleanField()
 
-    # HACK: show archived in status string
+    # HACK: show archived in status string (visible in admin UI)
     def status_string(self):
         s = original_status_string(self)
         try:
@@ -56,7 +56,7 @@ class Process(Page):
         FieldPanel('archived'),
     ]
 
-    parent_page_types = []
+    parent_page_types = ['meinberlin.OverviewPage']
 
 
 class ExternalProcess(Process):
@@ -74,16 +74,26 @@ class ExternalProcess(Process):
 
 
 class AdhocracyProcess(Process):
-    embed_code = models.TextField()
+    embed_url = models.CharField(max_length=255, blank=True)
     description = RichTextField(blank=True)
+    process_type = models.CharField(max_length=255, blank=True)
 
     @property
     def external(self):
         return False
 
+    @property
+    def relative_embed_url(self):
+        return self.embed_url[self.embed_url.find('api/') + 4:]
+
+    @property
+    def embed_widget(self):
+        return 'mein.berlin.de'
+
     content_panels = Process.content_panels + [
         FieldPanel('description'),
-        FieldPanel('embed_code'),
+        FieldPanel('embed_url'),
+        FieldPanel('process_type')
     ]
 
     parent_page_types = ['meinberlin.OverviewPage']

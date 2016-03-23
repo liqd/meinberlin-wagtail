@@ -7,18 +7,6 @@ from wagtail.wagtailcore.fields import RichTextField
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 
-PROCESS_CHOICES = (
-    ('adhocracy_meinberlin.resources.alexanderplatz.IProcess',
-        'Alexanderplatz',),
-    ('adhocracy_meinberlin.resources.bplan.IProcess', 'Bebauungsplan'),
-    ('adhocracy_meinberlin.resources.burgerhaushalt.IProcess',
-        'Bürgerhaushalt'),
-    ('adhocracy_core.resources.proposal.IProposalVersion', 'Dialog'),
-    ('adhocracy_meinberlin.resources.kiezkassen.IProcess', 'Kiezkasse'),
-    ('adhocracy_meinberlin.resources.collaborative_text.IProcess',
-        'Kollaborative Textarbeit'),
-)
-
 
 def original_status_string(self):
     # see wagtailcore.models.Page.status_string
@@ -86,6 +74,22 @@ class ExternalProcess(Process):
 
 
 class AdhocracyProcess(Process):
+    ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
+    BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
+    BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
+    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
+    COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
+
+    PROCESS_CHOICES = (
+        (ALEXANDERPLATZ, 'Alexanderplatz'),
+        (BPLAN, 'Bebauungsplan'),
+        (BUERGERHAUSHALT, 'Bürgerhaushalt'),
+        (DIALOG, 'Dialog'),
+        (KIEZKASSE, 'Kiezkasse'),
+        (COLLABORATIVE, 'Kollaborative Textarbeit'),
+    )
+
     embed_url = models.CharField(max_length=255, blank=True)
     description = RichTextField(blank=True)
     process_type = models.CharField(

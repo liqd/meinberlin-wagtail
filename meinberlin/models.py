@@ -60,7 +60,7 @@ class Process(Page):
 
 
 class ExternalProcess(Process):
-    external_url = models.URLField()
+    external_url = models.URLField(unique=True)
 
     @property
     def external(self):
@@ -77,7 +77,7 @@ class AdhocracyProcess(Process):
     ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
     BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
     BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
-    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    DIALOG = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
     KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
     COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
 
@@ -90,7 +90,7 @@ class AdhocracyProcess(Process):
         (COLLABORATIVE, 'Kollaborative Textarbeit'),
     )
 
-    embed_url = models.CharField(max_length=255, blank=True)
+    embed_url = models.URLField(unique=True)
     description = RichTextField(blank=True)
     process_type = models.CharField(
         max_length=255,

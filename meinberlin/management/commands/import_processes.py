@@ -1,6 +1,7 @@
 import requests
 
 from django.core.management.base import BaseCommand
+from django.db.utils import IntegrityError
 from django.template.defaultfilters import slugify
 
 from wagtail.wagtailimages.models import Image
@@ -13,11 +14,12 @@ RIBPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
 RIBURGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
 RICOLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
 RIKIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
-RIPROPOSAL = 'adhocracy_core.resources.proposal.IProposalVersion'
+RIPOLL = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
 RISTADTFORUM = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
 SIDESCRIPTION = 'adhocracy_core.sheets.description.IDescription'
 SINAME = 'adhocracy_core.sheets.name.IName'
 SIPOOL = 'adhocracy_core.sheets.pool.IPool'
+SITAGS = 'adhocracy_core.sheets.tags.ITags'
 SITITLE = 'adhocracy_core.sheets.title.ITitle'
 SIWORKFLOW = 'adhocracy_core.sheets.workflow.IWorkflowAssignment'
 
@@ -25,19 +27,9 @@ IMAGES = {
     RICOLLABORATIVE: (2, ''),
     RIKIEZKASSE: (3, 'Foto K - Fotolia.com'),
     RIBURGERHAUSHALT: (4, ''),
-    RIPROPOSAL: (5, ''),
+    RIPOLL: (5, ''),
     RIBPLAN: (6, 'SenStadtUm'),
 }
-
-
-def check_process_exists(process):
-    # FIXME: does not work for external processes
-    # FIXME: does not work for versioned resources
-    try:
-        AdhocracyProcess.objects.get(embed_url=process['path'])
-        return True
-    except AdhocracyProcess.DoesNotExist:
-        return False
 
 
 def get_image(process):
@@ -52,42 +44,51 @@ def get_image(process):
 
 def create_process(process, parent_process=None):
     image, image_copyright = get_image(process)
-    short_description = process['data'][SIDESCRIPTION]['short_description']
+
+    if process['content_type'] == RIPOLL:
+        q = AdhocracyProcess.objects
+        if q.filter(embed_url__startswith=process['path']).exists():
+            raise IntegrityError
+
+        item = process
+        process = requests.get(item['data'][SITAGS]['LAST']).json()
+
+        question = process['data'][SITITLE]['title']
+        slug = slugify(question)[:50]
+        title = 'Stadtforum'
+        short_description = question
+
+        process_state = parent_process['data'][SIWORKFLOW]['workflow_state']
+        item_state = item['data'][SIWORKFLOW]['workflow_state']
+        archived = process_state == 'result' or item_state == 'result'
+    else:
+        slug = process['data'][SINAME]['name']
+        title = process['data'][SITITLE]['title']
+        short_description = process['data'][SIDESCRIPTION]['short_description']
+        archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
+
     city = ''
     embed_url = process['path']
     description = process['data'][SIDESCRIPTION]['description']
 
-    if process['content_type'] == RIPROPOSAL:
-        question = process['data'][SITITLE]['title']
-        slug = slugify(question)[:50]
-        short_description = question
-        title = 'Stadtforum'
-        ws = 'workflow_state'
-        # FIXME: also check proposal item workflow state
-        archived = parent_process['data'][SIWORKFLOW][ws] == 'result'
-    else:
-        slug = process['data'][SINAME]['name']
-        title = process['data'][SITITLE]['title']
-        archived = process['data'][SIWORKFLOW]['workflow_state'] == 'result'
-
-        if short_description == '':
-            if archived:
+    if short_description == '':
+        if archived:
+            short_description = (
+                "Ergebnisse dieses Beteiligungsverfahrens "
+                "im Überblick"
+                )
+        else:
+            if process['content_type'] == RIBURGERHAUSHALT:
                 short_description = (
-                    "Ergebnisse dieses Beteiligungsverfahrens "
-                    "im Überblick"
+                    "Machen Sie Vorschläge, um Politik und "
+                    "Verwaltung dabei zu unterstützen, die knappen "
+                    "Finanzen des Bezirks bedarfsgerecht einzusetzen."
                     )
-            else:
-                if process['content_type'] == RIBURGERHAUSHALT:
-                    short_description = (
-                        "Machen Sie Vorschläge, um Politik und "
-                        "Verwaltung dabei zu unterstützen, die knappen "
-                        "Finanzen des Bezirks bedarfsgerecht einzusetzen."
-                        )
-                elif process['content_type'] == RIKIEZKASSE:
-                    short_description = (
-                        "Hier können Sie Ihre Ideen und Vorschläge für die "
-                        "Kiezkasse abgeben."
-                        )
+            elif process['content_type'] == RIKIEZKASSE:
+                short_description = (
+                    "Hier können Sie Ihre Ideen und Vorschläge für die "
+                    "Kiezkasse abgeben."
+                    )
 
     return AdhocracyProcess(
         title=title,
@@ -126,15 +127,20 @@ def create_external_process(process):
 
 def iter_stadtforum_polls(process):
     request = requests.get(process['path'], params={
-        'content_type': RIPROPOSAL,
-        'depth': 2,
-        'tag': 'LAST',
+        'content_type': RIPOLL,
         'elements': 'content',
     }).json()
 
-    for poll in request['data'][SIPOOL]['elements']:
-        if not check_process_exists(poll):
-            yield poll
+    return request['data'][SIPOOL]['elements']
+
+
+def add_process(path, process):
+    process_index = OverviewPage.objects.first()
+    try:
+        process_index.add_child(instance=process)
+        print('imported %s' % path)
+    except IntegrityError:
+        print('skipped %s' % path)
 
 
 class Command(BaseCommand):
@@ -157,27 +163,21 @@ class Command(BaseCommand):
         }).json()
         processes = r['data'][SIPOOL]['elements']
 
-        process_index = OverviewPage.objects.first()
-
         for process in processes:
-            if check_process_exists(process):
-                print('Skipped %s' % process['path'])
-                continue
-
             if process['content_type'] == RISTADTFORUM:
                 for poll in iter_stadtforum_polls(process):
-                    adhocracy_process = create_process(poll, process)
-                    process_index.add_child(instance=adhocracy_process)
-                    print('imported stadtforum %s' % process['path'])
+                    try:
+                        adhocracy_process = create_process(poll, process)
+                        add_process(poll['path'], adhocracy_process)
+                    except IntegrityError:
+                        print('skipped %s' % poll['path'])
 
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
                 if workflow_sheet['workflow_state'] == 'participate':
                     external_process = create_external_process(process)
-                    process_index.add_child(instance=external_process)
-                    print('imported bplan %s' % process['path'])
+                    add_process(process['path'], external_process)
 
             else:
                 adhocracy_process = create_process(process)
-                process_index.add_child(instance=adhocracy_process)
-                print('imported %s' % process['path'])
+                add_process(process['path'], adhocracy_process)

@@ -1,6 +1,6 @@
 var adhocracyOrigin = document.body.dataset.adhocracyUrl;
 
-adhocracy.init(adhocracyOrigin, function(adhocracy) {
+if (typeof adhocracy !== "undefined") adhocracy.init(adhocracyOrigin, function(adhocracy) {
     adhocracy.embed(".adhocracy_marker");
 });
 
@@ -73,4 +73,31 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
         localStorage.removeItem("user-session");
         onLogout();
     });
+
+    document.getElementById("menu-button").addEventListener("click", function(event) {
+        event.preventDefault();
+        toggleMenu(document.getElementById("main-nav"));
+        return false;
+    });
 })();
+
+// Helpers
+
+function toggleMenu(el) {
+    if(el.className.indexOf("m-open") > -1) {
+        removeClass(el, "m-open");
+    } else {
+        addClass(el, "m-open");
+    }
+}
+
+function removeClass(el, cl) {
+    if(el) {
+        el.className = el.className.replace(" " + cl, "");
+        el.className = el.className.replace(cl, "");
+    }
+}
+
+function addClass(el, cl) {
+    if(el) el.className = el.className + " " + cl;
+}

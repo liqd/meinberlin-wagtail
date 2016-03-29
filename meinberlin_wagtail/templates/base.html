@@ -66,7 +66,16 @@
                     <div class="span12">
                         <div class="row">
                             <div class="span12">
-                                <div class="content-navi-wrapper navbar">
+                                <div class="mobile-menu">
+                                    <a class="menu-button" id="menu-button" href="">Menu</a>
+                                    <div id="user-indicator">
+                                        <a id="login" href="/login">Login</a>
+                                        <a id="register" href="/register">Register</a>
+                                        <span id="user-name"></span>
+                                        <a id="logout" href="#">Logout</a>
+                                    </div>
+                                </div>
+                                <div class="content-navi-wrapper navbar" id="main-nav">
                                     <div class="html5-nav content-navi-top navbar-inner">
                                         <div class="nav-collapse mainnav-collapse collapse">
                                             <p class="aural">Hauptnavigation</p>
@@ -81,14 +90,10 @@
                                                 {% for menuitem in nav %}
                                                 <li><a href="{% pageurl menuitem %}">{{ menuitem.title }}</a></li>
                                                 {% endfor %}
+                                                <li class="register"><a id="register" href="/register">Register</a></li>
+                                                <li class="login"><a id="login" href="/login">Login</a></li>
                                             </ul>
                                             <div class="beberlin"><img alt="Logo beBerlin" title="Logo beBerlin" src="{% static 'images/logo_beberlin_darkblue.png' %}"></div>
-                                            <div id="user-indicator">
-                                                <a id="login" href="/login">Login</a>
-                                                <a id="register" href="/register">Register</a>
-                                                <span id="user-name"></span>
-                                                <a id="logout" href="#">Logout</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

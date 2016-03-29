@@ -61,7 +61,7 @@ class Process(Page):
 
 
 class ExternalProcess(Process):
-    external_url = models.URLField()
+    external_url = models.URLField(unique=True)
 
     @property
     def external(self):
@@ -78,7 +78,7 @@ class AdhocracyProcess(Process):
     ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
     BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
     BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
-    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    DIALOG = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
     KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
     COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
 
@@ -91,7 +91,7 @@ class AdhocracyProcess(Process):
         (COLLABORATIVE, 'Kollaborative Textarbeit'),
     )
 
-    embed_url = models.CharField(max_length=255, blank=True)
+    embed_url = models.URLField(unique=True)
     description = RichTextField(blank=True)
     process_type = models.CharField(
         max_length=255,
@@ -103,12 +103,27 @@ class AdhocracyProcess(Process):
         return False
 
     @property
-    def relative_embed_url(self):
-        return self.embed_url[self.embed_url.find('api/') + 4:]
+    def embed_options(self):
+        if self.process_type == self.DIALOG:
+            return {
+                'data-widget': 'meinberlin-stadtforum-proposal-detail',
+                'data-path': self.embed_url,
+                'data-autoresize': 'true',
+                'data-locale': 'de',
+                'data-autourl': 'false',
+                'data-noheader': 'true',
+            }
+        else:
+            relative_url = self.embed_url[self.embed_url.find('api/') + 4:]
 
-    @property
-    def embed_widget(self):
-        return 'mein.berlin.de'
+            return {
+                'data-widget':  'mein.berlin.de',
+                'data-initial-url': '/r/' + relative_url,
+                'data-autoresize': 'false',
+                'data-locale': 'de',
+                'data-autourl': 'true',
+                'style': 'height: 800px',
+            }
 
     content_panels = Process.content_panels + [
         FieldPanel('description'),

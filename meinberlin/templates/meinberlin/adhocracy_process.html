@@ -7,11 +7,6 @@
 
     <div
         class="adhocracy_marker"
-        data-widget="{{ self.embed_widget }}"
-        data-initial-url="/r/{{ self.relative_embed_url }}"
-        data-autoresize="false"
-        data-locale="de"
-        data-autourl="true"
-        style="height:500px">
-    </div>
+        {% for key, value in self.embed_options.items %}{{ key }}="{{ value }}"{% endfor %}
+    ></div>
 {% endblock %}

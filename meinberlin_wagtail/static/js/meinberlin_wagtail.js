@@ -1,13 +1,34 @@
 var adhocracyOrigin = document.body.dataset.adhocracyUrl;
 
-if (typeof adhocracy !== "undefined") adhocracy.init(adhocracyOrigin, function(adhocracy) {
-    adhocracy.embed(".adhocracy_marker");
-});
+if (typeof adhocracy !== "undefined") {
+    adhocracy.init(adhocracyOrigin, function(adhocracy) {
+        adhocracy.embed(".adhocracy_marker");
+    });
+}
 
 (function() {
     "use strict";
 
     var loggedIn = null;
+
+    var removeClass = function(el, cl) {
+        if(el) {
+            el.className = el.className.replace(" " + cl, "");
+            el.className = el.className.replace(cl, "");
+        }
+    };
+
+    var addClass = function(el, cl) {
+        if(el) el.className = el.className + " " + cl;
+    };
+
+    var toggleMenu = function(el) {
+        if (el.className.indexOf("m-open") > -1) {
+            removeClass(el, "m-open");
+        } else {
+            addClass(el, "m-open");
+        }
+    };
 
     var http = function(url, cb) {
         var req = new XMLHttpRequest();
@@ -77,27 +98,5 @@ if (typeof adhocracy !== "undefined") adhocracy.init(adhocracyOrigin, function(a
     document.getElementById("menu-button").addEventListener("click", function(event) {
         event.preventDefault();
         toggleMenu(document.getElementById("main-nav"));
-        return false;
     });
 })();
-
-// Helpers
-
-function toggleMenu(el) {
-    if(el.className.indexOf("m-open") > -1) {
-        removeClass(el, "m-open");
-    } else {
-        addClass(el, "m-open");
-    }
-}
-
-function removeClass(el, cl) {
-    if(el) {
-        el.className = el.className.replace(" " + cl, "");
-        el.className = el.className.replace(cl, "");
-    }
-}
-
-function addClass(el, cl) {
-    if(el) el.className = el.className + " " + cl;
-}

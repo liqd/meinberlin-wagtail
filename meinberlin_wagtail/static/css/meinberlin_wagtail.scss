@@ -429,7 +429,7 @@ $logo-offset: 50px;
 }
 
 .menu-button {
-    background: url("../images/bars.png") no-repeat;
+    background: url('../images/bars.png') no-repeat;
     display: block;
     height: 32px;
     text-indent: -9999px;
@@ -438,7 +438,7 @@ $logo-offset: 50px;
 
  .mobile-menu {
     background:     url('../images/LOGO.png') 5px center no-repeat,
-                    url(../images/bg-amplitude-blue.gif) bottom left no-repeat;
+                    url('../images/bg-amplitude-blue.gif') bottom left no-repeat;
     background-size: contain, contain;
     min-height: 50px;
     display: none;
@@ -466,8 +466,6 @@ $logo-offset: 50px;
         display: block;
     }
     .content-navi-wrapper.navbar {
-        //display: block !important;
-
         .collapse {
             border: 0;
             height: auto;

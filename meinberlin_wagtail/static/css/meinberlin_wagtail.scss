@@ -99,18 +99,6 @@ $logo-offset: 50px;
             }
 
             li {
-                &.user-indicator-login, &.user-indicator-register {
-                    float: right;
-                }
-
-                &.register {
-                    margin-right: 0;
-
-                    a {
-                        padding-right: 0;
-                    }
-                }
-
                 a {
                     padding-bottom: 0;
                     padding-top: 0;
@@ -123,7 +111,6 @@ $logo-offset: 50px;
         }
 
         .user-indicator {
-            @extend .nav;
             float: right;
             width: auto;
 
@@ -493,10 +480,6 @@ $logo-offset: 50px;
 
         ul.nav {
             margin-top: 10px;
-
-            .user-indicator-login, .user-indicator-register {
-                display: none;
-            }
         }
     }
 }

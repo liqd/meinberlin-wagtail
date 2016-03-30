@@ -91,10 +91,12 @@
                                                 <li><a href="{% pageurl menuitem %}">{{ menuitem.title }}</a></li>
                                                 {% endfor %}
                                             </ul>
-                                            <ul class="user-indicator">
-                                                <li class="register"><a id="register" href="/register">Register</a></li>
-                                                <li class="login"><a id="login" href="/login">Login</a></li>
-                                            </ul>
+                                            <div class="user-indicator">
+                                                <a class="user-indicator-login" href="/login">Login</a>
+                                                <a class="user-indicator-register" href="/register">Register</a>
+                                                <span class="user-indicator-name"></span>
+                                                <a class="user-indicator-logout" href="#">Logout</a>
+                                            </div>
                                             <div class="beberlin"><img alt="Logo beBerlin" title="Logo beBerlin" src="{% static 'images/logo_beberlin_darkblue.png' %}"></div>
                                         </div>
                                     </div>

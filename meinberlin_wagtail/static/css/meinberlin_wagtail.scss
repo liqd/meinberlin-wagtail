@@ -83,13 +83,13 @@ $logo-offset: 50px;
 .content-navi-wrapper {
     margin-bottom: 40px;
 
+
     .content-navi-top {
         .nav {
             margin-bottom: $logo-offset - $logo-size - 10px;
-            width: 100%;
 
-            &.level1>li:focus,
-            &.level1>li:hover {
+            >li:focus,
+            >li:hover {
                 @include box-shadow(none);
                 border-color: transparent;
                 background: none;
@@ -119,6 +119,20 @@ $logo-offset: 50px;
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+        }
+
+        .user-indicator {
+            @extend .nav;
+            float: right;
+            width: auto;
+
+            li:last-child {
+                margin-right: 0;
+
+                a {
+                    padding-right: 0;
                 }
             }
         }
@@ -469,6 +483,10 @@ $logo-offset: 50px;
         .collapse {
             border: 0;
             height: auto;
+        }
+
+        .user-indicator {
+            display: none;
         }
 
         &.m-open {

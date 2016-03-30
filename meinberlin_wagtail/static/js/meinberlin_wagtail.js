@@ -1,13 +1,41 @@
 var adhocracyOrigin = document.body.dataset.adhocracyUrl;
 
-adhocracy.init(adhocracyOrigin, function(adhocracy) {
-    adhocracy.embed(".adhocracy_marker");
-});
+if (typeof adhocracy !== "undefined") {
+    adhocracy.init(adhocracyOrigin, function(adhocracy) {
+        adhocracy.embed(".adhocracy_marker");
+    });
+}
 
 (function() {
     "use strict";
 
     var loggedIn = null;
+
+    var removeClass = function(el, cl) {
+        if(el) {
+            el.className = el.className.replace(" " + cl, "");
+            el.className = el.className.replace(cl, "");
+        }
+    };
+
+    var addClass = function(el, cl) {
+        if(el) el.className = el.className + " " + cl;
+    };
+
+    var toggleMenu = function(el) {
+        if (el.className.indexOf("m-open") > -1) {
+            removeClass(el, "m-open");
+        } else {
+            addClass(el, "m-open");
+        }
+    };
+
+    var forEachElement = function(cls, callback) {
+        var elements = document.getElementsByClassName(cls);
+        for (var i = 0; i < elements.length; i++) {
+            callback(elements[i]);
+        }
+    };
 
     var http = function(url, cb) {
         var req = new XMLHttpRequest();
@@ -23,8 +51,12 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
     };
 
     var onLogin = function(userName) {
-        document.getElementById("user-name").textContent = userName;
-        document.getElementById("user-indicator").className = "is-logged-in";
+        forEachElement("user-indicator-name", function(el) {
+            el.textContent = userName;
+        });
+        forEachElement("user-indicator", function(el) {
+            addClass(el, "is-logged-in");
+        });
 
         // this check is a bit shaky, but should be fine
         if (loggedIn === false && location.href.match(/adh/)) {
@@ -35,7 +67,9 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
     };
 
     var onLogout = function() {
-        document.getElementById("user-indicator").className = "";
+        forEachElement("user-indicator", function(el) {
+            removeClass(el, "is-logged-in");
+        });
         loggedIn = false;
     };
 
@@ -68,9 +102,16 @@ adhocracy.init(adhocracyOrigin, function(adhocracy) {
     window.addEventListener("storage", getLoginState);
     getLoginState();
 
-    document.getElementById("logout").addEventListener("click", function(event) {
+    forEachElement("user-indicator-logout", function(el) {
+        el.addEventListener("click", function(event) {
+            event.preventDefault();
+            localStorage.removeItem("user-session");
+            onLogout();
+        });
+    });
+
+    document.getElementById("menu-button").addEventListener("click", function(event) {
         event.preventDefault();
-        localStorage.removeItem("user-session");
-        onLogout();
+        toggleMenu(document.getElementById("main-nav"));
     });
 })();

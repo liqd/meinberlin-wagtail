@@ -87,8 +87,8 @@ $logo-offset: 50px;
         .nav {
             margin-bottom: $logo-offset - $logo-size - 10px;
 
-            &.level1>li:focus,
-            &.level1>li:hover {
+            >li:focus,
+            >li:hover {
                 @include box-shadow(none);
                 border-color: transparent;
                 background: none;
@@ -98,12 +98,27 @@ $logo-offset: 50px;
                 }
             }
 
-            li a {
-                padding-bottom: 0;
-                padding-top: 0;
+            li {
+                a {
+                    padding-bottom: 0;
+                    padding-top: 0;
 
-                &:hover {
-                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .user-indicator {
+            float: right;
+            width: auto;
+
+            li:last-child {
+                margin-right: 0;
+
+                a {
+                    padding-right: 0;
                 }
             }
         }
@@ -390,21 +405,51 @@ $logo-offset: 50px;
     }
 }
 
-#user-indicator {
+.user-indicator {
     text-align: right;
     line-height: 1.385em;
+    line-height: 32px;
 
-    #user-name,
-    #logout,
-    &.is-logged-in #register,
-    &.is-logged-in #login {
+    a {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .user-indicator-name,
+    .user-indicator-logout,
+    &.is-logged-in .user-indicator-register,
+    &.is-logged-in .user-indicator-login {
         display: none;
     }
 
-    &.is-logged-in #user-name,
-    &.is-logged-in #logout {
+    &.is-logged-in .user-indicator-name,
+    &.is-logged-in .user-indicator-logout {
         display: initial;
     }
+}
+
+.menu-button {
+    background: url('../images/bars.png') no-repeat;
+    display: block;
+    height: 32px;
+    text-indent: -9999px;
+    width: 32px;
+}
+
+.mobile-menu {
+    background:     url('../images/LOGO.png') 5px center no-repeat,
+                    url('../images/bg-amplitude-blue.gif') bottom left no-repeat;
+    background-size: contain, contain;
+    min-height: 50px;
+    display: none;
+
+    .menu-button, .user-indicator {
+        float: right;
+    }
+}
+
+#wagtail-userbar {
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -412,18 +457,29 @@ $logo-offset: 50px;
         top: -15px !important;
         right: -10px !important;
     }
-    .content-navi-top .nav {
-        width: 100%;
-    }
-    #meinberlin-logo {
+    #meinberlin-logo,
+    .container-portal-header {
         display: none;
     }
+    .mobile-menu {
+        display: block;
+    }
     .content-navi-wrapper.navbar {
-        display: block !important;
-
         .collapse {
             border: 0;
             height: auto;
+        }
+
+        .user-indicator {
+            display: none;
+        }
+
+        &.m-open {
+            display: block !important;
+        }
+
+        ul.nav {
+            margin-top: 10px;
         }
     }
 }

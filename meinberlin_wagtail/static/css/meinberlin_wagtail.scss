@@ -100,7 +100,7 @@ $logo-offset: 50px;
             }
 
             li {
-                &.login, &.register {
+                &.user-indicator-login, &.user-indicator-register {
                     float: right;
                 }
 
@@ -405,7 +405,7 @@ $logo-offset: 50px;
     }
 }
 
-#user-indicator {
+.user-indicator {
     text-align: right;
     line-height: 1.385em;
     line-height: 32px;
@@ -415,15 +415,15 @@ $logo-offset: 50px;
         padding-right: 10px;
     }
 
-    #user-name,
-    #logout,
-    &.is-logged-in #register,
-    &.is-logged-in #login {
+    .user-indicator-name,
+    .user-indicator-logout,
+    &.is-logged-in .user-indicator-register,
+    &.is-logged-in .user-indicator-login {
         display: none;
     }
 
-    &.is-logged-in #user-name,
-    &.is-logged-in #logout {
+    &.is-logged-in .user-indicator-name,
+    &.is-logged-in .user-indicator-logout {
         display: initial;
     }
 }
@@ -478,7 +478,7 @@ $logo-offset: 50px;
         ul.nav {
             margin-top: 10px;
 
-            .login, .register {
+            .user-indicator-login, .user-indicator-register {
                 display: none;
             }
         }

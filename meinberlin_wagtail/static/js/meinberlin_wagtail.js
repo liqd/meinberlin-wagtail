@@ -51,7 +51,7 @@ if (typeof adhocracy !== "undefined") {
     };
 
     var onLogin = function(userName) {
-        forEachElement("user-name", function(el) {
+        forEachElement("user-indicator-name", function(el) {
             el.textContent = userName;
         });
         forEachElement("user-indicator", function(el) {
@@ -102,7 +102,7 @@ if (typeof adhocracy !== "undefined") {
     window.addEventListener("storage", getLoginState);
     getLoginState();
 
-    forEachElement("logout", function(el) {
+    forEachElement("user-indicator-logout", function(el) {
         el.addEventListener("click", function(event) {
             event.preventDefault();
             localStorage.removeItem("user-session");

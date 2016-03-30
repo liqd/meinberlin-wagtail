@@ -30,6 +30,13 @@ if (typeof adhocracy !== "undefined") {
         }
     };
 
+    var forEachElement = function(cls, callback) {
+        var elements = document.getElementsByClassName(cls);
+        for (var i = 0; i < elements.length; i++) {
+            callback(elements[i]);
+        }
+    };
+
     var http = function(url, cb) {
         var req = new XMLHttpRequest();
 
@@ -44,8 +51,12 @@ if (typeof adhocracy !== "undefined") {
     };
 
     var onLogin = function(userName) {
-        document.getElementById("user-name").textContent = userName;
-        addClass(document.getElementById("user-indicator"), "is-logged-in");
+        forEachElement("user-name", function(el) {
+            el.textContent = userName;
+        });
+        forEachElement("user-indicator", function(el) {
+            addClass(el, "is-logged-in");
+        });
 
         // this check is a bit shaky, but should be fine
         if (loggedIn === false && location.href.match(/adh/)) {
@@ -56,7 +67,9 @@ if (typeof adhocracy !== "undefined") {
     };
 
     var onLogout = function() {
-        removeClass(document.getElementById("user-indicator"), "is-logged-in");
+        forEachElement("user-indicator", function(el) {
+            removeClass(el, "is-logged-in");
+        });
         loggedIn = false;
     };
 
@@ -89,10 +102,12 @@ if (typeof adhocracy !== "undefined") {
     window.addEventListener("storage", getLoginState);
     getLoginState();
 
-    document.getElementById("logout").addEventListener("click", function(event) {
-        event.preventDefault();
-        localStorage.removeItem("user-session");
-        onLogout();
+    forEachElement("logout", function(el) {
+        el.addEventListener("click", function(event) {
+            event.preventDefault();
+            localStorage.removeItem("user-session");
+            onLogout();
+        });
     });
 
     document.getElementById("menu-button").addEventListener("click", function(event) {

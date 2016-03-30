@@ -45,7 +45,7 @@ if (typeof adhocracy !== "undefined") {
 
     var onLogin = function(userName) {
         document.getElementById("user-name").textContent = userName;
-        document.getElementById("user-indicator").className = "is-logged-in";
+        addClass(document.getElementById("user-indicator"), "is-logged-in");
 
         // this check is a bit shaky, but should be fine
         if (loggedIn === false && location.href.match(/adh/)) {
@@ -56,7 +56,7 @@ if (typeof adhocracy !== "undefined") {
     };
 
     var onLogout = function() {
-        document.getElementById("user-indicator").className = "";
+        removeClass(document.getElementById("user-indicator"), "is-logged-in");
         loggedIn = false;
     };
 

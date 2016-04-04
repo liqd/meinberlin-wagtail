@@ -116,7 +116,7 @@ class AdhocracyProcess(Process):
             relative_url = self.embed_url[self.embed_url.find('api/') + 4:]
 
             return {
-                'data-widget':  'mein.berlin.de',
+                'data-widget': 'mein.berlin.de',
                 'data-initial-url': '/r/' + relative_url,
                 'data-autoresize': 'false',
                 'data-locale': 'de',

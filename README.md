@@ -13,9 +13,10 @@
 4.  run `pip install -r requirements.txt`
 5.  run `python manage.py migrate`
 6.  run `python manage.py loaddata initial_content.json`
-7.  run `python manage.py createsuperuser`
-8.  run `python manage.py runserver`
-9.  Browse to <http://localhost:8000/w/admin>
+7.  run `python manage.py import_processes`
+8.  run `python manage.py createsuperuser`
+9.  run `python manage.py runserver`
+10.  Browse to <http://localhost:8000/w/admin>
 
 ## run wagtail and adhocracy on same origin
 

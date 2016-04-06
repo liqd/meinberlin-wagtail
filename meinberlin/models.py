@@ -78,7 +78,7 @@ class AdhocracyProcess(Process):
     ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
     BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
     BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
-    DIALOG = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
+    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
     KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
     COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
 
@@ -117,7 +117,7 @@ class AdhocracyProcess(Process):
             relative_url = self.embed_url[self.embed_url.find('api/') + 4:]
 
             return {
-                'data-widget':  'mein.berlin.de',
+                'data-widget': 'mein.berlin.de',
                 'data-initial-url': '/r/' + relative_url,
                 'data-autoresize': 'false',
                 'data-locale': 'de',

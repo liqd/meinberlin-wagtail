@@ -84,7 +84,9 @@
                                                     <a href="/">Startseite</a>
                                                 </li>
                                                 <li id="meinberlin-logo">
-                                                    <img src="{% static 'images/LOGO.png' %}" alt="meinBerlin.de" height="130" width="130" />
+                                                    <a href="/">
+                                                        <img src="{% static 'images/LOGO.png' %}" alt="meinBerlin.de" height="130" width="130" />
+                                                    </a>
                                                 </li>
                                                 {% get_top_nav as nav %}
                                                 {% for menuitem in nav %}
@@ -93,7 +95,7 @@
                                             </ul>
                                             <div class="user-indicator">
                                                 <a class="user-indicator-login" href="/login">Login</a>
-                                                <a class="user-indicator-register" href="/register">Register</a>
+                                                <a class="user-indicator-register" href="/register">Registrieren</a>
                                                 <span class="user-indicator-name"></span>
                                                 <a class="user-indicator-logout" href="#">Logout</a>
                                             </div>

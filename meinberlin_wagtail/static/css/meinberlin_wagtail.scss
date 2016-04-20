@@ -483,3 +483,19 @@ $logo-offset: 50px;
         }
     }
 }
+
+.richtext-image {
+    &.right {
+        float: right;
+        margin-left: 1em;
+    }
+    &.left {
+        float: left;
+        margin-right: 1em;
+    }
+    &.full-width {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -104,7 +104,13 @@
                     </div>
                 </div>
 
-                {% block content %}{% endblock %}
+                {% block full_content %}
+                    <div class="row">
+                        <div class="span8 offset2">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+                {% endblock %}
             </div>
         </div>
 

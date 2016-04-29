@@ -100,7 +100,8 @@ def create_process(process, parent_process=None):
         archived=archived,
         embed_url=embed_url,
         description=description,
-        process_type=process['content_type'])
+        process_type=process['content_type'],
+        live=False)
 
 
 def create_external_process(process):
@@ -122,7 +123,8 @@ def create_external_process(process):
         image_copyright=image_copyright,
         city=city,
         archived=archived,
-        external_url=external_url)
+        external_url=external_url,
+        live=False)
 
 
 def iter_stadtforum_polls(process):

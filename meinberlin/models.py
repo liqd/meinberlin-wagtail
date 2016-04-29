@@ -158,11 +158,11 @@ class HomePage(Page):
 
     @property
     def processes(self):
-        return Process.objects.filter(archived=False).all()[:8]
+        return Process.objects.filter(archived=False).filter(live=True).all()[:8]
 
     @property
     def archived(self):
-        return Process.objects.filter(archived=True).all()[:4]
+        return Process.objects.filter(archived=True).filter(live=True).all()[:4]
 
     content_panels = [
         FieldPanel('title'),
@@ -222,7 +222,7 @@ class OverviewPage(Page):
 
     @property
     def processes(self):
-        return Process.objects.filter(archived=False).all()
+        return Process.objects.filter(archived=False).filter(live=True).all()
 
     content_panels = [
         FieldPanel('title'),
@@ -235,7 +235,7 @@ class OverviewPage(Page):
 class ArchivePage(OverviewPage):
     @property
     def processes(self):
-        return Process.objects.filter(archived=True).all()
+        return Process.objects.filter(archived=True).filter(live=True).all()
 
     parent_page_types = []
 

@@ -176,7 +176,9 @@ class Command(BaseCommand):
 
             elif process['content_type'] == RIBPLAN:
                 workflow_sheet = process['data'][SIWORKFLOW]
-                if workflow_sheet['workflow_state'] == 'participate':
+                do_import = (workflow_sheet['workflow_state'] == 'announce'
+                    or workflow_sheet['workflow_state'] == 'participate')
+                if do_import:
                     external_process = create_external_process(process)
                     add_process(process['path'], external_process)
 

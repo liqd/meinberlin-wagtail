@@ -175,10 +175,8 @@ class Command(BaseCommand):
                         print('skipped %s' % poll['path'])
 
             elif process['content_type'] == RIBPLAN:
-                workflow_sheet = process['data'][SIWORKFLOW]
-                do_import = (workflow_sheet['workflow_state'] == 'announce'
-                    or workflow_sheet['workflow_state'] == 'participate')
-                if do_import:
+                workflow_state = process['data'][SIWORKFLOW]['workflow_state']
+                if workflow_state in ['announce', 'participate']:
                     external_process = create_external_process(process)
                     add_process(process['path'], external_process)
 

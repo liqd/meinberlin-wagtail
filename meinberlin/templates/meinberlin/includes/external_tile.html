@@ -3,7 +3,7 @@
 <a class="span3 box-process external" href="{{ process.externalprocess.external_url }}" target="_blank" rel="external">
     <div class="img-wrapper">
         {% image process.image fill-640x480 %}
-        <p class="copyright">&#169; {{ process.image_copyright }}</p>
+        {% if process.image_copyright %}<p class="copyright">&#169; {{ process.image_copyright }}</p>{% endif %}
     </div>
     <h3 class="title">{{ process.title }}</h3>
     <span class="city">{{ process.city }}</span>

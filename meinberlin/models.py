@@ -25,6 +25,13 @@ def original_status_string(self):
             return "live"
 
 
+def get_processes(archived):
+    return Process.objects\
+        .filter(archived=archived)\
+        .filter(live=True)\
+        .all()
+
+
 class Process(Page):
     short_description = models.CharField(max_length=255)
     image = models.ForeignKey(
@@ -158,11 +165,11 @@ class HomePage(Page):
 
     @property
     def processes(self):
-        return Process.objects.filter(archived=False).all()[:8]
+        return get_processes(False)[:8]
 
     @property
     def archived(self):
-        return Process.objects.filter(archived=True).all()[:4]
+        return get_processes(True)[:4]
 
     content_panels = [
         FieldPanel('title'),
@@ -222,7 +229,7 @@ class OverviewPage(Page):
 
     @property
     def processes(self):
-        return Process.objects.filter(archived=False).all()
+        return get_processes(False)
 
     content_panels = [
         FieldPanel('title'),
@@ -235,7 +242,7 @@ class OverviewPage(Page):
 class ArchivePage(OverviewPage):
     @property
     def processes(self):
-        return Process.objects.filter(archived=True).all()
+        return get_processes(True)
 
     parent_page_types = []
 

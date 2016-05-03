@@ -240,17 +240,17 @@ $logo-offset: 50px;
             margin: 0;
             padding: 0 0.2em;
         }
+    }
 
-        &:after {
-            background-image: url('../images/LOGO.png');
-            background-size: 60px 60px;
-            content:"";
-            height: 60px;
-            right: 10px;
-            position: absolute;
-            bottom: 10px;
-            width: 60px;
-        }
+    &:not(.external) .img-wrapper:after {
+        background-image: url('../images/LOGO.png');
+        background-size: 60px 60px;
+        content:"";
+        height: 60px;
+        right: 10px;
+        position: absolute;
+        bottom: 10px;
+        width: 60px;
     }
 
     .title {

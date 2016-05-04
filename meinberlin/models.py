@@ -13,16 +13,16 @@ def original_status_string(self):
     # see wagtailcore.models.Page.status_string
     if not self.live:
         if self.expired:
-            return "expired"
+            return "vorbei"
         elif self.approved_schedule:
-            return "scheduled"
+            return "geplant"
         else:
-            return "draft"
+            return "entwurf"
     else:
         if self.has_unpublished_changes:
-            return "live + draft"
+            return "online + entwurf"
         else:
-            return "live"
+            return "online"
 
 
 def get_processes(archived):

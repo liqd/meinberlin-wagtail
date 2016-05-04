@@ -41,16 +41,16 @@ class Process(Page):
         related_name='+',
         verbose_name="Bild"
     )
-    image_copyright = models.CharField(max_length=255, blank=True, verbose_name="Urheberrecht")
+    image_copyright = models.CharField(max_length=255, blank=True, verbose_name="Bild Urheberrecht")
     city = models.CharField(max_length=255, verbose_name="Stadt")
-    archived = models.BooleanField(verbose_name="vergangen")
+    archived = models.BooleanField(verbose_name="archiviert")
 
     # HACK: show archived in status string (visible in admin UI)
     def status_string(self):
         s = original_status_string(self)
         try:
             if self.process.archived:
-                s += ' (vergangen)'
+                s += ' (archiviert)'
         except Exception:
             pass
         return s

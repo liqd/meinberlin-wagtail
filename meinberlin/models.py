@@ -33,23 +33,24 @@ def get_processes(archived):
 
 
 class Process(Page):
-    short_description = models.CharField(max_length=255)
+    short_description = models.CharField(max_length=255, verbose_name="Kurzbeschreibung")
     image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
         on_delete=models.SET_NULL,
-        related_name='+'
+        related_name='+',
+        verbose_name="Bild"
     )
-    image_copyright = models.CharField(max_length=255, blank=True)
-    city = models.CharField(max_length=255)
-    archived = models.BooleanField()
+    image_copyright = models.CharField(max_length=255, blank=True, verbose_name="Urheberrecht")
+    city = models.CharField(max_length=255, verbose_name="Stadt")
+    archived = models.BooleanField(verbose_name="vergangen")
 
     # HACK: show archived in status string (visible in admin UI)
     def status_string(self):
         s = original_status_string(self)
         try:
             if self.process.archived:
-                s += ' (archived)'
+                s += ' (vergangen)'
         except Exception:
             pass
         return s
@@ -68,7 +69,7 @@ class Process(Page):
 
 
 class ExternalProcess(Process):
-    external_url = models.URLField(unique=True)
+    external_url = models.URLField(unique=True, verbose_name="externe URL")
 
     @property
     def external(self):
@@ -98,10 +99,11 @@ class AdhocracyProcess(Process):
         (COLLABORATIVE, 'Kollaborative Textarbeit'),
     )
 
-    embed_url = models.URLField(unique=True)
-    description = RichTextField(blank=True)
+    embed_url = models.URLField(unique=True, verbose_name="Embed-URL")
+    description = RichTextField(blank=True, verbose_name="Beschreibung")
     process_type = models.CharField(
         max_length=255,
+        verbose_name="Verfahrenstyp",
         choices=PROCESS_CHOICES,
         default=KIEZKASSE)
 
@@ -142,26 +144,27 @@ class AdhocracyProcess(Process):
 
 
 class HomePage(Page):
-    header = models.CharField(max_length=255, blank=True)
-    description = RichTextField(blank=True)
+    header = models.CharField(max_length=255, blank=True, verbose_name="Kopfzeile")
+    description = RichTextField(blank=True, verbose_name="Beschreibung")
     cover_image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
-        related_name='+')
-    info1_title = models.CharField(max_length=255, blank=True)
-    info1_text = models.CharField(max_length=2047, blank=True)
-    info2_title = models.CharField(max_length=255, blank=True)
-    info2_text = models.CharField(max_length=2047, blank=True)
-    info3_title = models.CharField(max_length=255, blank=True)
-    info3_text = models.CharField(max_length=2047, blank=True)
+        related_name='+',
+        verbose_name="Titelbild")
+    info1_title = models.CharField(max_length=255, blank=True, verbose_name="Infobox 1 Titel")
+    info1_text = models.CharField(max_length=2047, blank=True, verbose_name="Infobox 1 Text")
+    info2_title = models.CharField(max_length=255, blank=True, verbose_name="Infobox 2 Titel")
+    info2_text = models.CharField(max_length=2047, blank=True, verbose_name="Infobox 2 Text")
+    info3_title = models.CharField(max_length=255, blank=True, verbose_name="Infobox 3 Titel")
+    info3_text = models.CharField(max_length=2047, blank=True, verbose_name="Infobox 3 Text")
     netiquette_linktext = models.CharField(max_length=255, blank=True)
-    privacy_linktext = models.CharField(max_length=255, blank=True)
-    processes_linktext = models.CharField(max_length=255, blank=True)
-    current_processes_title = models.CharField(max_length=255, blank=True)
-    view_all = models.CharField(max_length=255, blank=True)
-    past_processes_title = models.CharField(max_length=255, blank=True)
+    privacy_linktext = models.CharField(max_length=255, blank=True, verbose_name="Datenschutz Linktext")
+    processes_linktext = models.CharField(max_length=255, blank=True, verbose_name="Verfahrensübersicht Linktext")
+    current_processes_title = models.CharField(max_length=255, blank=True, verbose_name="Aktuelle Verfahren Titel")
+    view_all = models.CharField(max_length=255, blank=True, verbose_name="alle anzeigen")
+    past_processes_title = models.CharField(max_length=255, blank=True, verbose_name="Vergangene Verfahren Titel")
 
     @property
     def processes(self):
@@ -214,7 +217,7 @@ class HomePage(Page):
 
 
 class SimplePage(Page):
-    body = RichTextField(blank=True)
+    body = RichTextField(blank=True, verbose_name="Inhalt")
 
     content_panels = [
         FieldPanel('title'),
@@ -225,7 +228,7 @@ class SimplePage(Page):
 
 
 class OverviewPage(Page):
-    description = RichTextField(blank=True)
+    description = RichTextField(blank=True, verbose_name="Beschreibung")
 
     @property
     def processes(self):

@@ -484,6 +484,12 @@ $logo-offset: 50px;
     }
 }
 
+.page-description::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .richtext-image {
     &.right {
         float: right;

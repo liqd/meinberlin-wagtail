@@ -13,6 +13,7 @@ from meinberlin.models import OverviewPage
 RIBPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
 RIBURGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
 RICOLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
+RIIDEACOLLECTION = 'adhocracy_meinberlin.resources.idea_collection.IProcess'
 RIKIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
 RIPOLL = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
 RISTADTFORUM = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
@@ -24,11 +25,12 @@ SITITLE = 'adhocracy_core.sheets.title.ITitle'
 SIWORKFLOW = 'adhocracy_core.sheets.workflow.IWorkflowAssignment'
 
 IMAGES = {
-    RICOLLABORATIVE: (2, ''),
-    RIKIEZKASSE: (3, 'Foto K - Fotolia.com'),
-    RIBURGERHAUSHALT: (4, ''),
-    RIPOLL: (5, ''),
     RIBPLAN: (6, 'SenStadtUm'),
+    RIBURGERHAUSHALT: (4, ''),
+    RICOLLABORATIVE: (2, ''),
+    RIIDEACOLLECTION: (4, ''),
+    RIKIEZKASSE: (3, 'Foto K - Fotolia.com'),
+    RIPOLL: (5, '')
 }
 
 
@@ -88,6 +90,12 @@ def create_process(process, parent_process=None):
                 short_description = (
                     "Hier können Sie Ihre Ideen und Vorschläge für die "
                     "Kiezkasse abgeben."
+                    )
+            elif process['content_type'] == RIIDEACOLLECTION:
+                short_description = (
+                    "Sammeln Sie Ideen, die der Politik und der "
+                    "Verwaltung bei der Entscheidungsfindung und "
+                    "Gesetzgebung zu unterstützen."
                     )
 
     return AdhocracyProcess(

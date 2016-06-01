@@ -25,12 +25,12 @@ SITITLE = 'adhocracy_core.sheets.title.ITitle'
 SIWORKFLOW = 'adhocracy_core.sheets.workflow.IWorkflowAssignment'
 
 IMAGES = {
+    RIBPLAN: (6, 'SenStadtUm'),
+    RIBURGERHAUSHALT: (4, ''),
     RICOLLABORATIVE: (2, ''),
     RIIDEACOLLECTION: (4, ''),
     RIKIEZKASSE: (3, 'Foto K - Fotolia.com'),
-    RIBURGERHAUSHALT: (4, ''),
-    RIPOLL: (5, ''),
-    RIBPLAN: (6, 'SenStadtUm'),
+    RIPOLL: (5, '')
 }
 
 

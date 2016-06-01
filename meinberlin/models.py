@@ -86,17 +86,19 @@ class AdhocracyProcess(Process):
     ALEXANDERPLATZ = 'adhocracy_meinberlin.resources.alexanderplatz.IProcess'
     BPLAN = 'adhocracy_meinberlin.resources.bplan.IProcess'
     BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
-    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
-    KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
     COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
+    DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    IDEACOLLECTION = 'adhocracy_meinberlin.resources.idea_collection.IProcess'
+    KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
 
     PROCESS_CHOICES = (
         (ALEXANDERPLATZ, 'Alexanderplatz'),
         (BPLAN, 'Bebauungsplan'),
         (BUERGERHAUSHALT, 'Bürgerhaushalt'),
-        (DIALOG, 'Dialog'),
-        (KIEZKASSE, 'Kiezkasse'),
         (COLLABORATIVE, 'Kollaborative Textarbeit'),
+        (DIALOG, 'Dialog'),
+        (IDEACOLLECTION, 'Idea Collection'),
+        (KIEZKASSE, 'Kiezkasse'),
     )
 
     embed_url = models.URLField(unique=True, verbose_name="Embed-URL")

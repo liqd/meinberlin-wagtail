@@ -1,0 +1,44 @@
+.process {
+    margin-bottom: 4em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: $breakpoint) {
+    .process {
+        @include pie-clearfix;
+    }
+
+    .process-image,
+    .process-body {
+        @include grid-cell;
+    }
+
+    .process-image {
+        @include grid-width(4);
+    }
+
+    .process-body {
+        @include grid-width(6);
+    }
+
+    .process:nth-child(2n) {
+        .process-image {
+            @include grid-position(7);
+        }
+        .process-body {
+            @include grid-position(1);
+        }
+    }
+
+    .process:nth-child(2n+1) {
+        .process-image {
+            @include grid-position(1);
+        }
+        .process-body {
+            @include grid-position(5);
+        }
+    }
+}

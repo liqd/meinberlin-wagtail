@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header id="header">
+        <div class="l-wrapper">
+            <a href="#" data-scroll>
+                <img class="logo" alt="mein berlin" src="images/logo.png" />
+            </a>
+            <nav class="jumpNav">
+                {{#jumpNav}}
+                <a href="#{{id}}" data-scroll>{{title}}</a>
+                {{/jumpNav}}
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="l-wrapper">
+                <div class="l-left">
+                    <h1>{{heroTitle}}</h1>
+                    {{#markdown}}{{heroBody}}{{/markdown}}
+                </div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <div class="l-wrapper">
+                <div class="l-center">
+                    <h2>{{introTitle}}</h2>
+                    {{#markdown}}{{introBody}}{{/markdown}}
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="l-wrapper">
+                <h2>{{featuresTitle}}</h2>
+                <div>
+                    {{#features}}
+                    <div class="feature l-same-3">
+                        <i class="feature-icon">{{icon}}</i>
+                        <h3>{{title}}</h3>
+                        {{#markdown}}{{body}}{{/markdown}}
+                    </div>
+                    {{/features}}
+                </div>
+            </div>
+        </section>
+
+        <section id="processes">
+            <div class="l-wrapper">
+                <h2>{{processesTitle}}</h2>
+                <div>
+                    {{#processes}}
+                    <div class="process">
+                        <img class="process-image" src="{{img}}" alt="{{alt}}" />
+                        <div class="process-body">
+                            <h3>{{title}}</h3>
+                            {{#markdown}}{{body}}{{/markdown}}
+                        </div>
+                    </div>
+                    {{/processes}}
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="l-wrapper">
+                <div class="l-center">
+                    <h2>{{contactTitle}}</h2>
+                    {{#markdown}}{{contactBody}}{{/markdown}}
+                    <button class="button">{{contactButton}}</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="outro">
+            <div class="l-wrapper">
+                {{#outro}}
+                <div class="l-same-2">
+                    <h2>{{title}}</h2>
+                    {{#markdown}}{{body}}{{/markdown}}
+                </div>
+                {{/outro}}
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="l-wrapper">
+            <nav class="footerNav">
+                {{#footerNav}}
+                <a href="{{url}}">{{title}}</a>
+                {{/footerNav}}
+            </nav>
+        </div>
+    </footer>
+
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script>
+        smoothScroll.init({
+            selectorHeader: '#header',
+        });
+    </script>
+</body>
+</html>

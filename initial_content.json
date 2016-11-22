@@ -1364,7 +1364,7 @@
     "path": "000100010002",
     "depth": 3,
     "numchild": 0,
-    "title": "Archiv",
+    "title": "Abgeschlossene Beteiligungsverfahren",
     "slug": "archiv",
     "content_type": 6,
     "live": true,
@@ -1837,7 +1837,7 @@
     "processes_linktext": "Beteiligungsverfahren",
     "current_processes_title": "Aktuelle Verfahren",
     "view_all": "alle anzeigen",
-    "past_processes_title": "Vergangene Verfahren"
+    "past_processes_title": "Abgeschlossene Beteilgungsverfahren"
   }
 }
 ]

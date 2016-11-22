@@ -132,6 +132,7 @@ def create_external_process(process):
         city=city,
         archived=archived,
         external_url=external_url,
+        is_adhocracy=True,
         live=False)
 
 

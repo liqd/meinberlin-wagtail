@@ -70,6 +70,7 @@ class Process(Page):
 
 class ExternalProcess(Process):
     external_url = models.URLField(unique=True, verbose_name="externe URL")
+    is_adhocracy = models.BooleanField(verbose_name="Wurde der externe Prozess mit Adhocracy umgesetzt?", default=False)
 
     @property
     def external(self):
@@ -77,6 +78,7 @@ class ExternalProcess(Process):
 
     content_panels = Process.content_panels + [
         FieldPanel('external_url'),
+        FieldPanel('is_adhocracy'),
     ]
 
     parent_page_types = ['meinberlin.OverviewPage']

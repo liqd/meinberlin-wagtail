@@ -1,4 +1,4 @@
-TARGET := ../meinberlin_wagtail/static/info/
+TARGET := ../meinberlin_wagtail/static/info
 
 all: index.html style.css
 
@@ -6,6 +6,10 @@ install: all
 	mkdir -p $(TARGET)
 	cp index.html $(TARGET)
 	cp style.css $(TARGET)
+	mkdir -p $(TARGET)/images
+	cp images/* $(TARGET)/images
+	mkdir -p $(TARGET)/bower_components
+	cp -r bower_components/smooth-scroll $(TARGET)/bower_components
 
 index.html: index.mustache build.js node_modules
 	node build.js > $@

@@ -183,12 +183,11 @@ class Command(BaseCommand):
                     except IntegrityError:
                         print('skipped %s' % poll['path'])
 
-            elif process['content_type'] == RIBPLAN:
+            if process['content_type'] == RIBPLAN:
                 workflow_state = process['data'][SIWORKFLOW]['workflow_state']
                 if workflow_state in ['announce', 'participate']:
                     external_process = create_external_process(process)
                     add_process(process['path'], external_process)
-
             else:
                 adhocracy_process = create_process(process)
                 add_process(process['path'], adhocracy_process)

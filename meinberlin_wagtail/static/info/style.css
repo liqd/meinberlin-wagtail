@@ -103,6 +103,9 @@ h3, #outro h2, #outro #hero h1, #hero #outro h1 {
 }
 
 #features h2, #features #hero h1, #hero #features h1,
+#examples h2,
+#examples #hero h1, #hero
+#examples h1,
 #processes h2,
 #processes #hero h1, #hero
 #processes h1 {
@@ -125,16 +128,16 @@ body {
   border-top: 1px solid #e4e4e4;
 }
 
-#contact, #processes, #hero {
+#contact, #examples, #hero {
   background-color: #cd0055;
   color: #fff;
 }
 
-#contact a, #processes a, #hero a {
+#contact a, #examples a, #hero a {
   color: inherit;
 }
 
-#processes {
+#examples {
   background-color: #253276;
 }
 
@@ -171,12 +174,12 @@ button:hover, button:focus {
   top: 0;
   left: 0;
   z-index: 1;
-  line-height: 1;
+  line-height: 1.5;
   box-shadow: 0 0 0.8em rgba(34, 34, 34, 0.1);
 }
 
 body {
-  padding-top: 3em;
+  padding-top: 3.5em;
 }
 
 nav a {
@@ -197,7 +200,7 @@ nav a:first-child {
 .logo {
   width: 4em;
   position: absolute;
-  bottom: -2em;
+  bottom: -1em;
 }
 
 .jumpNav {
@@ -205,41 +208,41 @@ nav a:first-child {
   margin-left: 5em;
 }
 
-.process {
+.example {
   margin-bottom: 4em;
 }
 
-.process:last-child {
+.example:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 45em) {
-  .process:after {
+  .example:after {
     content: " ";
     display: block;
     clear: both;
   }
-  .process-image,
-  .process-body {
+  .example-image,
+  .example-body {
     float: left;
     margin-right: -100%;
   }
-  .process-image {
+  .example-image {
     width: 31.33333%;
   }
-  .process-body {
+  .example-body {
     width: 48.5%;
   }
-  .process:nth-child(2n) .process-image {
+  .example:nth-child(2n) .example-image {
     margin-left: 60.08333%;
   }
-  .process:nth-child(2n) .process-body {
+  .example:nth-child(2n) .example-body {
     margin-left: 8.58333%;
   }
-  .process:nth-child(2n+1) .process-image {
+  .example:nth-child(2n+1) .example-image {
     margin-left: 8.58333%;
   }
-  .process:nth-child(2n+1) .process-body {
+  .example:nth-child(2n+1) .example-body {
     margin-left: 42.91667%;
   }
 }
@@ -247,18 +250,16 @@ nav a:first-child {
 .feature {
   font-size: 80%;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .feature-icon {
-  display: block;
-  color: #cd0055;
-  font-size: 3em;
+  height: 6em;
 }
 
 @media (min-width: 45em) {
-  .feature-icon {
-    font-size: 6em;
+  .feature {
+    margin-bottom: 2em;
   }
 }
 

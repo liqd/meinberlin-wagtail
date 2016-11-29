@@ -7,7 +7,7 @@ install: all
 	cp index.html $(TARGET)
 	cp style.css $(TARGET)
 	mkdir -p $(TARGET)/images
-	cp images/* $(TARGET)/images
+	cp -r images/* $(TARGET)/images
 	mkdir -p $(TARGET)/bower_components
 	cp -r bower_components/smooth-scroll $(TARGET)/bower_components
 

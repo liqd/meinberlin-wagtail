@@ -1,17 +1,15 @@
 .feature {
     font-size: 80%;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .feature-icon {
-    display: block;
-    color: $color-brand1;
-    font-size: 3em;
+    height: 6em;
 }
 
 @media (min-width: $breakpoint) {
-    .feature-icon {
-        font-size: 6em;
+    .feature {
+        margin-bottom: 2em;
     }
 }

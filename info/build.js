@@ -27,15 +27,15 @@ var view = {
     introBody: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     featuresTitle: 'Features',
     features: [{
-        icon: 'Icon',
+        icon: 'images/icons/idea.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }, {
-        icon: 'Icon',
+        icon: 'images/icons/budget.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }, {
-        icon: 'Icon',
+        icon: 'images/icons/discussion.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }],
@@ -53,15 +53,15 @@ var view = {
     }],
     processesTitle: 'Prozesse',
     processes: [{
-        icon: 'Icon',
+        icon: 'images/icons/opinion.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }, {
-        icon: 'Icon',
+        icon: 'images/icons/prioritize.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }, {
-        icon: 'Icon',
+        icon: 'images/icons/vote.png',
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }],

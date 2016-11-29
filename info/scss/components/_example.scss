@@ -1,4 +1,4 @@
-.process {
+.example {
     margin-bottom: 4em;
 
     &:last-child {
@@ -7,37 +7,37 @@
 }
 
 @media (min-width: $breakpoint) {
-    .process {
+    .example {
         @include pie-clearfix;
     }
 
-    .process-image,
-    .process-body {
+    .example-image,
+    .example-body {
         @include grid-cell;
     }
 
-    .process-image {
+    .example-image {
         @include grid-width(4);
     }
 
-    .process-body {
+    .example-body {
         @include grid-width(6);
     }
 
-    .process:nth-child(2n) {
-        .process-image {
+    .example:nth-child(2n) {
+        .example-image {
             @include grid-position(7);
         }
-        .process-body {
+        .example-body {
             @include grid-position(1);
         }
     }
 
-    .process:nth-child(2n+1) {
-        .process-image {
+    .example:nth-child(2n+1) {
+        .example-image {
             @include grid-position(1);
         }
-        .process-body {
+        .example-body {
             @include grid-position(5);
         }
     }

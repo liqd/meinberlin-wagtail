@@ -12,6 +12,9 @@ var view = {
         id: 'features',
         title: 'Features',
     }, {
+        id: 'examples',
+        title: 'Beispiele',
+    }, {
         id: 'processes',
         title: 'Prozesse',
     }, {
@@ -36,8 +39,8 @@ var view = {
         title: 'Title',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }],
-    processesTitle: 'Prozesse',
-    processes: [{
+    examplesTitle: 'Beispiele',
+    examples: [{
         title: 'Cool example',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
         img: '',
@@ -47,6 +50,20 @@ var view = {
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
         img: '',
         alt: 'foo',
+    }],
+    processesTitle: 'Prozesse',
+    processes: [{
+        icon: 'Icon',
+        title: 'Title',
+        body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
+    }, {
+        icon: 'Icon',
+        title: 'Title',
+        body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
+    }, {
+        icon: 'Icon',
+        title: 'Title',
+        body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }],
     contactTitle: 'Another coll example',
     contactBody: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',

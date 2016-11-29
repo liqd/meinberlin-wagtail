@@ -54,17 +54,32 @@
             </div>
         </section>
 
+        <section id="examples">
+            <div class="l-wrapper">
+                <h2>{{processesTitle}}</h2>
+                <div>
+                    {{#examples}}
+                    <div class="example">
+                        <img class="example-image" src="{{img}}" alt="{{alt}}" />
+                        <div class="example-body">
+                            <h3>{{title}}</h3>
+                            {{#markdown}}{{body}}{{/markdown}}
+                        </div>
+                    </div>
+                    {{/examples}}
+                </div>
+            </div>
+        </section>
+
         <section id="processes">
             <div class="l-wrapper">
                 <h2>{{processesTitle}}</h2>
                 <div>
                     {{#processes}}
-                    <div class="process">
-                        <img class="process-image" src="{{img}}" alt="{{alt}}" />
-                        <div class="process-body">
-                            <h3>{{title}}</h3>
-                            {{#markdown}}{{body}}{{/markdown}}
-                        </div>
+                    <div class="feature l-same-3">
+                        <i class="feature-icon">{{icon}}</i>
+                        <h3>{{title}}</h3>
+                        {{#markdown}}{{body}}{{/markdown}}
                     </div>
                     {{/processes}}
                 </div>

@@ -90,6 +90,7 @@ class AdhocracyProcess(Process):
     BUERGERHAUSHALT = 'adhocracy_meinberlin.resources.burgerhaushalt.IProcess'
     COLLABORATIVE = 'adhocracy_meinberlin.resources.collaborative_text.IProcess'
     DIALOG = 'adhocracy_core.resources.proposal.IProposalVersion'
+    DIALOG_PROCESS = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
     IDEACOLLECTION = 'adhocracy_meinberlin.resources.idea_collection.IProcess'
     KIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
 
@@ -99,6 +100,7 @@ class AdhocracyProcess(Process):
         (BUERGERHAUSHALT, 'Bürgerhaushalt'),
         (COLLABORATIVE, 'Kollaborative Textarbeit'),
         (DIALOG, 'Dialog'),
+        (DIALOG_PROCESS, 'Dialogsammlung'),
         (IDEACOLLECTION, 'Idea Collection'),
         (KIEZKASSE, 'Kiezkasse'),
     )

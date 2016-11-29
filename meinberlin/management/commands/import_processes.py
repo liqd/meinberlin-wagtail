@@ -1,5 +1,6 @@
 import requests
 
+from django.core.exceptions import ValidationError
 from django.core.management.base import BaseCommand
 from django.db.utils import IntegrityError
 from django.template.defaultfilters import slugify
@@ -18,6 +19,7 @@ RIKIEZKASSE = 'adhocracy_meinberlin.resources.kiezkassen.IProcess'
 RIPOLL = 'adhocracy_meinberlin.resources.stadtforum.IPoll'
 RISTADTFORUM = 'adhocracy_meinberlin.resources.stadtforum.IProcess'
 SIDESCRIPTION = 'adhocracy_core.sheets.description.IDescription'
+SIEMBED = 'adhocracy_core.sheets.embed.IEmbed'
 SINAME = 'adhocracy_core.sheets.name.IName'
 SIPOOL = 'adhocracy_core.sheets.pool.IPool'
 SITAGS = 'adhocracy_core.sheets.tags.ITags'
@@ -115,11 +117,14 @@ def create_process(process, parent_process=None):
 def create_external_process(process):
     image, image_copyright = get_image(process)
     short_description = process['data'][SIDESCRIPTION]['short_description']
-    city = ''
-    domain = (
+    default_domain = (
         'http://www.stadtentwicklung.berlin.de/planen/'
         'b-planverfahren/de/oeffauslegung/')
-    external_url = domain + process['path'].split('/')[-2].lower()
+    embed_url = process['data'][SIEMBED]['external_url']
+    if embed_url:
+        external_url = embed_url
+    else:
+        external_url = default_domain + process['path'].split('/')[-2].lower()
     slug = process['data'][SINAME]['name']
     title = process['data'][SITITLE]['title']
     archived = False
@@ -129,7 +134,7 @@ def create_external_process(process):
         short_description=short_description,
         image=image,
         image_copyright=image_copyright,
-        city=city,
+        city='',
         archived=archived,
         external_url=external_url,
         is_adhocracy=True,
@@ -150,6 +155,9 @@ def add_process(path, process):
     try:
         process_index.add_child(instance=process)
         print('imported %s' % path)
+    except ValidationError as e:
+        print('error on %s:' % path)
+        print(e)
     except IntegrityError:
         print('skipped %s' % path)
 
@@ -183,12 +191,11 @@ class Command(BaseCommand):
                     except IntegrityError:
                         print('skipped %s' % poll['path'])
 
-            elif process['content_type'] == RIBPLAN:
+            if process['content_type'] == RIBPLAN:
                 workflow_state = process['data'][SIWORKFLOW]['workflow_state']
                 if workflow_state in ['announce', 'participate']:
                     external_process = create_external_process(process)
                     add_process(process['path'], external_process)
-
             else:
                 adhocracy_process = create_process(process)
                 add_process(process['path'], adhocracy_process)

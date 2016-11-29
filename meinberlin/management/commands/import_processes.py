@@ -1,5 +1,6 @@
 import requests
 
+from django.core.exceptions import ValidationError
 from django.core.management.base import BaseCommand
 from django.db.utils import IntegrityError
 from django.template.defaultfilters import slugify
@@ -154,6 +155,9 @@ def add_process(path, process):
     try:
         process_index.add_child(instance=process)
         print('imported %s' % path)
+    except ValidationError as e:
+        print('error on %s:' % path)
+        print(e)
     except IntegrityError:
         print('skipped %s' % path)
 

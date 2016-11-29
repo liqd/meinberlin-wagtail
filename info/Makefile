@@ -24,3 +24,6 @@ bower_components:
 node_modules:
 	npm install mustache
 	npm install markdown-it
+
+clean:
+	rm -f index.html style.css

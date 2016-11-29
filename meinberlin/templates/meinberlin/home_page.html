@@ -51,4 +51,14 @@
 
     {% include "meinberlin/includes/processes_tile.html" with processes=self.archived %}
     <a href="/w/archiv/">{{ self.view_all }}</a>
+
+    <div class="shariff" data-theme="white"></div>
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'js/shariff/shariff.complete.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="{% static 'js/shariff/shariff.complete.js' %}"></script>
 {% endblock %}

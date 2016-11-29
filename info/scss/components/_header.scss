@@ -5,12 +5,12 @@
     top: 0;
     left: 0;
     z-index: 1;
-    line-height: 1;
+    line-height: 1.5;
     box-shadow: 0 0 0.8em rgba($color-fg, 0.1);
 }
 
 body {
-    padding-top: 3em;
+    padding-top: 3.5em;
 }
 
 nav a {
@@ -31,7 +31,7 @@ nav a {
 .logo {
     width: 4em;
     position: absolute;
-    bottom: -2em;
+    bottom: -1em;
 }
 
 .jumpNav {

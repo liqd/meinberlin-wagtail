@@ -17,6 +17,8 @@ class FeedbackForm(forms.Form):
     answer4 = forms.CharField(label='Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
         max_length=1000,
         required=False)
+    sender_address = forms.EmailField(label='Wenn Sie eine Antwort bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',
+        required=False)
 
 
 def feedback_view(request):
@@ -33,7 +35,7 @@ def feedback_view(request):
             qa3 = 'Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer3'] + '\n\n'
             qa4 = 'Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer4'] + '\n\n'
             message = qa1 + qa2 + qa3 + qa4
-            sender = 'noreply@mein.berlin.de'
+            sender = form.cleaned_data['sender_address']
             recipients = ['feedback@mein.berlin.de']
 
             send_mail(subject, message, sender, recipients, fail_silently=False)

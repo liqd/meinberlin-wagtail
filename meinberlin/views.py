@@ -2,6 +2,7 @@ from django import forms
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.conf import settings
 
 
 class FeedbackForm(forms.Form):
@@ -34,11 +35,11 @@ def feedback_view(request):
             qa2 = 'Was missfällt Ihnen an den Inhalten von mein.berlin.de?\n\n' + form.cleaned_data['answer2'] + '\n\n'
             qa3 = 'Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer3'] + '\n\n'
             qa4 = 'Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer4'] + '\n\n'
-            message = qa1 + qa2 + qa3 + qa4
-            sender = form.cleaned_data['sender_address']
-            recipients = ['feedback@mein.berlin.de']
+            email = 'Nutzer-Email: ' + form.cleaned_data['sender_address'] + '\n\n'
+            message = qa1 + qa2 + qa3 + qa4 + email
+            recipients = [settings.FEEDBACK_TO_EMAIL]
 
-            send_mail(subject, message, sender, recipients, fail_silently=False)
+            send_mail(subject, message, None, recipients, fail_silently=False)
             return HttpResponseRedirect('/w')
 
     # if a GET (or any other method) we'll create a blank form

@@ -219,7 +219,7 @@ $logo-offset: 50px;
         @include transition(background 0.2s ease-in);
     }
 
-    @media screen and (max-width:769px) {
+    @media screen and (max-width:767px) {
         min-height: 1px;
         overflow: hidden;
     }

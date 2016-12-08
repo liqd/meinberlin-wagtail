@@ -6,17 +6,17 @@ from django.shortcuts import render
 
 class FeedbackForm(forms.Form):
     answer1 = forms.CharField(label='Was gefällt Ihnen an den Inhalten von mein.berlin.de?',
-		max_length=1000,
-		required=False)
+        max_length=1000,
+        required=False)
     answer2 = forms.CharField(label='Was missfällt Ihnen an den Inhalten von mein.berlin.de?',
-		max_length=1000,
-		required=False)
+        max_length=1000,
+        required=False)
     answer3 = forms.CharField(label='Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-		max_length=1000,
-		required=False)
+        max_length=1000,
+        required=False)
     answer4 = forms.CharField(label='Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-		max_length=1000,
-		required=False)
+        max_length=1000,
+        required=False)
 
 
 def feedback_view(request):
@@ -27,7 +27,6 @@ def feedback_view(request):
         form = FeedbackForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-			# import pdb;pdb.set_trace()
             subject = 'meinberlin feedback'
             qa1 = 'Was gefällt Ihnen an den Inhalten von mein.berlin.de?\n\n' + form.cleaned_data['answer1'] + '\n\n'
             qa2 = 'Was missfällt Ihnen an den Inhalten von mein.berlin.de?\n\n' + form.cleaned_data['answer2'] + '\n\n'

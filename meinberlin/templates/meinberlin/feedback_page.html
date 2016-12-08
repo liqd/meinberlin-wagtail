@@ -2,7 +2,7 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-<form action="/w/" method="post">
+<form action="/w/feedback" method="post">
     {% csrf_token %}
     {{ form }}
     <p>Vielen Dank für Ihr Feedback!</p>

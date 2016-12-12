@@ -7,19 +7,19 @@ from django.conf import settings
 
 class FeedbackForm(forms.Form):
     answer1 = forms.CharField(label='Was gefällt Ihnen an den Inhalten von mein.berlin.de?',
-        widget=forms.Textarea,
+        widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
     answer2 = forms.CharField(label='Was missfällt Ihnen an den Inhalten von mein.berlin.de?',
-        widget=forms.Textarea,
+        widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
     answer3 = forms.CharField(label='Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-        widget=forms.Textarea,
+        widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
     answer4 = forms.CharField(label='Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-        widget=forms.Textarea,
+        widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
     sender_address = forms.EmailField(label='Wenn Sie eine Antwort bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',

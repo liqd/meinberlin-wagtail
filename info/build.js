@@ -43,18 +43,18 @@ var view = {
     examples: [{
         title: 'Ideensammlungsverfahren ISEK Tegel',
         body: 'Der Dialog zum Flughafenumfeld Tegel wurde in verschiedenen Phasen mit dem Ideensammlungs-Tool begleitet. Es wurden erst offen und in einem zweiten Schritt zu konkreten Themen Vorschläge von Bürger*innen gesammelt und ausgewertet.',
-        img: '',
-        alt: 'foo',
+        img: 'images/examples/Tegel.png',
+        alt: '',
     }, {
         title: 'Pflege- und Bebauungsplan Tempelhof',
         body: 'Mit dem Textarbeitstool wurde kooperativ mit Bürger*innen der Pflege- und Bebauungsplan für das alte Flugfeld Tempelhof erstellt. Der Textentwurf wurde über 200 mal kommentiert und anschließend vom Abgeordnetenhaus angenommen.',
-        img: '',
-        alt: 'foo',
+        img: 'images/examples/Tempelhof.jpg',
+        alt: '',
     }, {
         title: 'Umfragen des Familienportals',
         body: 'Das Familienportal führt regelmäßig Umfragen rund um das Thema Familie “Zuhause in Berlin” durch. Die Umfragen dauern jeweils einen Monat. Die Ergebnisse der Online-Debatten fließen direkt in die Diskussion der Sitzungen des Berliner Beirats für Familienfragen mit ein.',
-        img: '',
-        alt: 'foo',
+        img: 'images/examples/Familienportal.png',
+        alt: '',
     }],
     processesTitle: 'Verfahren',
     processes: [{

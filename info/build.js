@@ -47,7 +47,7 @@ var view = {
         alt: '',
         url: 'http://www.stadtentwicklung.berlin.de/staedtebau/projekte/tegel/stadtumbau/dokumentation.shtml#!/r/isek/tegel/',
     }, {
-        title: 'Pflege- und Bebauungsplan Tempelhof',
+        title: 'Entwicklungs- und Pflegeplan Tempelhof',
         body: 'Mit dem Textarbeitstool wurde kooperativ mit Bürger*innen der Pflege- und Bebauungsplan für das alte Flugfeld Tempelhof erstellt. Der Textentwurf wurde über 200 mal kommentiert und anschließend vom Abgeordnetenhaus angenommen.',
         img: 'images/examples/Tempelhof.jpg',
         alt: '',
@@ -63,15 +63,15 @@ var view = {
     processes: [{
         icon: 'images/icons/opinion.png',
         title: 'Bebauungsplanverfahren',
-        body: 'Mit dem Stellungnahmetool können Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung begleiten. Das Tool eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
+        body: 'Begleiten Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung mit dem Stellungnahmetool. Das Tool eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
     }, {
         icon: 'images/icons/vote.png',
         title: 'Umfragen',
-        body: 'Umfragen zu verschiedenen Themen geben sehr niedrigschwellige Beteiligungsmöglichkeiten. Das Verfahren eignet sich besonders, um ein Meinungsbild zu einer konkreten Frage einzuholen.',
+        body: 'Ermöglichen Sie sehr niedrigschwellige Beteiligungsmöglichkeiten zu verschiedenen Themen mit dem Umfragetool. Das Verfahren eignet sich besonders, um ein Meinungsbild zu einer konkreten Frage einzuholen.',
     }, {
         icon: 'images/icons/budget.png',
         title: 'Bürgerhaushalte',
-        body: 'Bürgerhaushalte sind eine gut erprobte Lösung, um Bürger*innen an der lokalen Finanzplanung zu beteiligen. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene.',
+        body: 'Beteiligen Sie Bürger*innen an der lokalen Finanzplanung mit einem gut erprobten Bürgerhaushaltsverfahren. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene.',
     }, {
         icon: 'images/icons/idea.png',
         title: 'Ideensammlung und Diskussion',
@@ -81,8 +81,8 @@ var view = {
         title: 'Textbearbeitung',
         body: 'Das Tool zur kooperativen Textarbeit eignet sich vor allem für das Ende eines Beteiligungs- oder Planungsprozesses, wenn ein schon erarbeitetes Papier überprüft, ergänzt und überarbeitet werden soll.',
     }],
-    contactTitle: 'Another coll example',
-    contactBody: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
+    contactTitle: 'Sie wollen sich weiter informieren lassen?',
+    contactBody: 'Rufen Sie an und lassen sich kompetent beraten. Wir helfen gerne weiter, welche Verfahren sich für welche Fragen eignen oder geben einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <http://mein.berlin-demo.de> besuchen.',
     outro: [{
         title: 'First of two columns',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
@@ -91,7 +91,7 @@ var view = {
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
     }],
     footerNav: [{
-        url: '',
+        url: 'https://liqd.net/de/impressum/',
         title: 'Impressum',
     }],
     markdown: function() {

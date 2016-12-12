@@ -18,8 +18,9 @@ urlpatterns = [
 
     url(r'^w/search/$', search_views.search, name='search'),
 
+    url(r'^w/feedback/$', meinberlin_views.feedback_view, name='feedback'),
+
     url(r'w/', include(wagtail_urls)),
-    url(r'^w/feedback', meinberlin_views.feedback_view, name='feedback'),
 ]
 
 

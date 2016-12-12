@@ -29,7 +29,6 @@ class FeedbackForm(forms.Form):
 def feedback_view(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
-        print('trying to post the form')
         # create a form instance and populate it with data from the request:
         form = FeedbackForm(request.POST)
         # check whether it's valid:

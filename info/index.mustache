@@ -60,10 +60,11 @@
                 <div>
                     {{#examples}}
                     <div class="example">
-                        <img class="example-image" src="{{img}}" alt="{{alt}}" />
+                        <a href="{{url}}"><img class="example-image" src="{{img}}" alt="{{alt}}" /></a>
                         <div class="example-body">
                             <h3>{{title}}</h3>
                             {{#markdown}}{{body}}{{/markdown}}
+                            <a href="{{url}}">&#8594; Zum Beispielverfahren</a>
                         </div>
                     </div>
                     {{/examples}}

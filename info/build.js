@@ -45,16 +45,19 @@ var view = {
         body: 'Der Dialog zum Flughafenumfeld Tegel wurde in verschiedenen Phasen mit dem Ideensammlungs-Tool begleitet. Es wurden erst offen und in einem zweiten Schritt zu konkreten Themen Vorschläge von Bürger*innen gesammelt und ausgewertet.',
         img: 'images/examples/Tegel.png',
         alt: '',
+        url: 'http://www.stadtentwicklung.berlin.de/staedtebau/projekte/tegel/stadtumbau/dokumentation.shtml#!/r/isek/tegel/',
     }, {
         title: 'Pflege- und Bebauungsplan Tempelhof',
         body: 'Mit dem Textarbeitstool wurde kooperativ mit Bürger*innen der Pflege- und Bebauungsplan für das alte Flugfeld Tempelhof erstellt. Der Textentwurf wurde über 200 mal kommentiert und anschließend vom Abgeordnetenhaus angenommen.',
         img: 'images/examples/Tempelhof.jpg',
         alt: '',
+        url: 'https://mein.berlin.de/w/prozesse/epptf/ ',
     }, {
         title: 'Umfragen des Familienportals',
         body: 'Das Familienportal führt regelmäßig Umfragen rund um das Thema Familie “Zuhause in Berlin” durch. Die Umfragen dauern jeweils einen Monat. Die Ergebnisse der Online-Debatten fließen direkt in die Diskussion der Sitzungen des Berliner Beirats für Familienfragen mit ein.',
         img: 'images/examples/Familienportal.png',
         alt: '',
+        url: 'https://mein.berlin.de/w/prozesse/treiben-sie-mit-ihrer-familie-sport-welche-angebot/',
     }],
     processesTitle: 'Verfahren',
     processes: [{

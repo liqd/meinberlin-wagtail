@@ -83,7 +83,6 @@ var view = {
     }],
     contactTitle: 'Another coll example',
     contactBody: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
-    contactButton: 'Call to Action',
     outro: [{
         title: 'First of two columns',
         body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',

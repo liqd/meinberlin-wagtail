@@ -96,7 +96,11 @@ var view = {
     }],
     markdown: function() {
         return function(text, render) {
-            return md.render(render(text));
+            var originalEscape = Mustache.escape;
+            Mustache.escape = function(x) {return x} ;
+            var result = md.render(render(text));
+            Mustache.escape = originalEscape;
+            return result;
         };
     },
 };

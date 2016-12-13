@@ -83,13 +83,6 @@ var view = {
     }],
     contactTitle: 'Sie wollen sich weiter informieren lassen?',
     contactBody: 'Rufen Sie an und lassen sich kompetent beraten. Wir helfen gerne weiter, welche Verfahren sich für welche Fragen eignen oder geben einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <http://mein.berlin-demo.de> besuchen.',
-    outro: [{
-        title: 'First of two columns',
-        body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
-    }, {
-        title: 'First of two columns',
-        body: 'MeinBerlin makes online pariticipation powerful and easy for you. And for everyone else.',
-    }],
     footerNav: [{
         url: 'https://liqd.net/de/impressum/',
         title: 'Impressum',

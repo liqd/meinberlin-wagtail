@@ -209,11 +209,20 @@ nav a:first-child {
 }
 
 .example {
-  margin-bottom: 4em;
+  margin-bottom: 5em;
+}
+
+.example h3, .example #outro h2, #outro .example h2, .example #outro #hero h1, #outro #hero .example h1, .example #hero #outro h1, #hero #outro .example h1 {
+  margin-top: 0;
 }
 
 .example:last-child {
   margin-bottom: 0;
+}
+
+.example-image {
+  margin-bottom: 1em;
+  width: 100%;
 }
 
 @media (min-width: 45em) {

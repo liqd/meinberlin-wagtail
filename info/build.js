@@ -27,15 +27,15 @@ var view = {
     introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über Möglichkeiten und Beispiele erfahren.',
     featuresTitle: 'Plattform',
     features: [{
-        icon: 'images/icons/idea.png',
+        icon: 'images/icons/easy.png',
         title: 'Digitale Beteiligung einfach gemacht',
         body: 'mein.berlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Für Ihren Überblick finden Sie hier die verschiedenen Tools von mein.berlin mit Beispielen und Funktionalitäten.',
     }, {
-        icon: 'images/icons/budget.png',
+        icon: 'images/icons/simple.png',
         title: 'Komplexe Prozesse unkompliziert anlegen',
         body: 'Sie haben bereits konkrete Vorstellungen oder Ihr Prozess ist sehr complex? Wir beraten Sie gerne persönlich weiter und besprechen die Umsetzung Ihres Prozesses.',
     }, {
-        icon: 'images/icons/discussion.png',
+        icon: 'images/icons/embedding.png',
         title: 'Mühelos einbetten und informieren',
         body: 'Mein.Berlin-Beteiligungsverfahren sind so konzipiert, dass sie auch einfach auf Ihrer berlin.de-Seite eingebettet werden können. So können Sie die Bürger auf Ihrer Seite und auf mein.berlin informieren und sie direkt zur Teilhabe einladen.',
     }],

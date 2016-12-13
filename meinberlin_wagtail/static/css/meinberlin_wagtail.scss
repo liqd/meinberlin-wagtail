@@ -219,7 +219,7 @@ $logo-offset: 50px;
         @include transition(background 0.2s ease-in);
     }
 
-    @media screen and (max-width:769px) {
+    @media screen and (max-width:767px) {
         min-height: 1px;
         overflow: hidden;
     }
@@ -508,4 +508,51 @@ $logo-offset: 50px;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.feedback-button,
+input[type=submit] {
+    background: $red;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+        background: darken($red, 10%);
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.feedback-button {
+    @include rem-size(16px, padding);
+    @include rem-size(14px, font-size);
+    @include rem-size(10px, border-bottom-left-radius);
+    @include rem-size(10px, border-bottom-right-radius);
+    line-height: 1;
+    border: 2px solid #fff;
+    border-top-width: 0;
+
+    position: fixed;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+    top: 45%;
+    z-index: 1;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+input[type=submit] {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    padding: .5em 2em .55em;
+    border-radius: .5em;
 }

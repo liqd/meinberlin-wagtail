@@ -23,13 +23,13 @@ var view = {
     }],
     heroTitle: 'mein.berlin',
     heroBody: 'Herzlich Willkommen bei mein.berlin, der Plattform für Bürgerbeteiligungsprozesse in Berlin!',
-    introTitle: 'mein.berlin ist der Ort, an dem Sie mit Bürgern ins Gespräch kommen.',
+    introTitle: 'Mein.berlin ist der Ort, an dem Sie mit Bürgern ins Gespräch kommen.',
     introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über Möglichkeiten und Beispiele erfahren.',
-    featuresTitle: 'Plattform',
+    featuresTitle: 'Features',
     features: [{
         icon: 'images/icons/easy.png',
         title: 'Digitale Beteiligung einfach gemacht',
-        body: 'mein.berlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Für Ihren Überblick finden Sie hier die verschiedenen Tools von mein.berlin mit Beispielen und Funktionalitäten.',
+        body: 'Mein.berlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Für Ihren Überblick finden Sie hier die verschiedenen Tools von mein.berlin mit Beispielen und Funktionalitäten.',
     }, {
         icon: 'images/icons/simple.png',
         title: 'Komplexe Prozesse unkompliziert anlegen',
@@ -59,25 +59,25 @@ var view = {
         alt: '',
         url: 'https://mein.berlin.de/w/prozesse/treiben-sie-mit-ihrer-familie-sport-welche-angebot/',
     }],
-    processesTitle: 'Verfahren',
+    processesTitle: 'Prozesse',
     processes: [{
         icon: 'images/icons/opinion.png',
         title: 'Bebauungsplanverfahren',
         body: 'Begleiten Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung mit dem Stellungnahmetool. Das Tool eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
     }, {
-        icon: 'images/icons/vote.png',
+        icon: 'images/icons/prioritize.png',
         title: 'Umfragen',
         body: 'Ermöglichen Sie sehr niedrigschwellige Beteiligungsmöglichkeiten zu verschiedenen Themen mit dem Umfragetool. Das Verfahren eignet sich besonders, um ein Meinungsbild zu einer konkreten Frage einzuholen.',
     }, {
-        icon: 'images/icons/budget.png',
+        icon: 'images/icons/vote.png',
         title: 'Bürgerhaushalte',
         body: 'Beteiligen Sie Bürger*innen an der lokalen Finanzplanung mit einem gut erprobten Bürgerhaushaltsverfahren. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene.',
     }, {
-        icon: 'images/icons/idea.png',
+        icon: 'images/icons/vote.png',
         title: 'Ideensammlung und Diskussion',
         body: 'Die Ideensammlung ist das vielfältigste mein.Berlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Statdentwicklung benutzen.',
     }, {
-        icon: 'images/icons/discussion.png',
+        icon: 'images/icons/vote.png',
         title: 'Textbearbeitung',
         body: 'Das Tool zur kooperativen Textarbeit eignet sich vor allem für das Ende eines Beteiligungs- oder Planungsprozesses, wenn ein schon erarbeitetes Papier überprüft, ergänzt und überarbeitet werden soll.',
     }],

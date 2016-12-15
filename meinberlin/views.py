@@ -6,23 +6,11 @@ from django.conf import settings
 
 
 class FeedbackForm(forms.Form):
-    answer1 = forms.CharField(label='Was gefällt Ihnen an den Inhalten von mein.berlin.de?',
+    answer = forms.CharField(label='Ihr Feedback zu mein.berlin.de:',
         widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
-    answer2 = forms.CharField(label='Was missfällt Ihnen an den Inhalten von mein.berlin.de?',
-        widget=forms.Textarea(attrs={'rows': 4}),
-        max_length=1000,
-        required=False)
-    answer3 = forms.CharField(label='Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-        widget=forms.Textarea(attrs={'rows': 4}),
-        max_length=1000,
-        required=False)
-    answer4 = forms.CharField(label='Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?',
-        widget=forms.Textarea(attrs={'rows': 4}),
-        max_length=1000,
-        required=False)
-    sender_address = forms.EmailField(label='Wenn Sie eine Antwort bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',
+    sender_address = forms.EmailField(label='Wenn Sie Rückmeldung bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',
         required=False)
 
 
@@ -34,12 +22,9 @@ def feedback_view(request):
         # check whether it's valid:
         if form.is_valid():
             subject = 'meinberlin feedback'
-            qa1 = 'Was gefällt Ihnen an den Inhalten von mein.berlin.de?\n\n' + form.cleaned_data['answer1'] + '\n\n'
-            qa2 = 'Was missfällt Ihnen an den Inhalten von mein.berlin.de?\n\n' + form.cleaned_data['answer2'] + '\n\n'
-            qa3 = 'Was gefällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer3'] + '\n\n'
-            qa4 = 'Was missfällt Ihnen an der technischen Umsetzung von mein.berlin.de?\n\n' + form.cleaned_data['answer4'] + '\n\n'
+            qa = 'Ihr Feedback zu mein.berlin.de:\n\n' + form.cleaned_data['answer'] + '\n\n'
             email = 'Nutzer-Email: ' + form.cleaned_data['sender_address'] + '\n\n'
-            message = qa1 + qa2 + qa3 + qa4 + email
+            message = qa + email
             recipients = [settings.FEEDBACK_TO_EMAIL]
 
             send_mail(subject, message, None, recipients, fail_silently=False)

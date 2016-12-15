@@ -10,7 +10,7 @@ class FeedbackForm(forms.Form):
         widget=forms.Textarea(attrs={'rows': 4}),
         max_length=1000,
         required=False)
-    sender_address = forms.EmailField(label='Wenn Sie eine Antwort bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',
+    sender_address = forms.EmailField(label='Wenn Sie Rückmeldung bekommen möchten, geben Sie bitte Ihre email-Adresse an (optional):',
         required=False)
 
 

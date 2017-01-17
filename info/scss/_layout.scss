@@ -39,8 +39,4 @@ body {
     .l-same-3 {
         @include grid-same-width(3);
     }
-
-    .l-left {
-        @include grid-span(6, 0);
-    }
 }

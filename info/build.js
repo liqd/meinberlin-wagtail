@@ -27,7 +27,7 @@ var view = {
     introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über verschiedene Möglichkeiten erfahren und Referenzprojekte finden.',
     featuresTitle: 'Plattform',
     features: [{
-        icon: 'images/icons/easy.png',
+        icon: 'images/icons/click.png',
         title: 'Digitale Beteiligung ganz einfach',
         body: 'meinBerlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Die verschiedenen Tools von meinBerlin mit Beispielen und Funktionalitäten finden Sie hier im Überblick.',
     }, {
@@ -61,23 +61,23 @@ var view = {
     }],
     processesTitle: 'Verfahren',
     processes: [{
-        icon: 'images/icons/opinion.png',
+        icon: 'images/icons/building.png',
         title: 'Bebauungsplanverfahren',
         body: 'Begleiten Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung mit dem Stellungnahmetool. Das Tool eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
     }, {
-        icon: 'images/icons/prioritize.png',
+        icon: 'images/icons/vote.png',
         title: 'Umfragen',
         body: 'Ermöglichen Sie sehr niedrigschwellige Beteiligungsmöglichkeiten zu verschiedenen Themen mit dem Umfragetool. Das Verfahren eignet sich besonders, um ein Meinungsbild zu einer konkreten Frage einzuholen.',
     }, {
-        icon: 'images/icons/vote.png',
+        icon: 'images/icons/budget.png',
         title: 'Bürgerhaushalte',
         body: 'Beteiligen Sie Bürger*innen an der lokalen Finanzplanung mit einem gut erprobten Bürgerhaushaltsverfahren. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene.',
     }, {
-        icon: 'images/icons/vote.png',
+        icon: 'images/icons/idea.png',
         title: 'Ideensammlung und Diskussion',
         body: 'Die Ideensammlung ist das vielfältigste meinBerlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Stadtentwicklung benutzen.',
     }, {
-        icon: 'images/icons/vote.png',
+        icon: 'images/icons/comment_on_document.png',
         title: 'Textbearbeitung',
         body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten.',
     }],

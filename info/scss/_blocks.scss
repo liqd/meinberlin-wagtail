@@ -40,7 +40,8 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 
-    min-height: calc(100vh - 3em);
+    height: calc(100vh - 3em);
+    max-height: 40em;
     display: flex;
     align-items: flex-end;
 }

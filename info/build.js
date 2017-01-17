@@ -13,7 +13,7 @@ var view = {
         title: 'Plattform',
     }, {
         id: 'examples',
-        title: 'Beispiele',
+        title: 'Referenzprojekte',
     }, {
         id: 'processes',
         title: 'Verfahren',
@@ -22,24 +22,24 @@ var view = {
         title: 'Kontakt',
     }],
     heroTitle: 'mein.berlin',
-    heroBody: 'Herzlich Willkommen bei mein.berlin, der Plattform für Bürgerbeteiligungsprozesse in Berlin!',
-    introTitle: 'Mein.berlin ist der Ort, an dem Sie mit Bürgern ins Gespräch kommen.',
-    introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über Möglichkeiten und Beispiele erfahren.',
+    heroBody: 'Herzlich Willkommen bei meinBerlin, der Plattform für Bürgerbeteiligungsprozesse in Berlin!',
+    introTitle: 'meinBerlin ist der Ort, an dem Sie mit Bürger*innen der Stadt ins Gespräch kommen.',
+    introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über verschiedene Möglichkeiten erfahren und Referenzprojekte finden.',
     featuresTitle: 'Features',
     features: [{
         icon: 'images/icons/easy.png',
-        title: 'Digitale Beteiligung einfach gemacht',
-        body: 'Mein.berlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Für Ihren Überblick finden Sie hier die verschiedenen Tools von mein.berlin mit Beispielen und Funktionalitäten.',
+        title: 'Digitale Beteiligung ganz einfach',
+        body: 'meinBerlin bietet eine Reihe von Beteiligungsverfahren, die man einfach in Ihren Prozess einbinden und mit Ihrer Fragestellung kombinieren kann. Die verschiedenen Tools von meinBerlin mit Beispielen und Funktionalitäten finden Sie hier im Überblick.',
     }, {
         icon: 'images/icons/simple.png',
-        title: 'Komplexe Prozesse unkompliziert anlegen',
-        body: 'Sie haben bereits konkrete Vorstellungen oder Ihr Prozess ist sehr complex? Wir beraten Sie gerne persönlich weiter und besprechen die Umsetzung Ihres Prozesses.',
+        title: 'Komplexe Prozesse bequem anlegen',
+        body: 'Sie haben bereits konkrete Vorstellungen oder komplexe Prozesse umzusetzen? Wir beraten Sie gerne persönlich zur Umsetzung Ihres Prozesses.',
     }, {
         icon: 'images/icons/embedding.png',
-        title: 'Mühelos einbetten und informieren',
-        body: 'Mein.Berlin-Beteiligungsverfahren sind so konzipiert, dass sie auch einfach auf Ihrer berlin.de-Seite eingebettet werden können. So können Sie die Bürger auf Ihrer Seite und auf mein.berlin informieren und sie direkt zur Teilhabe einladen.',
+        title: 'Direkt einbetten und informieren',
+        body: 'meinBerlin-Beteiligungsverfahren sind so konzipiert, dass sie auch einfach auf Ihrer berlin.de-Seite eingebunden werden können. So können Sie die Bürger*innen auf beiden Seiten informieren und direkt zur Teilhabe einladen.',
     }],
-    examplesTitle: 'Beispiele',
+    examplesTitle: 'Referenzprojekte',
     examples: [{
         title: 'Ideensammlungsverfahren ISEK Tegel',
         body: 'Der Dialog zum Flughafenumfeld Tegel wurde in verschiedenen Phasen mit dem Ideensammlungs-Tool begleitet. Es wurden erst offen und in einem zweiten Schritt zu konkreten Themen Vorschläge von Bürger*innen gesammelt und ausgewertet.',
@@ -75,14 +75,14 @@ var view = {
     }, {
         icon: 'images/icons/vote.png',
         title: 'Ideensammlung und Diskussion',
-        body: 'Die Ideensammlung ist das vielfältigste mein.Berlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Statdentwicklung benutzen.',
+        body: 'Die Ideensammlung ist das vielfältigste meinBerlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Stadtentwicklung benutzen.',
     }, {
         icon: 'images/icons/vote.png',
         title: 'Textbearbeitung',
-        body: 'Das Tool zur kooperativen Textarbeit eignet sich vor allem für das Ende eines Beteiligungs- oder Planungsprozesses, wenn ein schon erarbeitetes Papier überprüft, ergänzt und überarbeitet werden soll.',
+        body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten.',
     }],
-    contactTitle: 'Sie wollen sich weiter informieren lassen?',
-    contactBody: 'Rufen Sie an und lassen sich kompetent beraten. Wir helfen gerne weiter, welche Verfahren sich für welche Fragen eignen oder geben einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <http://mein.berlin-demo.de> besuchen.',
+    contactTitle: 'Möchten Sie weitere Informationen?',
+    contactBody: 'Rufen Sie uns an, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen gern einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <http://mein.berlin-demo.de> besuchen.',
     footerNav: [{
         url: 'https://liqd.net/de/impressum/',
         title: 'Impressum',

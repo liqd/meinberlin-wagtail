@@ -25,7 +25,7 @@ var view = {
     heroBody: 'Herzlich Willkommen bei meinBerlin, der Plattform für Bürgerbeteiligungsprozesse in Berlin!',
     introTitle: 'meinBerlin ist der Ort, an dem Sie mit Bürger*innen der Stadt ins Gespräch kommen.',
     introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über verschiedene Möglichkeiten erfahren und Referenzprojekte finden.',
-    featuresTitle: 'Features',
+    featuresTitle: 'Plattform',
     features: [{
         icon: 'images/icons/easy.png',
         title: 'Digitale Beteiligung ganz einfach',
@@ -59,7 +59,7 @@ var view = {
         alt: '',
         url: 'https://mein.berlin.de/w/prozesse/treiben-sie-mit-ihrer-familie-sport-welche-angebot/',
     }],
-    processesTitle: 'Prozesse',
+    processesTitle: 'Verfahren',
     processes: [{
         icon: 'images/icons/opinion.png',
         title: 'Bebauungsplanverfahren',

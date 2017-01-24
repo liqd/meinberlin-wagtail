@@ -82,7 +82,7 @@ var view = {
         body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten.',
     }],
     contactTitle: 'Möchten Sie weitere Informationen?',
-    contactBody: 'Rufen Sie uns an, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen gern einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <http://mein.berlin-demo.de> besuchen.',
+    contactBody: 'Rufen Sie uns an, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen gern einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <https://meinberlin-demo.liqd.net> besuchen.',
     footerNav: [{
         url: 'https://liqd.net/de/impressum/',
         title: 'Impressum',

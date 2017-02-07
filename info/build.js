@@ -80,6 +80,10 @@ var view = {
         icon: 'images/icons/comment_on_document.png',
         title: 'Textbearbeitung',
         body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten.',
+    }, {
+        icon: 'images/icons/agenda.png',
+        title: 'Themenplanung',
+        body: 'Mit diesem Verfahren können relevante Themen und Handlungsfelder eingebracht, identifiziert und priorisiert werden. Durch die Kommentar- und Abstimmungsfunktion kann eine rege Diskussion entstehen und ein kontinuierlicher Dialog gefördert werden.',
     }],
     contactTitle: 'Möchten Sie weitere Informationen?',
     contactBody: 'Rufen Sie uns an, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen gern einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <https://meinberlin-demo.liqd.net> besuchen.',

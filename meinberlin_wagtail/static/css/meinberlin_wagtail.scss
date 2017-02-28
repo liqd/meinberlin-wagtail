@@ -556,3 +556,9 @@ input[type=submit] {
     padding: .5em 2em .55em;
     border-radius: .5em;
 }
+
+@media screen and (min-width: 767px) {
+    .shariff-button.whatsapp {
+        display: none;
+    }
+}

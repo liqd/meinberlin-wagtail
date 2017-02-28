@@ -22,7 +22,7 @@ var view = {
         title: 'Kontakt',
     }],
     heroTitle: 'meinBerlin',
-    heroBody: 'Herzlich Willkommen bei meinBerlin, der Plattform für Bürgerbeteiligungsprozesse in Berlin!',
+    heroBody: 'DIE Beteiligungsplattform des Landes Berlin. Herzlich Willkommen!',
     introTitle: 'meinBerlin ist der Ort, an dem Sie mit Bürger*innen der Stadt ins Gespräch kommen.',
     introBody: 'Hier können Sie Meinungen erfragen oder Stellungnahmen zu Ihrem Bebauungsplanverfahren erhalten. Mein Berlin soll in Zukunft alle gesetzlich geregelten und informellen Bürgerbeteiligungsverfahren Berlins beherbergen. Es haben bereits viele Beteiligungen stattgefunden: hier können Sie mehr über verschiedene Möglichkeiten erfahren und Referenzprojekte finden.',
     featuresTitle: 'Plattform',

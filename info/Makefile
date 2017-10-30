@@ -6,6 +6,7 @@ install: all
 	mkdir -p $(TARGET)
 	cp index.html $(TARGET)
 	cp style.css $(TARGET)
+	cp init.js $(TARGET)
 	mkdir -p $(TARGET)/images
 	cp -r images/* $(TARGET)/images
 	mkdir -p $(TARGET)/bower_components

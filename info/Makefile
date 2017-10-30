@@ -1,4 +1,4 @@
-TARGET := ../meinberlin_wagtail/static/info
+TARGET := ../../a4-meinberlin/meinberlin/assets/info
 
 all: index.html style.css
 

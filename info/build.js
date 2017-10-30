@@ -61,34 +61,46 @@ var view = {
     }],
     processesTitle: 'Verfahren',
     processes: [{
-        icon: 'images/icons/building.png',
-        title: 'Bebauungsplanverfahren',
-        body: 'Begleiten Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung mit dem Stellungnahmetool. Das Tool eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
+        icon: 'images/icons/idea.png',
+        title: 'Brainstorming, Ideensammlung und Diskussion',
+        body: 'Das Brainstorming und die Ideensammlung sind die vielfältigsten meinBerlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Stadtentwicklung benutzen. Sammeln Sie ortspezifische und/oder themenspezifische Ideen, kommentieren und bewerten Sie diese! Ortspezifische Ideen können außerdem auf einer Karte verortet werden.',
+    }, {
+        icon: 'images/icons/agenda.png',
+        title: 'Agenda festlegen',
+        body: 'Identifizieren Sie mit diesem Verfahren Themen und definieren Sie das Selbstverständnis und die Grundprinzipien. Im Anschluss können die Themen bewertet und kommentiert werden. Darüber erhalten Sie eine quantitative Rückmeldung mittels der Bewertung der Ideen.',
+    }, {
+        icon: 'images/icons/comment_on_document.png',
+        title: 'Textbearbeitung',
+        body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten. Textentwürfe können dabei erstellt und kommentiert werden.',
+    }, {
+        icon: 'images/icons/budget.png',
+        title: 'Bürgerhaushalte',
+        body: 'Beteiligen Sie Bürger*innen an der lokalen Finanzplanung mit einem gut erprobten Bürgerhaushaltsverfahren. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene. Vorschläge können mit einem Budget versehen und auf einer Karte verortet werden, sowie anschließend bewertet und kommentiert werden.',
+    }, {
+        icon: 'images/icons/external.png',
+        title: 'Externes Projekt',
+        body: 'Auch externe Projekte, die auf einer anderen Plattform zu finden sind, können auf mein.Berlin.de mühelos verlinkt werden.',
     }, {
         icon: 'images/icons/vote.png',
         title: 'Umfragen',
         body: 'Ermöglichen Sie sehr niedrigschwellige Beteiligungsmöglichkeiten zu verschiedenen Themen mit dem Umfragetool. Das Verfahren eignet sich besonders, um ein Meinungsbild zu einer konkreten Frage einzuholen.',
     }, {
-        icon: 'images/icons/budget.png',
-        title: 'Bürgerhaushalte',
-        body: 'Beteiligen Sie Bürger*innen an der lokalen Finanzplanung mit einem gut erprobten Bürgerhaushaltsverfahren. Sie werden zumeist als konsultatives Verfahren eingesetzt und eignen sich besonders auf kommunaler Ebene.',
-    }, {
-        icon: 'images/icons/idea.png',
-        title: 'Ideensammlung und Diskussion',
-        body: 'Die Ideensammlung ist das vielfältigste meinBerlin-Verfahren. Man kann es sowohl für das Entwickeln einer Vision als auch zur Diskussion konkreter Ansätze im Bereich Stadtentwicklung benutzen.',
-    }, {
-        icon: 'images/icons/comment_on_document.png',
-        title: 'Textbearbeitung',
-        body: 'Das Tool zur kooperativen Textarbeit eignet sich hervorragend für das Ende eines Beteiligungs- oder Planungsprozesses, um ein bereits erarbeitetes Papier zu überprüfen, ergänzen und zu überarbeiten.',
-    }, {
-        icon: 'images/icons/agenda.png',
-        title: 'Themenplanung',
+        icon: 'images/icons/topicprio.png',
+        title: 'Themenpriorisierung',
         body: 'Mit diesem Verfahren können relevante Themen und Handlungsfelder eingebracht, identifiziert und priorisiert werden. Durch die Kommentar- und Abstimmungsfunktion kann eine rege Diskussion entstehen und ein kontinuierlicher Dialog gefördert werden.',
+    }, {
+        icon: 'images/icons/building.png',
+        title: 'Bebauungsplanverfahren',
+        body: 'Begleiten Sie ganz einfach (online) eine frühzeitige Öffentlichkeitsbeteiligung oder eine öffentliche Auslegung mit einem Formular zur Stellungnahme. Dieses Formular kann auf externen Seiten eingebunden werden und eignet sich auch für Verfahren zur Festsetzung von Naturschutz- oder Landschaftsschutzgebieten.',
+    }, {
+        icon: 'images/icons/kiezkasse.png',
+        title: 'Kiezkasse',
+        body: 'Mit diesem Tool können Vorschläge mit einem Budget versehen werden und sie auf einer Karte verortet werden. Diese Vorschläge können bewertet und kommentiert werden und dienen als wertvolle Rückmeldung für alle Beteiligten.',
     }],
     contactTitle: 'Möchten Sie weitere Informationen?',
-    contactBody: 'Rufen Sie uns an, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen gern einen vertieften Überblick.\n\nLiquid Democracy e.V.  \nJana Gähler  \nTelefon: 030 62984840  \nEmail: <jana.gaehler@liqd.de>  \n\nZum Testen der Verfahren können Sie außerdem <https://meinberlin-demo.liqd.net> besuchen.',
+    contactBody: 'Kontaktieren Sie uns, wir beraten Sie gern welche Verfahren sich für welche Fragen eignen und geben Ihnen einen vertieften Überblick.\n\nDaniel Kämpfe-Fehrle  \nReferent für E-Partizipation in der Landesredaktion/-koordinierung Berlin.de  \nTelefon: 030 90262283  \nE-Mail: <daniel.kaempfe-fehrle@senatskanzlei.berlin.de>\n\nZum Testen der Verfahren können Sie außerdem <https://meinberlin-demo.liqd.net> besuchen.',
     footerNav: [{
-        url: 'https://liqd.net/de/impressum/',
+        url: 'https://mein.berlin.de/impressum/',
         title: 'Impressum',
     }],
     markdown: function() {
